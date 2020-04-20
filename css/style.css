@@ -68,22 +68,34 @@ header *{
   border: none;
   margin: auto 0;
 }
+.container *{
+  margin: auto;
+}
 .container{
   padding: 10px;
   margin: 0 auto;
   margin-top: 5px;
   width: 100%;
+<<<<<<< HEAD
   height: 200px;
   background-color:#00e6e6;
   display: flex;
 }
 /* .container ul{
+=======
+  background-color: lightgray;
+  display: flex;
+}
+.container ul{
+  margin: auto;
+>>>>>>> 988ff30ba0ff264282cea433db97dbe61761b2ef
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  margin: 5px 10px;
+  justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   list-style: none;
+<<<<<<< HEAD
 } */
 .container .nav-da-pesquisa h3 {
   margin-left: 70px;
@@ -192,12 +204,42 @@ header *{
 }
 .bloco-all .label {
   font-weight: bold;
+=======
+  padding: 4px;
+}
+.container ul li{
+  width: 20%;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color:#ffffff;
+  padding: 5px;
+  height: 2em;
+}
+.container label{
+  margin: 5px 0;
+  width: 25%;
+  text-align: center;
+>>>>>>> 988ff30ba0ff264282cea433db97dbe61761b2ef
+}
+.container input{
+  padding: 4px;
+  border: none;
+  margin: 0 4px;
+  width: 80%;
+}
+.container input:focus{
+  outline: none;
 }
 .home_main{
   width: 95%;
   background-color: #00cccc;
   margin: auto;
   padding: 4px;
+}
+#onde_ir{
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: left;
 }
 footer{
   text-align: center;
