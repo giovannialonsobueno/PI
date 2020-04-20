@@ -76,7 +76,7 @@ header *{
   margin: 0 auto;
   margin-top: 5px;
   width: 100%;
-<<<<<<< HEAD
+
   height: 200px;
   background-color:#00e6e6;
   display: flex;
@@ -95,7 +95,7 @@ header *{
   flex-wrap: wrap;
   align-items: center;
   list-style: none;
-<<<<<<< HEAD
+
 } */
 .container .nav-da-pesquisa h3 {
   margin-left: 70px;
@@ -204,7 +204,6 @@ header *{
 }
 .bloco-all .label {
   font-weight: bold;
-=======
   padding: 4px;
 }
 .container ul li{
@@ -219,7 +218,7 @@ header *{
   margin: 5px 0;
   width: 25%;
   text-align: center;
->>>>>>> 988ff30ba0ff264282cea433db97dbe61761b2ef
+
 }
 .container input{
   padding: 4px;
