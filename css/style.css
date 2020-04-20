@@ -68,33 +68,59 @@ header *{
   border: none;
   margin: auto 0;
 }
+.container *{
+  margin: auto;
+}
 .container{
   padding: 10px;
   margin: 0 auto;
   margin-top: 5px;
   width: 100%;
-  background-color:#00e6e6;
+  background-color: lightgray;
   display: flex;
 }
 .container ul{
+  margin: auto;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  margin: 5px 10px;
+  justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   list-style: none;
+  padding: 4px;
 }
 .container ul li{
+  width: 20%;
+  margin: 0 auto;
+  border-radius: 5px;
   background-color:#ffffff;
-  padding: 4px;
-  min-width: 70px;
+  padding: 5px;
+  height: 2em;
+}
+.container label{
+  margin: 5px 0;
+  width: 25%;
   text-align: center;
+}
+.container input{
+  padding: 4px;
+  border: none;
+  margin: 0 4px;
+  width: 80%;
+}
+.container input:focus{
+  outline: none;
 }
 .home_main{
   width: 95%;
   background-color: #00cccc;
   margin: auto;
   padding: 4px;
+}
+#onde_ir{
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: left;
 }
 footer{
   text-align: center;
