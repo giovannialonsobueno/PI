@@ -25,14 +25,36 @@
       </nav>
      </header>
        <section class="container">
-         <nav>
+         <nav class="nav-da-pesquisa">
            <h3>Para onde deseja ir?</h3>
-             <ul>
-               <li><i class="fa fa-map-marker"></i><a href="#"> Onde</a></li>
-               <li><i class="fa fa-calendar"></i><a href="#"> Entrada</a></li>
-               <li><i class="fa fa-calendar"></i><a href="#"> Saida</a></li>
-               <li><i class="fa fa-bed"></i><a href="#"> Quartos/pessoas</a></li>
-             </ul>
+
+           <div class="bloco-all">
+            
+            <div class="bloco-lugar">
+            <label for="Onde" class="label">Onde</label> <br>
+            <input type="place" name= "local" placeholder="Insira o lugar que gostaria de ir"> <br>
+            </div>
+            
+            <div class="bloco-data">
+            <label for="data" class="label">Datas</label> <br>
+            <input type="date" class="data" name="data" placeholder="dd/mm/yy">
+            <input type="date" class="data" name="data" placeholder="dd/mm/yy"> 
+            </div>
+
+            <div class="bloco-quartos">
+              <label for="Room" class="label">Quartos</label><br>
+              <input type="number" class="room">
+            </div>
+
+            <div class="bloco-pessoas">
+              <label for="pessoas" class="label">Pessoas</label><br>
+              <input type="number" class="pessoas">
+            </div>
+          
+            <div class="bloco-procura">
+              <button type="botao" name="botao-procura"><a href="#"></a> Procurar</button>
+            </div>
+            </div>
          </nav>
        </section>
        <main class="home_main">
