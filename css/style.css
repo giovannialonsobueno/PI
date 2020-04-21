@@ -75,17 +75,111 @@ header *{
   padding: 10px;
   margin: 10px auto;
   width: 100%;
-  background-color: lightgray;
+
+  height: 200px;
+  background-color:#00e6e6;
   display: flex;
 }
-.container ul{
-  margin: auto;
-  width: 100%;
+.container .nav-da-pesquisa h3 {
+  margin-left: 70px;
+}
+.bloco-all{
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-  list-style: none;
+  margin-top: 40px;
+  margin-left: 70px;
+}
+
+.bloco-lugar input{
+  width: 281px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url(../icon-img/pin.png);
+  background-position: 7px 9px;
+  background-repeat: no-repeat;
+  padding: 12px 0px 12px 40px;
+  margin-top: 5px;
+}
+
+.bloco-lugar input:focus {
+  border: 3px solid #555;
+}
+
+.bloco-data {
+  margin-left: 40px;
+}
+
+.bloco-data .data {
+  width: 180px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px; 
+  background-color: white;
+  background-image: url(../icon-img/calendario.png);
+  background-position: 7px 9px;
+  background-repeat: no-repeat;
+  padding: 12px 0px 12px 40px;
+  margin-top: 5px;
+  margin-right: 6px;
+}
+
+.bloco-quartos {
+  margin-left: 40px;
+}
+
+.bloco-quartos .room {
+  width: 115px;
+  margin-top: 5px;
+  margin-right: 6px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url(../icon-img/cama.png);
+  background-position: 7px 9px;
+  background-repeat: no-repeat;
+  padding: 12px 0px 12px 40px; 
+
+}
+
+.bloco-pessoas .pessoas {
+  width: 115px;
+  margin-top: 5px;
+  margin-right: 6px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url(../icon-img/user.png);
+  background-position: 7px 9px;
+  background-repeat: no-repeat;
+  padding: 12px 0px 12px 40px;
+}
+
+.bloco-procura {
+  margin-left: 25px;
+  margin-top: 18px;
+}
+
+.bloco-procura button {
+  width: 150px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url(../icon-img/procurar.png);
+  background-position: 7px 9px;
+  background-repeat: no-repeat;
+  padding: 12px 0px 12px 40px;
+  margin-top: 5px;
+}
+.bloco-all .label {
+  font-weight: bold;
   padding: 4px;
 }
 .container ul li{
@@ -100,6 +194,7 @@ header *{
   margin: 5px 0;
   width: 25%;
   text-align: center;
+
 }
 .container input{
   padding: 4px;
