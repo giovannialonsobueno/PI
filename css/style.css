@@ -73,8 +73,7 @@ header *{
 }
 .container{
   padding: 10px;
-  margin: 0 auto;
-  margin-top: 5px;
+  margin: 10px auto;
   width: 100%;
   background-color: lightgray;
   display: flex;
@@ -111,7 +110,7 @@ header *{
 .container input:focus{
   outline: none;
 }
-.home_main{
+.home_section{
   width: 95%;
   background-color: #00cccc;
   margin: auto;
@@ -123,6 +122,7 @@ header *{
   text-align: left;
 }
 footer{
+  margin-top: 10px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -130,4 +130,7 @@ footer{
   width: 100%;
   background-color:#4dff4d;
   min-height: 50px;
+}
+h2{
+  margin: auto;
 }
