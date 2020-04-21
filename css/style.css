@@ -81,22 +81,6 @@ header *{
   background-color:#00e6e6;
   display: flex;
 }
-/* .container ul{
-=======
-  background-color: lightgray;
-  display: flex;
-}
-.container ul{
-  margin: auto;
->>>>>>> 988ff30ba0ff264282cea433db97dbe61761b2ef
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-  list-style: none;
-
-} */
 .container .nav-da-pesquisa h3 {
   margin-left: 70px;
 }
@@ -105,13 +89,6 @@ header *{
   margin-top: 40px;
   margin-left: 70px;
 }
-
-/* .bloco-lugar input{
-  margin-top: 5px;
-  height: 35px;
-  width: 190px;
-  border: none;
-} */
 
 .bloco-lugar input{
   width: 281px;
