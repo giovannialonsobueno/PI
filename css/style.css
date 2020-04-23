@@ -9,7 +9,7 @@ a{
   color: inherit;
 }
 body{
-  background-color:#ffffff;
+  background-color:#dddddd;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
 }
@@ -77,14 +77,7 @@ header *{
   background-color:#000b72;
   display: flex;
 }
-/* .container ul{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin: 5px 10px;
-  align-items: center;
-  list-style: none;
-} */
+
 .container .nav-da-pesquisa h3 {
   margin-left: 70px;
   color: white;
@@ -94,13 +87,6 @@ header *{
   margin-top: 40px;
   margin-left: 70px;
 }
-
-/* .bloco-lugar input{
-  margin-top: 5px;
-  height: 35px;
-  width: 190px;
-  border: none;
-} */
 
 .bloco-lugar input{
   width: 281px;
@@ -195,6 +181,33 @@ header *{
   font-weight: bold;
   color: white;
 }
+
+.titulo-promocao {
+  margin-left: 40px;
+  margin-bottom: 40px;
+  margin-top: 100px;
+}
+
+.grid-main {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 500px;
+  margin-left: 40px;
+  margin-right: 40px;
+  
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
 footer{
   text-align: center;
   display: flex;
