@@ -28,6 +28,7 @@ header *{
   height: 100%;
   border-bottom: 1px solid black;
   background-color: rgb(255, 255, 255);
+  background-color: rgb(200, 200, 200);
   padding: 4px;
   box-shadow: 1px 1px 8px;
 }
@@ -58,6 +59,8 @@ header *{
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
   border: none;
+  border: black solid 1px;
+  border-right: none;
   margin: auto 0;
   margin-left: auto;
 }
@@ -66,7 +69,12 @@ header *{
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border: none;
+  border: black solid 1px;
+  border-left: none;
   margin: auto 0;
+}
+.search_bar:focus, .search_input:focus{
+  outline: none;
 }
 .container{
   padding: 10px;
@@ -155,6 +163,7 @@ header *{
   background-position: 7px 9px;
   background-repeat: no-repeat;
   padding: 12px 0px 12px 40px; 
+  padding: 12px 0px 12px 40px;
 
 }
 
