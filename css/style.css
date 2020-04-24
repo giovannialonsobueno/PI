@@ -194,34 +194,94 @@ header *{
   margin-top: 100px;
 }
 
-.grid-main {
-  display: grid;
-  grid-column-gap: 15px;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: 500px;
-  margin-left: 40px;
-  margin-right: 40px;
-  
-.grid-main {
+.grid-main{
   width: 100%;
   display: flex;
   justify-content: space-around;
   margin: 10px auto;
-}
 
-.grid-main div {
+}
+.grid-main .div {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
   font-size: 30px;
   text-align: center;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   width: calc((100% - 120px)/4);
   min-height: 400px;
+  box-shadow: 0 4px 8px rgba(68,68,68,0.2);
+  border: 1px solid #cccccc;
+  height: 680px;
 }
+.info-bloco {
+  flex-grow: 1;
+  position: relative;
+  padding: 24px;
+}
+
+.info-bloco .tipo-produto {
+  color: #666666;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  right: 78px;
+  bottom: 30px;
+  font-weight: bold;
+}
+
+.info-bloco .nome-produto {
+  font-size: 24px;
+  line-height: 28px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  right: 32px;
+  bottom: 24px;
+  font-weight: bold;
+}
+
+.info-bloco .rating-and-stars {
+  margin: 8px 0 12px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  bottom: 15px;
+}
+.info-bloco .number-rating{
+  margin-right: 8px;
+  width: 24px;
+  height: 20px;
+  background-color: #03a691;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-bloco .number {
+  font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+.info-bloco i {
+  color: #E16C02;
+  font-size: 16px;
+}
+
+.info-bloco .nome-lugar {
+  font-size: 14px;
+  color: #666666;
+  position: relative;
+} 
+
 .grid-main div img{
   width: 100%;
-  height: 50%;
+  height: 30%;
   border-top-left-radius: 19px;
   border-top-right-radius: 19px;
   object-fit: cover;
