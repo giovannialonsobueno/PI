@@ -211,7 +211,7 @@ header *{
   min-height: 400px;
   box-shadow: 0 4px 8px rgba(68,68,68,0.2);
   border: 1px solid #cccccc;
-  height: 680px;
+  height: 600px;
 }
 .info-bloco {
   flex-grow: 1;
