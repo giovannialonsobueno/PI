@@ -194,26 +194,15 @@ header *{
   margin-top: 100px;
 }
 
-.grid-main {
-  display: grid;
-  grid-column-gap: 15px;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: 500px;
-  margin-left: 40px;
-  margin-right: 40px;
-  
 .grid-main{
   width: 100%;
   display: flex;
   justify-content: space-around;
   margin: 10px auto;
 }
-
-.grid-item {
 .grid-main div {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
   font-size: 30px;
   text-align: center;
   border-top-left-radius: 20px;
@@ -227,7 +216,6 @@ header *{
   border-top-right-radius: 19px;
   object-fit: cover;
 }
-
 footer{
   text-align: center;
   display: flex;
