@@ -269,6 +269,8 @@ header *{
   font-size: 14px;
   color: #666666;
   position: relative;
+  right: 123px;
+  top: 7px;
 }
 
 .grid-main div img{
