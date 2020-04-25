@@ -204,7 +204,7 @@ header *{
 .grid-main .div {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 30px;
-  text-align: center;
+  text-align: left;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   width: calc((100% - 120px)/4);
@@ -218,7 +218,6 @@ header *{
   position: relative;
   padding: 24px;
 }
-
 .info-bloco .tipo-produto {
   color: #666666;
   font-size: 12px;
@@ -226,9 +225,6 @@ header *{
   line-height: 16px;
   font-weight: 500;
   text-transform: uppercase;
-  position: relative;
-  right: 78px;
-  bottom: 30px;
   font-weight: bold;
 }
 
@@ -237,12 +233,8 @@ header *{
   line-height: 28px;
   overflow: hidden;
   text-overflow: ellipsis;
-  position: relative;
-  right: 32px;
-  bottom: 24px;
   font-weight: bold;
 }
-
 .info-bloco .rating-and-stars {
   margin: 8px 0 12px;
   display: flex;
@@ -260,9 +252,8 @@ header *{
   align-items: center;
   justify-content: center;
 }
-
 .info-bloco .number {
-  font-size: 12px;
+    font-size: 12px;
     line-height: 16px;
     font-weight: 400;
     color: white;
@@ -277,7 +268,7 @@ header *{
   font-size: 14px;
   color: #666666;
   position: relative;
-} 
+}
 
 .grid-main div img{
   width: 100%;
@@ -286,6 +277,7 @@ header *{
   border-top-right-radius: 19px;
   object-fit: cover;
 }
+
 footer{
   text-align: center;
   display: flex;
