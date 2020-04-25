@@ -228,9 +228,6 @@ header *{
   margin: 8px 0 12px;
   display: flex;
   align-items: center;
-  overflow: hidden;
-  position: relative;
-  bottom: 15px;
 }
 .info-bloco .number-rating{
   margin-right: 8px;
@@ -247,7 +244,10 @@ header *{
     font-weight: 400;
     color: white;
 }
-
+.star-rating{
+  display: flex;
+  align-items: flex-end;
+}
 .info-bloco i {
   color: #E16C02;
   font-size: 16px;
