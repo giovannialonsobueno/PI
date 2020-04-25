@@ -9,13 +9,12 @@
   <script src="https://kit.fontawesome.com/837f81fff7.js" crossorigin="anonymous"></script>
   <title></title>
 </head>
-
 <body>
   <header class="top_header">
     <nav>
       <div class="left_header">
         <h2 class="logo">NH Turism</h2>
-        <input class="search_bar" type="text" placeholder="Pesquisar">
+        <input class="search_bar" type="search" placeholder="Pesquisar">
         <button class="search_input" type="button" name="button">
           <i class="fa fa-search"></i></button>
       </div>
@@ -30,14 +29,11 @@
   <section class="container">
     <nav class="nav-da-pesquisa">
       <h3>Para onde deseja ir?</h3>
-
       <div class="bloco-all">
-
         <div class="bloco-lugar">
           <label for="Onde" class="label">Onde</label> <br>
           <input type="place" name="local" placeholder="Insira o lugar que gostaria de ir"> <br>
         </div>
-
         <div class="bloco-data">
           <label for="data" class="label">Datas</label> <br>
           <input type="date" class="data" name="data" placeholder="dd/mm/yy" required>
@@ -47,12 +43,10 @@
           <label for="Room" class="label">Quartos</label><br>
           <input type="number" class="room">
         </div>
-
         <div class="bloco-pessoas">
           <label for="pessoas" class="label">Pessoas</label><br>
           <input type="number" class="pessoas">
         </div>
-
         <div class="bloco-procura">
           <button type="submit" name="botao-procura"><a href="#"></a> Procurar</button>
         </div>
@@ -60,26 +54,21 @@
     </nav>
   </section>
   <section>
-    <div class="titulo-promocao">
-      <h2>As melhores promoções para você:</h2>
-    </div>
-
     <!--   COLOCAR O NOME "NATAL" EMBAIXO DO NUMERO DE AVALIACAO...
     FAZENDO COM QUE A PALAVRA NATAL FIQUE COLADA NA ESQUEDA IGUAL AS DEMAIS./
     ARRUMAR O BLOCO QUE CONTENHA "TIPO-PRODUTO", "NOME-PRODUTO" E AS DEMAIS
     "RANTING-AND-STARS".
     Se Possivel tentar por uma linha de visiao apos o a palavra natal para
     dividir o conteudo do preco que ira ficar embaixo da divisao -->
+    <h2 class="titulo-promocao">As melhores promoções para você:</h2>
     <div class="grid-main">
       <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
         <div class="info-bloco">
           <span class="tipo-produto">Hospedagem</span>
           <p class="nome-produto">Esmeralda Praia Hotel</p>
           <div class="rating-and-stars">
-            <div class="number-rating">
-              <span class="number">4.5</span>
-            </div>
-            <div>
+              <span class="number number-rating">4.5</span>
+            <div class="star-rating">
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
               </i><i class="fas fa-star"></i><i class="fas fa-star"></i> 
           </div>
@@ -87,6 +76,8 @@
               <span class="nome-lugar">Natal</span>
             </div>
           </div>
+          <span class="nome-lugar">Natal</span>
+          <p>R$22,50</p>
         </div>
       </div>
       <div class="div"> <img src="img-lugar\catavento-praia-hotel.jpg" alt="">
@@ -94,10 +85,8 @@
           <span class="tipo-produto">Hospedagem</span>
           <p class="nome-produto">Esmeralda Praia Hotel</p>
           <div class="rating-and-stars">
-            <div class="number-rating">
-              <span class="number">4.5</span>
-            </div>
-            <div>
+            <span class="number number-rating">4.5</span>
+            <div class="star-rating">
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
               </i><i class="fas fa-star"></i><i class="fas fa-star"></i>
           </div>
@@ -105,6 +94,8 @@
               <span class="nome-lugar">Natal</span>
             </div>
           </div>
+          <span class="nome-lugar">Natal</span>
+          <p>R$22,50</p>
         </div>
       </div>
       <div class="div"> <img src="img-lugar\catavento-praia-hotel.jpg" alt="">
@@ -112,10 +103,8 @@
           <span class="tipo-produto">Hospedagem</span>
           <p class="nome-produto">Esmeralda Praia Hotel</p>
           <div class="rating-and-stars">
-            <div class="number-rating">
-              <span class="number">4.5</span>
-            </div>
-            <div>
+            <span class="number number-rating">4.5</span>
+            <div class="star-rating">
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
               </i><i class="fas fa-star"></i><i class="fas fa-star"></i>
           </div>
@@ -123,6 +112,8 @@
               <span class="nome-lugar">Natal</span>
             </div>
           </div>
+          <span class="nome-lugar">Natal</span>
+          <p>R$22,50</p>
         </div>
       </div>
       <div class="div"> <img src="img-lugar\catavento-praia-hotel.jpg" alt="">
@@ -130,10 +121,8 @@
           <span class="tipo-produto">Hospedagem</span>
           <p class="nome-produto">Esmeralda Praia Hotel</p>
           <div class="rating-and-stars">
-            <div class="number-rating">
-              <span class="number">4.5</span>
-            </div>
-            <div>
+            <span class="number number-rating">4.5</span>
+            <div class="star-rating">
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
               </i><i class="fas fa-star"></i><i class="fas fa-star"></i>
           </div>
@@ -141,11 +130,13 @@
             <span class="nome-lugar">Natal</span>
           </div>
           </div>
+          <span class="nome-lugar">Natal</span>
+          <p>R$22,50</p>
         </div>
       </div> <!--  fechamento main-grid-->
     </div  >
   </section>
-  <section>
+  <!-- <section>
     <div>teest</div>
   </section>
   <section>
@@ -159,7 +150,7 @@
   </section>
   <section>
     <div>4</div>
-  </section>
+  </section> -->
   <footer><a href="#">Northeast Heat Turism</a></footer>
 </body>
 

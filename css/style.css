@@ -76,27 +76,29 @@ header *{
   outline: none;
 }
 .container{
-  padding: 10px;
+  padding: 20px;
   margin: 0 auto;
   margin-top: 5px;
   width: 100%;
-  height: 200px;
   background-color:#000b72;
   display: flex;
-}
-
-.container .nav-da-pesquisa h3 {
-  margin-left: 70px;
+  justify-content: center;
   color: white;
+}
+.container .nav-da-pesquisa h3 {
+  margin-top:5px;
+  margin-bottom: 10px;
 }
 .bloco-all{
   display: flex;
-  margin-top: 40px;
-  margin-left: 70px;
+  margin: 0 auto;
 }
-
+.bloco-all div{
+  margin: 20px;
+}
 .bloco-lugar input{
-  width: 281px;
+  min-width: 180px;
+  min-height: 30px;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
@@ -105,8 +107,8 @@ header *{
   background-image: url(../icon-img/pin.png);
   background-position: 7px 9px;
   background-repeat: no-repeat;
-  padding: 12px 0px 12px 40px;
-  margin-top: 5px;
+  padding: 12px 30px;
+  padding-left:40px;
 }
 
 .bloco-lugar input:focus {
@@ -114,7 +116,7 @@ header *{
 }
 
 .bloco-data {
-  margin-left: 40px;
+
 }
 
 .bloco-data .data {
@@ -127,18 +129,10 @@ header *{
   background-position: 7px 9px;
   background-repeat: no-repeat;
   padding: 12px 0px 12px 40px;
-  margin-top: 5px;
-  margin-right: 6px;
-}
-
-.bloco-quartos {
-  margin-left: 40px;
 }
 
 .bloco-quartos .room {
   width: 115px;
-  margin-top: 5px;
-  margin-right: 6px;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
@@ -148,13 +142,10 @@ header *{
   background-position: 7px 9px;
   background-repeat: no-repeat;
   padding: 12px 0px 12px 40px;
-
 }
 
 .bloco-pessoas .pessoas {
   width: 115px;
-  margin-top: 5px;
-  margin-right: 6px;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
@@ -167,8 +158,7 @@ header *{
 }
 
 .bloco-procura {
-  margin-left: 25px;
-  margin-top: 18px;
+  align-self: flex-end;
 }
 
 .bloco-procura button {
@@ -182,7 +172,6 @@ header *{
   background-position: 7px 9px;
   background-repeat: no-repeat;
   padding: 12px 0px 12px 40px;
-  margin-top: 5px;
 }
 .bloco-all .label {
   font-weight: bold;
@@ -190,9 +179,8 @@ header *{
 }
 
 .titulo-promocao {
-  margin-left: 40px;
-  margin-bottom: 40px;
-  margin-top: 100px;
+  margin: 20px 20px;
+  display: block;
 }
 
 .grid-main{
@@ -200,7 +188,7 @@ header *{
   display: flex;
   justify-content: space-around;
   margin: 10px auto;
-
+  flex-wrap: wrap;
 }
 .grid-main .div {
   background-color: rgba(255, 255, 255, 0.8);
@@ -240,9 +228,6 @@ header *{
   margin: 8px 0 12px;
   display: flex;
   align-items: center;
-  overflow: hidden;
-  position: relative;
-  bottom: 15px;
 }
 .info-bloco .number-rating{
   margin-right: 8px;
@@ -259,14 +244,17 @@ header *{
     font-weight: 400;
     color: white;
 }
-
+.star-rating{
+  display: flex;
+  align-items: flex-end;
+}
 .info-bloco i {
   color: #E16C02;
   font-size: 16px;
 }
 
 .info-bloco .nome-lugar {
-  font-size: 14px;
+  font-size:1.5rem;
   color: #666666;
   position: relative;
   right: 123px;
