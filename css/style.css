@@ -115,10 +115,6 @@ header *{
   border: 3px solid #555;
 }
 
-.bloco-data {
-
-}
-
 .bloco-data .data {
   width: 180px;
   box-sizing: border-box;
@@ -200,7 +196,7 @@ header *{
   min-height: 400px;
   box-shadow: 0 4px 8px rgba(68,68,68,0.2);
   border: 1px solid #cccccc;
-  height: 600px;
+  height: 500px;
 }
 .info-bloco {
   flex-grow: 1;
@@ -223,6 +219,7 @@ header *{
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: bold;
+  margin-top: 10px;
 }
 .info-bloco .rating-and-stars {
   margin: 8px 0 12px;
@@ -256,12 +253,78 @@ header *{
 }
 
 .info-bloco .nome-lugar {
-  font-size:1.5rem;
+  font-size: 16px;
   color: #666666;
   position: relative;
-  right: 123px;
-  top: 7px;
+  bottom: 12px;
 }
+
+/* MUDANÇA A PARTIR DAQUI */
+
+.bloco-de-preco .hr-top {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.bloco-de-preco .descricao-preco {
+  font-size: 13px;
+  margin-top: 15px;
+  font-family: Arial, sans-serif;
+  margin-left: 30px;
+}
+
+.bloco-de-preco .preco-g {
+  display: flex;
+}
+
+.bloco-de-preco .preco {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 24px;
+  margin-top: 15px;
+  margin-left: 5px;
+  font-family: Arial, sans-serif;
+}
+
+.bloco-de-preco .real {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-left: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.bloco-de-preco .valor-total {
+  opacity: 0.4;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-family: Arial, sans-serif;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  text-decoration: line-through;
+}
+
+.bloco-desconto {
+  background-color: #03a691;
+  display: flex;
+  justify-content: flex-start;
+  height: 28px;
+  width: 40px;
+  margin-left: 265px;
+}
+
+.bloco-desconto .desconto {
+  font-size: 15px;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 
 .grid-main div img{
   width: 100%;
@@ -280,3 +343,5 @@ footer{
   background-color:#4dff4d;
   min-height: 50px;
 }
+
+
