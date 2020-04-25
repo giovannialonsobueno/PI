@@ -244,6 +244,8 @@ header *{
     font-weight: 400;
     color: white;
 }
+/* adição da classe
+ pra modificar as estrelas */
 .star-rating{
   display: flex;
   align-items: flex-end;
