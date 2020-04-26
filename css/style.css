@@ -1,28 +1,34 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 a{
   text-decoration: none;
   color: inherit;
 }
+
 body{
   background-color:#dddddd;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   width: 100%;
 }
+
 header{
   width: 100%;
   background-color: #8080ff;
   min-height: 50px;
   z-index: 999;
 }
+
 header *{
   display: flex;
 }
+
 .top_header{
   position: sticky;
   top: 0;
@@ -33,6 +39,7 @@ header *{
   padding: 4px;
   box-shadow: 1px 1px 8px;
 }
+
 .top_header nav{
   margin: auto;
   width: 100%;
@@ -40,6 +47,7 @@ header *{
   align-items: center;
   justify-content: space-between;
 }
+
 .top_header ul{
   width: 20%;
   display: flex;
@@ -47,14 +55,17 @@ header *{
   align-items: center;
   list-style: none;
 }
+
 .logo{
   margin-top: 5px;
   margin-left: 20px;
 }
+
 .left_header{
   display: flex;
   width: 30%;
 }
+
 .search_bar{
   padding: 5px;
   border-bottom-left-radius: 15px;
@@ -64,6 +75,7 @@ header *{
   margin: auto 0;
   margin-left: auto;
 }
+
 .search_input{
   padding: 6px;
   border-top-right-radius: 15px;
@@ -72,9 +84,11 @@ header *{
   border-left: none;
   margin: auto 0;
 }
+
 .search_bar:focus, .search_input:focus{
   outline: none;
 }
+
 .container{
   padding: 20px;
   margin: 0 auto;
@@ -85,14 +99,17 @@ header *{
   justify-content: center;
   color: white;
 }
+
 .container .nav-da-pesquisa h3 {
   margin-top:5px;
   margin-bottom: 10px;
 }
+
 .bloco-all{
   display: flex;
   margin: 0 auto;
 }
+
 .bloco-all div{
   margin: 20px;
 }
@@ -169,6 +186,7 @@ header *{
   background-repeat: no-repeat;
   padding: 12px 0px 12px 40px;
 }
+
 .bloco-all .label {
   font-weight: bold;
   color: white;
@@ -187,6 +205,7 @@ header *{
   margin: 10px auto;
   flex-wrap: wrap;
 }
+
 .grid-main .div {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 2rem;
@@ -196,13 +215,15 @@ header *{
   width: calc((100% - 120px)/4);
   box-shadow: 0 4px 8px rgba(68,68,68,0.2);
   border: 1px solid #cccccc;
-  min-height: 55vh;
+  min-height: 50vh;
 }
+
 .info-bloco {
   flex-grow: 1;
   position: relative;
   padding: 24px;
 }
+
 .info-bloco .tipo-produto {
   color: #666666;
   font-size: 0.8rem;
@@ -217,11 +238,13 @@ header *{
   font-size: 1.5rem;
   font-weight: bold;
 }
+
 .info-bloco .rating-and-stars {
   margin: 8px 0 12px;
   display: flex;
   align-items: center;
 }
+
 .info-bloco .number-rating{
   margin-right: 8px;
   padding: 5px;
@@ -230,10 +253,12 @@ header *{
   color: white;
   font-size: 1rem;
 }
+
 .star-rating{
   display: flex;
   align-items: flex-end;
 }
+
 .info-bloco i {
   color: #E16C02;
   font-size: 1rem;
@@ -302,6 +327,7 @@ header *{
   font-size: 1.2rem;
   color: white;
 }
+
 .grid-main div img{
   width: 100%;
   height: 30%;
@@ -315,9 +341,9 @@ header *{
 }
 
 .titulo {
-  margin: 20px;
+  width: 98%;
   display: block;
-  margin-top: 30vh;
+  margin: 10px auto;
 }
 
 .sobre-lugar {
@@ -326,8 +352,7 @@ header *{
   margin: 0 auto;
   width: 98%;
   padding: 40px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
 }
 
 footer{
