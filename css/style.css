@@ -194,10 +194,9 @@ header *{
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   width: calc((100% - 120px)/4);
-  min-height: 400px;
   box-shadow: 0 4px 8px rgba(68,68,68,0.2);
   border: 1px solid #cccccc;
-  height: 500px;
+  min-height: 55vh;
 }
 .info-bloco {
   flex-grow: 1;
@@ -215,12 +214,8 @@ header *{
 }
 
 .info-bloco .nome-produto {
-  font-size: 24px;
-  line-height: 28px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-top: 10px;
 }
 .info-bloco .rating-and-stars {
   margin: 8px 0 12px;
@@ -231,7 +226,7 @@ header *{
   margin-right: 8px;
   padding: 5px;
   background-color:#03a691;
-  font-weight: 400;
+  font-weight: 300;
   color: white;
   font-size: 1rem;
 }
@@ -241,7 +236,7 @@ header *{
 }
 .info-bloco i {
   color: #E16C02;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .info-bloco .nome-lugar {
@@ -251,23 +246,17 @@ header *{
   bottom: 12px;
 }
 
-/* MUDANÇA A PARTIR DAQUI */
 .bloco-de-preco{
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.bloco-de-preco .hr-top {
   width: 80%;
+  margin: 20px auto;
 }
 
 .bloco-de-preco .descricao-preco {
   width: 100%;
   font-size: 1rem;
   font-family: Arial, sans-serif;
-  margin: 10px;
 }
 
 .bloco-de-preco .preco-g {
@@ -277,7 +266,7 @@ header *{
 .bloco-de-preco .preco {
   display: flex;
   justify-content: flex-start;
-  font-size: 24px;
+  font-size: 1.5rem;
   margin-top: 15px;
   margin-left: 5px;
   font-family: Arial, sans-serif;
@@ -305,7 +294,7 @@ header *{
   text-decoration: line-through;
 }
 
-.bloco-desconto {
+.desconto {
   background-color:#e69500;
   padding: 8px;
   max-height: 3rem;
@@ -320,9 +309,25 @@ header *{
   border-top-right-radius: 19px;
   object-fit: cover;
 }
-.bloco-de-preco .preco-g,
+
 .bloco-de-preco .bloco-desconto{
   margin-top: 5px;
+}
+
+.titulo {
+  margin: 20px;
+  display: block;
+  margin-top: 30vh;
+}
+
+.sobre-lugar {
+  background-color: blue;
+  color: #ffffff;
+  margin: 0 auto;
+  width: 98%;
+  padding: 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 footer{
