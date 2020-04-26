@@ -309,7 +309,7 @@ header *{
 
 .bloco-de-preco .valor-total {
   opacity: 0.4;
-  font-size: 14px;
+  font-size: 1rem;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -341,15 +341,15 @@ header *{
 }
 
 .titulo {
-  width: 98%;
+  width: 95%;
   display: block;
-  margin: 10px auto;
+  margin: 30px auto;
 }
 
 .sobre-lugar {
   background-color: blue;
   color: #ffffff;
-  margin: 0 auto;
+  margin: 30px auto;
   width: 98%;
   padding: 40px;
   border-radius: 10px;
