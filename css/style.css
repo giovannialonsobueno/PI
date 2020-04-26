@@ -182,6 +182,7 @@ header *{
 .grid-main{
   width: 100%;
   display: flex;
+  min-height: 500px;
   justify-content: space-around;
   margin: 10px auto;
   flex-wrap: wrap;
@@ -207,7 +208,7 @@ header *{
   color: #666666;
   font-size: 0.8rem;
   letter-spacing: 1px;
-  line-height: 16px;
+  line-height: 1rem;
   font-weight: 500;
   text-transform: uppercase;
   font-weight: bold;
@@ -254,12 +255,12 @@ header *{
 .bloco-de-preco{
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .bloco-de-preco .hr-top {
-  width: 100%;
+  width: 80%;
 }
 
 .bloco-de-preco .descricao-preco {
@@ -267,7 +268,6 @@ header *{
   font-size: 1rem;
   font-family: Arial, sans-serif;
   margin: 10px;
-  text-align: center;
 }
 
 .bloco-de-preco .preco-g {
@@ -322,7 +322,7 @@ header *{
 }
 .bloco-de-preco .preco-g,
 .bloco-de-preco .bloco-desconto{
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 footer{
