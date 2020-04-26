@@ -175,7 +175,7 @@ header *{
 }
 
 .titulo-promocao {
-  margin: 20px 20px;
+  margin: 20px;
   display: block;
 }
 
@@ -188,7 +188,7 @@ header *{
 }
 .grid-main .div {
   background-color: rgba(255, 255, 255, 0.8);
-  font-size: 30px;
+  font-size: 2rem;
   text-align: left;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -205,7 +205,7 @@ header *{
 }
 .info-bloco .tipo-produto {
   color: #666666;
-  font-size: 12px;
+  font-size: 0.8rem;
   letter-spacing: 1px;
   line-height: 16px;
   font-weight: 500;
@@ -228,21 +228,12 @@ header *{
 }
 .info-bloco .number-rating{
   margin-right: 8px;
-  width: 24px;
-  height: 20px;
-  background-color: #03a691;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 5px;
+  background-color:#03a691;
+  font-weight: 400;
+  color: white;
+  font-size: 1rem;
 }
-.info-bloco .number {
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: 400;
-    color: white;
-}
-/* adição da classe
- pra modificar as estrelas */
 .star-rating{
   display: flex;
   align-items: flex-end;
@@ -260,17 +251,23 @@ header *{
 }
 
 /* MUDANÇA A PARTIR DAQUI */
+.bloco-de-preco{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
 
 .bloco-de-preco .hr-top {
-  margin-top: 10px;
   width: 100%;
 }
 
 .bloco-de-preco .descricao-preco {
-  font-size: 13px;
-  margin-top: 15px;
+  width: 100%;
+  font-size: 1rem;
   font-family: Arial, sans-serif;
-  margin-left: 30px;
+  margin: 10px;
+  text-align: center;
 }
 
 .bloco-de-preco .preco-g {
@@ -309,29 +306,23 @@ header *{
 }
 
 .bloco-desconto {
-  background-color: #03a691;
-  display: flex;
-  justify-content: flex-start;
-  height: 28px;
-  width: 40px;
-  margin-left: 265px;
-}
-
-.bloco-desconto .desconto {
-  font-size: 15px;
+  background-color:#e69500;
+  padding: 8px;
+  max-height: 3rem;
+  margin: auto;
+  font-size: 1.2rem;
   color: white;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
 }
-
-
 .grid-main div img{
   width: 100%;
   height: 30%;
   border-top-left-radius: 19px;
   border-top-right-radius: 19px;
   object-fit: cover;
+}
+.bloco-de-preco .preco-g,
+.bloco-de-preco .bloco-desconto{
+  margin-top: 20px;
 }
 
 footer{
@@ -343,5 +334,3 @@ footer{
   background-color:#4dff4d;
   min-height: 50px;
 }
-
-
