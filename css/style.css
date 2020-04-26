@@ -320,9 +320,25 @@ header *{
   border-top-right-radius: 19px;
   object-fit: cover;
 }
-.bloco-de-preco .preco-g,
+
 .bloco-de-preco .bloco-desconto{
   margin-top: 5px;
+}
+
+.titulo {
+  margin: 20px;
+  display: block;
+  margin-top: 30vh;
+}
+
+.sobre-lugar {
+  background-color: blue;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 5vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  
 }
 
 footer{
