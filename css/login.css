@@ -1,0 +1,71 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img-lugar/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bloco-login {
+    background-color: rgba(255,255,255,0.8);
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    height: 470px;
+    width: 540px;
+    margin-left: 25%;
+    margin-top: 10%;
+    border-radius: 10px;
+    border: 1px solid rgb(119, 119, 119);
+}
+
+.bloco {
+    padding: 20px;
+}
+
+.bloco .faca-login {
+    font-size: 20px;
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+}
+
+
+.bloco .insira-email {
+    font-family: Arial,sans-serif;
+}
+
+.bloco .label {
+ margin-top: 17px;
+}
+
+.logo {
+    display: flex;  
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+.form-group .form-control {
+    width: 50%;
+    margin-top: -4px;
+    margin-bottom: -10px;
+    opacity: 0.7;
+}
+
+.bloco button {
+    margin-top: 12px;
+}
+
+.criar-conta {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+
