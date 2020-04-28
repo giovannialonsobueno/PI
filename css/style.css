@@ -365,7 +365,9 @@ header *{
   justify-content: space-around;
 }
 .section-comentario {
+  line-height: 1rem;
   width: 100%;
+  height:
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
@@ -398,11 +400,11 @@ header *{
   width: 100%;
 }
 .horario{
-  width: 100%;
+  width: 90%;
   text-align: left;
   height: 50%;
-  margin-left: 10px;
-  margin-top: 10px;
+  margin:10px auto;
+  font-weight: bold;
 }
 
 .nome {
@@ -410,6 +412,10 @@ width: 70%;
 font-size: 1rem;
 }
 
+.comentario{
+  width: 90%;
+  font-size: 1rem;
+}
 footer{
   text-align: center;
   display: flex;
