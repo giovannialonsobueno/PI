@@ -396,14 +396,14 @@ header *{
   display: block;
 }
 .img-nome-horario hr{
-  color: black;
-  width: 100%;
+  color: rgba(0,0,0,0.5);
+  width: 90%;
 }
 .horario{
-  width: 90%;
+  width: 100%;
   text-align: left;
   height: 50%;
-  margin:10px auto;
+  margin: 5px auto;
   font-weight: bold;
 }
 
@@ -413,9 +413,18 @@ font-size: 1rem;
 }
 
 .comentario{
-  width: 90%;
+  width: 100%;
   font-size: 1rem;
+  margin: 5px auto;
 }
+
+.comment-area{
+  margin:10px auto;
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
 footer{
   text-align: center;
   display: flex;
