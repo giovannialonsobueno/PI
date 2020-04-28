@@ -350,12 +350,14 @@ header *{
 }
 
 .sobre-lugar {
-  background-color: blue;
-  color: #ffffff;
+  background-color: white;
+  font-family: Arial, sans-serif;
+  font-weight: lighter;
   margin: 30px auto;
   width: 98%;
   padding: 40px;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(68,68,68,0.2);
 }
 
 .coments{
@@ -367,7 +369,6 @@ header *{
 .section-comentario {
   line-height: 1rem;
   width: 100%;
-  height:
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
