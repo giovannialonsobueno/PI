@@ -358,37 +358,56 @@ header *{
   border-radius: 10px;
 }
 
+.coments{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
 .section-comentario {
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.section-comentario .bloco-comentario {
-  background-color: #f1f1f1;
-  width: calc((100% - 120px)/4);
-  margin: 10px;
-  line-height: 85px;
-  border-radius: 10px;
-  border: 1px solid #cccccc;
-}
-
-.section-comentario .img-nome-tempo {
+  flex-flow: row wrap;
   padding: 12px;
+  width: calc( ( 100% - 120px )/4);
+  background-color: #f1f1f1;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  padding: 10px;
+  height:auto;
+  margin: 10px auto;
 }
 
-.info-comentario {
+.section-comentario .img-nome-horario {
+  height:auto;
   display: flex;
-  align-items: flex-start;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
-.info-comentario img {
+.img-nome-horario img {
+  margin: 10px;
   border-radius: 50%;
-  width: 15%;
+  width: 70px;
+  display: block;
+}
+.img-nome-horario hr{
+  color: black;
+  width: 100%;
+}
+.horario{
+  width: 100%;
+  text-align: left;
   height: 50%;
-  margin-right: 6px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.nome {
+width: 70%;
+font-size: 1rem;
 }
 
 footer{
