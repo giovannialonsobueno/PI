@@ -7,19 +7,18 @@ body {
 
 .container-login{
   width: 100%;
-  height: 100vh;
-}
-.bloco-login {
-    background-color: rgba(255,255,255,0.8);
-    border-radius: 10px;
-    border: 1px solid rgb(119, 119, 119);
-    width: 30%;
-    height: 50%;
+  height: 90vh;
 }
 
 .bloco-login {
-    padding: 20px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    border: 1px solid rgb(119, 119, 119);
+    width: auto;
+    height: auto;
     margin: auto;
+    padding: 20px;
+    text-align: center;
 }
 
 .bloco-login .faca-login {
@@ -28,32 +27,38 @@ body {
     font-weight: bold;
 }
 
-
 .bloco-login .insira-email {
     font-family: Arial,sans-serif;
 }
 
-.bloco-login label, .bloco-login input,.bloco-login button{
-  margin: 10px 5px;
+.bloco-login label,.bloco-login button{
+  margin: 10px auto;
   padding: 3px;
   font-size: 1rem;
 }
+
 .bloco-login input{
   border-radius:3px;
   border: black solid 1px;
+  width: 100%;
+  margin: 5px
+  width: 80%;;
+  padding: 3px;
+  font-size: 1rem;
+  opacity: 0.7;
 }
+
 .logo {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
-    padding-top: 20px;
+    margin: 10px 0;
     font-family: Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1.8rem;
 }
 
-.form-group .form-control {
-    width: 50%;
-    opacity: 0.7;
+.form-group {
+    margin: 10px;
+    text-align: left;
 }
 
 .criar-conta {
@@ -67,4 +72,39 @@ body {
   display: flex;
   justify-content: center;
   align-items:center;
+}
+
+.primario{
+  margin: auto;
+  width: 95%;
+  height: 2rem;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px #007BFF solid;
+  color: #007BFF;
+  transition: 0.2s;
+  font-size: 1rem;
+  background-color: #fff;
+}
+.primario:hover{
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+}
+.secundario{
+  margin: auto;
+  width: 95%;
+  height: 2rem;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px #007BFF solid;
+  transition: 0.2s;
+  font-size: 1rem;
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.secundario:hover{
+  color: #007BFF;
+  background-color: #fff;
 }
