@@ -56,9 +56,13 @@ header *{
   list-style: none;
 }
 
-.logo{
-  margin-top: 5px;
-  margin-left: 20px;
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    width: 100px;
+    display: block;
 }
 
 .left_header{
