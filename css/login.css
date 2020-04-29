@@ -45,6 +45,8 @@ body {
   padding: 3px;
   font-size: 1rem;
   opacity: 0.7;
+  height: 40px;
+  background-color: rgba(253, 253, 253, 0.9);
 }
 
 .login-logo{
@@ -72,35 +74,35 @@ body {
 
 .primario{
   margin: auto;
-  width: 100%;
+  width: 99%;
   height: 2rem;
   padding: 10px;
   border-radius: 10px;
   border: 1px #007BFF solid;
-  color: #007BFF;
+  color: white;
   transition: 0.2s;
   font-size: 1rem;
-  background-color: #fff;
+  background-color: #007BFF;
 }
 .primario:hover{
-  background-color: #007BFF;
+  background-color: rgb(41, 144, 255);
   color: #fff;
   border: none;
 }
 .secundario{
   margin: auto;
-  width: 100%;
+  width: 99%;
   height: 2rem;
   padding: 10px;
   border-radius: 10px;
   border: 1px #007BFF solid;
   transition: 0.2s;
   font-size: 1rem;
-  background-color: #007BFF;
-  color: #fff;
+  background-color: #fff;
+  color: #007BFF;
 }
 
 .secundario:hover{
-  color: #007BFF;
-  background-color: #fff;
+  color: #fff;
+  background-color: #007BFF;
 }

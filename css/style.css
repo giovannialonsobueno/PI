@@ -134,7 +134,7 @@ header *{
 }
 
 .bloco-data .data {
-  width: 180px;
+  width: 170px;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
@@ -176,7 +176,7 @@ header *{
 }
 
 .bloco-procura button {
-  width: 150px;
+  width: 140px;
   box-sizing: border-box;
   border: none;
   border-radius: 20px;
@@ -480,7 +480,8 @@ footer{
   width: 100%;
   background-color: rgb(175, 175, 175);
   min-height: 50px;
-  height: 100px;
+  height: 80px;
   font-family: Arial, sans-serif;
   font-size: 22px;
 }
+
