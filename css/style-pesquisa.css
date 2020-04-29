@@ -1,12 +1,4 @@
 
-
-header{
-  width: 100%;
-  background-color: #8080ff;
-  min-height: 50px;
-  z-index: 999;
-}
-
 header *{
   display: flex;
 }
@@ -168,70 +160,102 @@ header *{
   background-repeat: no-repeat;
   padding: 12px 0px 12px 40px;
 }
+
+.bloco-all .label {
+  font-weight: bold;
+  color: white;
+}
 section h2{
   margin-top: 20px;
   margin-left: 15px;
+  margin-left: 3vh;
   margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 29px;
+}
+
+.nav-filtros ul {
+  margin-bottom: 5vh;
 }
 .nav-filtros ul li{
   width: 25%;
   justify-content: space-around;
   margin-left: 60px;
+  margin-left: 3vh;
   list-style: none;
   font-weight: bold;
   text-decoration:none;
-  pointer-events: visible;
-  font-size: 18px;
-  background-color: #000b72;
-  border-radius: 25px;
+}
+section h2{
   padding: 10px 30px;
   color: white;
   display: inline;
-  margin-bottom: 5px;
-}
-main div{
-  margin-top: 40px;
-  margin-bottom: 40px;
-  margin-left: 30px;
-  display: block;
-  width: 500px;
-  text-align: justify;
-}
-.img1{
-  width:400px;
-  height: 300px;
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-.img2{
-  width:400px;
-  height: 300px;
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-hr{
-box-shadow:5px 5px 5px #555;
-width: 600px;
-color: black;
-
 }
 
+.resultado-pesquisa {
+  display: flex;
+  justify-content: flex-start;
+  margin: 4vh 3vh;
+  width: 100%;
+}
+
+.resultado-pesquisa img {
+  width:100%;
+}
+
+.resultado-pesquisa .descricao {
+  margin: 0 2vh;
+  width: 100%;
+}
+
+.rtn-i {
+  display: flex;
+}
+
+.resultado-pesquisa .rtn-i i {
+ display: flex;
+ justify-content: flex-start;
+ color: #E16C02;
+ font-size: 1rem;
+}
+
+.resultado-pesquisa .rtn-i .price {
+  display: flex;
+  margin-top: 30vh;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  margin-right: 2vw;
+}
+
+hr {
+  margin-top: 5px;
+}
 footer{
-  margin-top: 30px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(175, 175, 175);
+  min-height: 50px;
+  height: 100px;
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  margin-top: 10vh;
 }
-footer h3{
-  border-radius: 30px;
-  background-color:#000b72 ;
-  width:400px ;
-  color: white;
-  padding: 20px 20px;
-  margin-left: 500px;
+main{
+  width: 70%;
 }
-footer h6{
-  margin-top: 15px;
-  font-size: 16px;
-  font-weight: bolder;
-  margin-left:20px ;
-  margin-bottom: 30px;
+.flex{
+  width: 100%;
+  display: flex;
+}
+.mapa{
+  width: 30%;
+  top: auto;
+  border: solid 5px black;
+}
+.mapa img{
+  width: 100%;
+  height: 100%;
 }

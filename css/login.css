@@ -7,14 +7,14 @@ body {
 
 .container-login{
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
 .bloco-login {
     background-color: rgba(255,255,255,0.8);
     border-radius: 10px;
     border: 1px solid rgb(119, 119, 119);
-    width: 30%;
-    height: 50%;
+    width: auto;
+    height: auto;
 }
 
 .bloco-login {
@@ -23,18 +23,17 @@ body {
 }
 
 .bloco-login .faca-login {
-    font-size: 20px;
     font-family: Arial,sans-serif;
     font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
 }
-
 
 .bloco-login .insira-email {
     font-family: Arial,sans-serif;
 }
-
-.bloco-login label, .bloco-login input,.bloco-login button{
-  margin: 10px 5px;
+.bloco-login label, .bloco-login input {
+  margin: 10px auto;
   padding: 3px;
   font-size: 1rem;
 }
@@ -49,14 +48,14 @@ body {
   opacity: 0.7;
 }
 
-.logo {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
-    font-family: Arial, sans-serif;
-    font-size: 1.8rem;
+.login-logo{
+  margin: auto;
+  width: 50%;
 }
-
+.form-group {
+    margin: 2
+    margin: 5px auto;0px;
+}
 .form-group .form-control {
     width: 50%;
     opacity: 0.7;
@@ -76,7 +75,6 @@ body {
 }
 
 .primario{
-  margin: auto;
   width: 100%;
   height: 2rem;
   padding: 10px;
@@ -86,6 +84,7 @@ body {
   transition: 0.2s;
   font-size: 1rem;
   background-color: #fff;
+  margin: 10px auto;
 }
 .primario:hover{
   background-color: #007BFF;
@@ -93,7 +92,7 @@ body {
   border: none;
 }
 .secundario{
-  margin: auto;
+  margin: 10px auto;
   width: 100%;
   height: 2rem;
   padding: 10px;

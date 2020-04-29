@@ -430,7 +430,47 @@ font-size: 1rem;
   display: flex;
   flex-flow: row wrap;
 }
+.receber-email {
+  margin-top: 30vh;
+  margin-bottom: 30vh;
+  width: 100%;
+}
 
+.receber-email hr {
+  width: 100%;
+}
+
+.bloco-receber-email {
+  display: flex;
+  margin: 0 auto;
+  padding: 20px 0 10px 0;
+  justify-content: flex-end;
+  flex-flow: column wrap;
+  margin-left: 50vh;
+  margin-right: 50vh;
+}
+
+
+.bloco-receber-email span {
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.input-button {
+  display: flex;
+  justify-content: center;
+}
+
+.bloco-receber-email input {
+  height: 20px;
+  width: 35%;
+}
+
+.btn-receber {
+  margin-left: 10vh;
+}
 footer{
   text-align: center;
   display: flex;
@@ -439,7 +479,6 @@ footer{
   width: 100%;
   background-color:#4dff4d;
   min-height: 50px;
-  height: 100px;
   font-family: Arial, sans-serif;
-  font-size: 22px;
+  font-size: 1.2rem;
 }
