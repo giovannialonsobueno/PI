@@ -72,6 +72,7 @@ header *{
 
 .search_bar{
   padding: 5px;
+  height: 1.8rem;
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
   border: black solid 1px;
@@ -82,6 +83,7 @@ header *{
 
 .search_input{
   padding: 6px;
+  height: 1.8rem;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border: black solid 1px;
