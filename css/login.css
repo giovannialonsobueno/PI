@@ -7,18 +7,19 @@ body {
 
 .container-login{
   width: 100%;
-  height: 90vh;
+  height: 100vh;
+}
+.bloco-login {
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    border: 1px solid rgb(119, 119, 119);
+    width: 30%;
+    height: 50%;
 }
 
 .bloco-login {
-    background-color: rgba(255,255,255,0.9);
-    border-radius: 10px;
-    border: 1px solid rgb(119, 119, 119);
-    width: auto;
-    height: auto;
-    margin: auto;
     padding: 20px;
-    text-align: center;
+    margin: auto;
 }
 
 .bloco-login .faca-login {
@@ -27,36 +28,32 @@ body {
     font-weight: bold;
 }
 
+
 .bloco-login .insira-email {
     font-family: Arial,sans-serif;
 }
 
-.bloco-login label,.bloco-login button{
-  margin: 10px auto;
+.bloco-login label, .bloco-login input,.bloco-login button{
+  margin: 10px 5px;
   padding: 3px;
   font-size: 1rem;
 }
-
 .bloco-login input{
   border-radius:3px;
   border: black solid 1px;
-  width: 100%;
-  margin: 5px;
-  padding: 3px;
-  font-size: 1rem;
-  opacity: 0.7;
-  height: 40px;
-  background-color: rgba(253, 253, 253, 0.9);
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
 }
 
-.login-logo{
-  margin: auto;
-  width: 50%;
-}
-
-.form-group {
-    margin: 10px;
-    text-align: left;
+.form-group .form-control {
+    width: 50%;
+    opacity: 0.7;
 }
 
 .criar-conta {
@@ -70,39 +67,4 @@ body {
   display: flex;
   justify-content: center;
   align-items:center;
-}
-
-.primario{
-  margin: auto;
-  width: 99%;
-  height: 2rem;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px #007BFF solid;
-  color: white;
-  transition: 0.2s;
-  font-size: 1rem;
-  background-color: #007BFF;
-}
-.primario:hover{
-  background-color: rgb(41, 144, 255);
-  color: #fff;
-  border: none;
-}
-.secundario{
-  margin: auto;
-  width: 99%;
-  height: 2rem;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px #007BFF solid;
-  transition: 0.2s;
-  font-size: 1rem;
-  background-color: #fff;
-  color: #007BFF;
-}
-
-.secundario:hover{
-  color: #fff;
-  background-color: #007BFF;
 }
