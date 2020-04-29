@@ -439,4 +439,7 @@ footer{
   width: 100%;
   background-color:#4dff4d;
   min-height: 50px;
+  height: 100px;
+  font-family: Arial, sans-serif;
+  font-size: 22px;
 }
