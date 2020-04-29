@@ -1,110 +1,108 @@
 
 body {
-    background-image: url(../img-lugar/bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(../img-lugar/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container-login{
-  width: 100%;
-  height: 90vh;
-}
-.bloco-login {
-    background-color: rgba(255,255,255,0.8);
-    border-radius: 10px;
-    border: 1px solid rgb(119, 119, 119);
-    width: auto;
-    height: auto;
+width: 100%;
+height: 90vh;
 }
 
 .bloco-login {
-    padding: 20px;
-    margin: auto;
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 10px;
+  border: 1px solid rgb(119, 119, 119);
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
 }
 
 .bloco-login .faca-login {
-    font-family: Arial,sans-serif;
-    font-weight: bold;
-    text-align: center;
-    margin: 10px auto;
+  font-size: 20px;
+  font-family: Arial,sans-serif;
+  font-weight: bold;
 }
 
 .bloco-login .insira-email {
-    font-family: Arial,sans-serif;
+  font-family: Arial,sans-serif;
 }
-.bloco-login label, .bloco-login input {
-  margin: 10px auto;
-  padding: 3px;
-  font-size: 1rem;
+
+.bloco-login label,.bloco-login button{
+margin: 10px auto;
+padding: 3px;
+font-size: 1rem;
 }
+
 .bloco-login input{
-  border-radius:3px;
-  border: black solid 1px;
-  width: 100%;
-  margin: 5px
-  width: 80%;;
-  padding: 3px;
-  font-size: 1rem;
-  opacity: 0.7;
+border-radius:3px;
+border: black solid 1px;
+width: 100%;
+margin: 5px;
+padding: 3px;
+font-size: 1rem;
+opacity: 0.7;
+height: 40px;
+background-color: rgba(253, 253, 253, 0.9);
 }
 
 .login-logo{
-  margin: auto;
-  width: 50%;
+margin: auto;
+width: 50%;
 }
+
 .form-group {
-    margin: 2
-    margin: 5px auto;0px;
-}
-.form-group .form-control {
-    width: 50%;
-    opacity: 0.7;
+  margin: 10px;
+  text-align: left;
 }
 
 .criar-conta {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 
 .container-login{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items:center;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items:center;
 }
 
 .primario{
-  width: 100%;
-  height: 2rem;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px #007BFF solid;
-  color: #007BFF;
-  transition: 0.2s;
-  font-size: 1rem;
-  background-color: #fff;
-  margin: 10px auto;
+margin: auto;
+width: 99%;
+height: 2rem;
+padding: 10px;
+border-radius: 10px;
+border: 1px #007BFF solid;
+color: white;
+transition: 0.2s;
+font-size: 1rem;
+background-color: #007BFF;
 }
 .primario:hover{
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
+background-color: rgb(41, 144, 255);
+color: #fff;
+border: none;
 }
 .secundario{
-  margin: 10px auto;
-  width: 100%;
-  height: 2rem;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px #007BFF solid;
-  transition: 0.2s;
-  font-size: 1rem;
-  background-color: #007BFF;
-  color: #fff;
+margin: auto;
+width: 99%;
+height: 2rem;
+padding: 10px;
+border-radius: 10px;
+border: 1px #007BFF solid;
+transition: 0.2s;
+font-size: 1rem;
+background-color: #fff;
+color: #007BFF;
 }
 
 .secundario:hover{
-  color: #007BFF;
-  background-color: #fff;
+color: #fff;
+background-color: #007BFF;
 }
