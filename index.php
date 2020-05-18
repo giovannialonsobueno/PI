@@ -5,55 +5,84 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/837f81fff7.js" crossorigin="anonymous"></script>
-  <title>Welcomo - Home Page </title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <title>Welcome - Home Page </title>
 </head>
 <body>
-  <header class="top_header">
-    <nav>
-      <div class="left_header">
-        <img class="logo" src="icon-img/logo.png" alt="logo">
-        <input class="search_bar" type="search" placeholder="Pesquisar">
-        <button class="search_input" type="button" name="button">
-          <i class="fa fa-search"></i></button>
-      </div>
-      <ul>
-        <li><a href="#">Login | Cadastrar</a></li>
-        <li><a href="#">Ajuda</a></li>
-        <li><a href="#">BRL</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section class="container">
+  <script>
+     $(function(){
+      $('#entrada').datepicker({
+                        buttonImage:"icon-img/calendario.png",
+                        showOn: "button",
+                        buttonImageOnly: true
+              });
+     });
+ $(function(){
+  $('#saida').datepicker({
+                    buttonImage:"icon-img/calendario.png",
+                    showOn: "button",
+                    buttonImageOnly: true
+          });
+ });
+</script>
+  <header class="container">
     <nav class="nav-da-pesquisa">
-      <h3>Para onde deseja ir?</h3>
-      <div class="bloco-all">
-        <div class="bloco-lugar">
-          <label for="Onde" class="label">Onde</label> <br>
-          <input type="place" name="local" placeholder="Insira o lugar que gostaria de ir"> <br>
+          <form class="" method="post">
+      <div class="all">
+          <div class="lugar">
+          <label for="Onde">Onde</label> <br>
+          <input type="text" name="local" placeholder="Insira o lugar que gostaria de ir"><br>
         </div>
-        <div class="bloco-data">
-          <label for="data" class="label">Datas</label> <br>
-          <input type="date" class="data" name="data" placeholder="dd/mm/yy" required>
-          <input type="date" class="data" name="data" placeholder="dd/mm/yy" required>
+        <div class="calendario">
+          <label for="entrada">Entrada</label><br>
+          <input id="entrada" type="date" name="entrada">
         </div>
-        <div class="bloco-quartos">
-          <label for="Room" class="label">Quartos</label><br>
-          <input type="number" class="room">
+        <div class="calendario">
+          <label for="saida">Saída</label><br>
+          <input id="saida" type="date" name="saida">
         </div>
-        <div class="bloco-pessoas">
-          <label for="pessoas" class="label">Pessoas</label><br>
-          <input type="number" class="pessoas">
+        <div>
+          <label for="quartos">Quartos</label><br>
+          <input type="number" id="quartos">
         </div>
-        <div class="bloco-procura">
-          <button type="submit" name="botao-procura"><a href="#"></a> Procurar</button>
+        <div>
+          <label for="hospedes">Hóspedes</label><br>
+          <input type="number" id="hospedes">
         </div>
-      </div>
+          <div class="procura">
+          <button type="submit" name="botao-procura"> <img src="icon-img/procurar.png" alt=""> </button>
+          </div>
+      </form>
+      <button id="cadastrar" onclick="openForm()"> <img src="icon-img/user.png" alt=""><span>Entrar</span></button>
+        </div>
     </nav>
-  </section>
+            <!-- <script>
+            function openForm() {
+              document.getElementById("cadastrar").style.display = "block";
+            }
 
+            function closeForm() {
+              document.getElementById("cadastrar").style.display = "none";
+            }
+            </script>
+    <div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
 
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div> -->
+  </header>
+  <img class="banner" src="img/banner1.jpg" alt="">
   <section>
     <h2 class="titulo-promocao">As melhores promoções para você:</h2>
     <div class="grid-main">
@@ -159,13 +188,8 @@
     </div>
   </section>
 
-
   <section>
-    <h2 class="titulo">Por quê Fortaleza?</h2>
-    <div class="sobre-lugar">
-      <p>Fortaleza possui 34 km de praias, entre elas, Jericoacoara, Canoa Quebrada, Cumbuco, Lagoinha e Morro Branco, além de ter o melhor parque da américa latina chamado : 'Beach Park'. Mas Fortaleza não é só isso, sua culinária é incrível por possuir uns pratos bem gostosos, como a típica tapioca nordestina e vários outros: Sarapatel, Bolo Mole, Baião de Dois ou Cuscuz Nordestino de Sol com macaxeira. Você acha que é tudo ? Fortaleza </p>
-    </div>
-    <div class="grid-main">
+      <div class="grid-main">
       <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
         <div class="info-bloco">
           <span class="tipo-produto">Hospedagem</span>
@@ -269,8 +293,7 @@
   </section>
 
   <section>
-    <h2 class="titulo">Maragogi</h2>
-    <div class="grid-main">
+      <div class="grid-main">
       <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
         <div class="info-bloco">
           <span class="tipo-produto">Hospedagem</span>
@@ -374,8 +397,6 @@
   </section>
 
   <section class="coments">
-    <h2 class="titulo">Experiência dos viajantes que utlizaram a NH Turism</h2>
-
     <div class="section-comentario">
         <div class="img-nome-horario">
           <img src="img-lugar/foto.jpg" alt="foto">
