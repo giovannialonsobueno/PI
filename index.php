@@ -85,8 +85,7 @@
 </div> -->
   <img class="banner" src="img/banner1.jpg" alt="">
     <h2 class="titulo-promocao">As melhores promoções para você</h2>
-  <section>
-    <div class="grid-main">
+    <section class="grid-main">
       <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
         <div class="info-bloco">
           <span class="tipo-produto">Hospedagem</span>
@@ -136,6 +135,7 @@
           <span class="desconto">-30%</span>
         </div>
         </div>
+        <button class="ver_mais" type="button" name="ver_mais">Ver mais</button>
       </div>
 
       <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
@@ -161,6 +161,7 @@
           <span class="desconto">-30%</span>
           </div>
         </div>
+        <button class="ver_mais" type="button" name="ver_mais">Ver mais</button>
       </div>
 
       <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
@@ -186,12 +187,12 @@
           <span class="desconto">-30%</span>
         </div>
         </div>
+      <button class="ver_mais" type="button" name="ver_mais">Ver mais</button>
       </div>
-    </div>
   </section>
 
-  <section>
-      <div class="grid-main">
+
+      <section class="grid-main">
       <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
         <div class="info-bloco">
           <span class="tipo-produto">Hospedagem</span>
@@ -215,6 +216,7 @@
           <span class="desconto">-30%</span>
         </div>
         </div>
+        <button class="ver_mais" type="button" name="ver_mais">Ver mais</button>
       </div>
 
       <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
@@ -240,6 +242,7 @@
           <span class="desconto">-30%</span>
         </div>
         </div>
+        <button class="ver_mais" type="button" name="ver_mais">Ver mais</button>
       </div>
 
       <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
@@ -265,6 +268,7 @@
           <span class="desconto">-30%</span>
         </div>
         </div>
+        <button class="ver_mais" type="button" name="ver_mais">Ver mais</button>
       </div>
 
       <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
@@ -290,14 +294,12 @@
           <span class="desconto">-30%</span>
           </div>
         </div>
+        <button class="ver_mais" type="button" name="ver_mais">Ver mais</button>
       </div>
-    </div>
   </section>
 
 <img class="banner" src="img/banner2.jpg" alt="">
-
-  <section>
-      <div class="grid-main">
+      <section class="grid-main">
       <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
         <div class="info-bloco">
           <span class="tipo-produto">Hospedagem</span>
@@ -321,6 +323,7 @@
           <span class="desconto">-30%</span>
         </div>
         </div>
+        <button class="ver_mais" type="button" name="ver_mais">Ver mais</button>
       </div>
 
       <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
@@ -346,6 +349,7 @@
           <span class="desconto">-30%</span>
         </div>
         </div>
+        <button class="ver_mais" type="button" name="ver_mais">Ver mais</button>
       </div>
 
       <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
@@ -371,6 +375,7 @@
           <span class="desconto">-30%</span>
         </div>
         </div>
+        <button class="ver_mais" type="button" name="ver_mais">Ver mais</button>
       </div>
 
       <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
@@ -396,8 +401,8 @@
           <span class="desconto">-30%</span>
         </div>
         </div>
+        <button class="ver_mais" type="button" name="ver_mais">Ver mais</button>
       </div>
-    </div>
   </section>
 
 <h2>Como foi a sua viajem?</h2>
