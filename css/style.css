@@ -22,6 +22,17 @@ body{
   width: 100%;
 }
 
+h2{
+font-size: 1.5rem;
+color: #0053b3;
+text-align: center;
+margin: 20px auto;
+}
+
+button{
+cursor: pointer;
+}
+
 .container{
   padding: 0 20px;
   padding-top: 20px;
@@ -43,6 +54,7 @@ input::-webkit-inner-spin-button {
 button:focus{
 outline: none;
 }
+
 .all{
   display: flex;
   margin: 0 auto;
@@ -105,7 +117,6 @@ width: 100%;
 #cadastrar{
 background-color: inherit;
 margin: 20px;
-margin-left: 30%;
 font-size: 1.2rem;
 display: flex;
 color: white;
@@ -117,13 +128,6 @@ margin: 20px 0;
 
 #cadastrar span{
 margin: 22px 10px;
-}
-
-.titulo-promocao {
-  margin: 20px;
-  display: block;
-  font-family: Arial, sans-serif;
-  font-size: 30px;
 }
 
 .grid-main{
@@ -144,8 +148,7 @@ margin: 22px 10px;
   width: calc((100% - 120px)/4);
   box-shadow: 1px 8px 16px rgba(68,68,68,0.2);
   border: 1px solid #cccccc;
-  min-height: 50vh;
-  margin-bottom: 30px;
+  margin: 10px auto;
 }
 
 .info-bloco {
@@ -249,7 +252,7 @@ margin: 22px 10px;
   text-decoration: line-through;
 }
 
-.desconto {
+.desconto{
   background-color:#e69500;
   padding: 4px;
   max-height: 3rem;
@@ -290,7 +293,14 @@ margin: 22px 10px;
   box-shadow: 0 4px 8px rgba(68,68,68,0.2);
 }
 
+.ver_mais{
+  width: 100%;
+  padding: 10px;
+  border: none; 
+}
+
 .coments{
+  margin-top: 20px;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -304,7 +314,7 @@ margin: 22px 10px;
   justify-content: space-around;
   flex-flow: row wrap;
   padding: 12px;
-  width: calc( ( 100% - 120px )/4);
+  width: calc( ( 100% - 40px )/4);
   background-color: #f1f1f1;
   border: 1px solid #cccccc;
   border-radius: 10px;
@@ -328,7 +338,7 @@ margin: 22px 10px;
   display: block;
 }
 
-.img-nome-horario hr{
+.section-comentario hr{
   color: rgba(0,0,0,0.5);
   width: 90%;
 }
@@ -355,62 +365,62 @@ text-align: center;
 
 .comment-area{
   margin:10px auto;
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-flow: row wrap;
 }
 
-.receber-email {
-  margin-top: 30vh;
-  margin-bottom: 30vh;
-  width: 100%;
-}
-
-.receber-email hr {
-  width: 100%;
-}
-
-.bloco-receber-email {
-  display: flex;
-  margin: 0 auto;
-  padding: 20px 0 10px 0;
-  justify-content: flex-end;
-  flex-flow: column wrap;
-  margin-left: 50vh;
-  margin-right: 50vh;
-}
-
-.bloco-receber-email span {
-  font-size: 24px;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-}
-
-.input-button {
-  display: flex;
-  justify-content: center;
-}
-
-.bloco-receber-email input {
-  height: 20px;
-  width: 35%;
-}
-
-.btn-receber {
-  margin-left: 10vh;
-}
-
 footer{
-  text-align: center;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
   min-height: 50px;
-  height: 80px;
   font-family: Arial, sans-serif;
-  font-size: 22px;
-  background-color:#000b72;
+  font-size: 1.6rem;
+  background-color:rgb(0, 117, 255);
   color: white;
+  padding: 20px;
+}
+
+.footer_info{
+text-align: left;
+width: calc( ( 100% - 120px )/4);
+display: flex;
+flex-flow: column;
+}
+
+.footer_info h3{
+color: rgba(255,255,255,0.6);
+font-size: 1.2rem;
+text-transform: uppercase;
+margin: 0;
+width:100%;
+}
+
+.footer_info a{
+font-size: 1.1rem;
+margin: 0 5px;
+transition: 0.2s;
+}
+
+.footer_info a:hover{
+color:#00e600;
+}
+
+#social_info{
+display: flex;
+flex-flow: row wrap;
+align-self: center;
+text-align: center;
+}
+
+#social_info a {
+margin: auto;
+width: auto;
+}
+
+#social_info img{
+margin: 5px auto;
+width: 40px;
+min-height: 35px;
 }
