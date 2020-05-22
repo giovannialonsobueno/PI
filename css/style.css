@@ -33,6 +33,10 @@ button{
 cursor: pointer;
 }
 
+#cadastro{
+display: none;
+}
+
 .container{
   padding: 0 20px;
   padding-top: 20px;
@@ -45,6 +49,13 @@ cursor: pointer;
   width: 100%;
 }
 
+.container form{
+width: 80%;
+display: flex;
+justify-content: space-around;
+flex-flow: row wrap;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -55,18 +66,20 @@ button:focus{
 outline: none;
 }
 
-.all{
+
+.nav-da-pesquisa{
   display: flex;
   margin: 0 auto;
   flex-flow: row;
+  justify-content: center;
   width: 100%;
 }
 
-.all div , .all button{
+.nav-da-pesquisa div , .nav-da-pesquisa button{
   margin: 5px;
 }
 
-.all input{
+.nav-da-pesquisa input{
   margin: 5px 0;
   font-size: 1rem;
   min-height: 3rem;
@@ -78,7 +91,7 @@ outline: none;
   padding: 0 10px;
 }
 
-.all button{
+.nav-da-pesquisa button{
 margin: 25px 5px;
 background-color: inherit;
 border: none;
@@ -87,7 +100,7 @@ height: 2rem;
 }
 
 .lugar input{
-  min-width: 20rem;
+  min-width: 10rem;
 }
 
 #quartos, #hospedes{
@@ -105,16 +118,16 @@ margin: 5px 0;
 }
 
 
-.all label {
+.nav-da-pesquisa label {
   font-weight: bold;
   color: white;
 }
 
-.all img{
+.nav-da-pesquisa img{
 width: 100%;
 }
 
-#cadastrar{
+.cadastrar button{
 background-color: inherit;
 margin: 20px;
 font-size: 1.2rem;
@@ -122,18 +135,18 @@ display: flex;
 color: white;
 }
 
-#cadastrar img{
+.cadastrar button img{
 margin: 20px 0;
 }
 
-#cadastrar span{
+.cadastrar button span{
 margin: 22px 10px;
 }
+
 
 .grid-main{
   width: 100%;
   display: flex;
-  min-height: 500px;
   justify-content: space-around;
   margin: 10px auto;
   flex-wrap: wrap;
@@ -145,7 +158,7 @@ margin: 22px 10px;
   text-align: left;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  width: calc((100% - 120px)/4);
+  width: calc((100% - 80px)/4);
   box-shadow: 1px 8px 16px rgba(68,68,68,0.2);
   border: 1px solid #cccccc;
   margin: 10px auto;
@@ -158,6 +171,7 @@ margin: 22px 10px;
 }
 
 .info-bloco .tipo-produto {
+  margin: auto;
   color: #666666;
   font-size: 0.8rem;
   letter-spacing: 1px;
@@ -208,24 +222,26 @@ margin: 22px 10px;
   display: flex;
   flex-wrap: wrap;
   width: 80%;
-  margin: 20px auto;
+  margin: 15px auto;
 }
 
 .bloco-de-preco .descricao-preco {
-  width: 100%;
   font-size: 1rem;
   font-family: Arial, sans-serif;
+  margin: auto;
 }
 
 .bloco-de-preco .preco-g {
+  text-align: center;
   display: flex;
+  margin: auto;
 }
 
 .bloco-de-preco .preco {
   display: flex;
   justify-content: flex-start;
   font-size: 1.5rem;
-  margin-top: 15px;
+  margin-top: 5px;
   margin-left: 5px;
   font-family: Arial, sans-serif;
 }
@@ -259,7 +275,7 @@ margin: 22px 10px;
   margin: auto;
   font-size: 1.2rem;
   color: white;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .grid-main div img{
@@ -395,7 +411,7 @@ footer{
 
 .footer_info{
 text-align: left;
-width: calc( ( 100% - 120px )/4);
+min-width: calc( ( 100% - 120px )/4);
 display: flex;
 flex-flow: column;
 }
@@ -434,4 +450,79 @@ width: auto;
 margin: 5px auto;
 width: 40px;
 min-height: 35px;
+}
+
+@media (max-width:1199px){
+
+.grid-main .div{
+  min-width: calc((100% - 40px)/2);
+}
+
+.nav-da-pesquisa{
+flex-wrap: wrap;
+}
+
+.lugar{
+width: 100%;
+}
+
+.calendario{
+width: calc( 50% - 10px  );
+}
+
+.nav-da-pesquisa input, #quartos, #hospedes{
+width: 100%;
+}
+
+.hospedes, .cadastrar{
+width: calc( 30% - 10px );
+}
+
+.procura button, .cadastrar button{
+margin: none auto;
+}
+
+.section-comentario{
+width: calc( ( 100% - 40px )/2);
+}
+
+.cadastrar{
+margin: auto;
+}
+
+.footer_info{
+width: 100%;
+flex-wrap: wrap;
+}
+
+  .cadastrar{
+  position: relative;
+  left: 25%;
+  }
+
+}
+
+@media (max-width:550px){
+  .container form,.nav-da-pesquisa,
+  .calendario, #hospedes, #quartos,{
+  width: 100%;
+  }
+
+  .banner{
+  display: none;
+  }
+
+  .section-comentario,.grid-main .div{
+  width: 90%;
+  }
+
+  .hospedes, .procura{
+  width: calc(30% - 10px);
+  margin: auto;
+  }
+
+  .footer_info{
+  display: none;
+  }
+
 }

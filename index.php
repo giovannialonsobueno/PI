@@ -29,10 +29,9 @@
 </script>
   <header class="container">
     <nav class="nav-da-pesquisa">
-          <!-- <form class="" method="post"> -->
-      <div class="all">
-          <div class="lugar">
-          <label for="local">Local</label> <br>
+          <form class="" method="post">
+        <div class="lugar">
+          <label for="local">Local</label><br>
           <input type="text" name="local" placeholder="Onde quer ir?"><br>
         </div>
         <div class="calendario">
@@ -43,33 +42,34 @@
           <label for="saida">Saída</label><br>
           <input id="saida" type="date" name="saida">
         </div>
-        <div>
+        <div class="hospedes">
           <label for="quartos">Quartos</label><br>
           <input type="number" id="quartos">
         </div>
-        <div>
+        <div class="hospedes">
           <label for="hospedes">Hóspedes</label><br>
           <input type="number" id="hospedes">
         </div>
-          <div class="procura">
-          <button type="submit" name="botao-procura"> <img src="icon-img/procurar.png" alt=""> </button>
-          </div>
-      <button id="cadastrar" onclick="openForm()"> <img src="icon-img/user.png" alt=""><span>Entrar</span></button>
-      <!-- </form> -->
+        <div class="procura">
+          <button type="submit" name="botao-procura"><img src="icon-img/procurar.png" alt=""></button>
         </div>
+      <div class="cadastrar">
+        <button type="button" onclick="openForm()"> <img src="icon-img/user.png" alt=""><span>Entrar</span></button>
+      </div>
+      </form>
     </nav>
   </header>
-    <!--  pop up do botão de cadastro a ser adicionado
+     <!-- pop up do botão de cadastro a ser adicionado -->
             <script>
             function openForm() {
-              document.getElementById("cadastrar").style.display = "block";
+              document.getElementById("cadastro").style.display = "block";
             }
 
             function closeForm() {
-              document.getElementById("cadastrar").style.display = "none";
+              document.getElementById("cadastro").style.display = "none";
             }
             </script>
-    <div class="form-popup" id="myForm">
+    <div id="cadastro">
   <form action="/action_page.php" class="form-container">
     <h1>Login</h1>
 
@@ -82,7 +82,8 @@
     <button type="submit" class="btn">Login</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
-</div> -->
+</div>
+
   <img class="banner" src="img/banner1.jpg" alt="">
     <h2 class="titulo-promocao">As melhores promoções para você</h2>
     <section class="grid-main">
@@ -405,7 +406,7 @@
       </div>
   </section>
 
-<h2>Como foi a sua viajem?</h2>
+<h2>Como foi a sua viagem?</h2>
 
   <section class="coments">
     <div class="section-comentario">
