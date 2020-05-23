@@ -496,13 +496,11 @@ flex-wrap: wrap;
 }
 
   .cadastrar{
-  position: relative;
-  left: 25%;
+  align-self: flex-start;
   }
-
 }
 
-@media (max-width:550px){
+@media (max-width:499px){
   .container form,.nav-da-pesquisa,
   .calendario, #hospedes, #quartos,{
   width: 100%;
@@ -518,11 +516,26 @@ flex-wrap: wrap;
 
   .hospedes, .procura{
   width: calc(30% - 10px);
-  margin: auto;
   }
 
   .footer_info{
   display: none;
+  }
+
+  .cadastrar{
+  position: relative;
+  bottom: 20px;
+  }
+}
+
+@media (max-width:440px){
+
+  .calendario{
+  width: 100%;
+  }
+
+  .cadastrar, .hospedes{
+  width: calc(50% - 10px);
   }
 
 }
