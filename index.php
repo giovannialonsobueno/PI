@@ -51,10 +51,10 @@
           <input type="number" id="hospedes">
         </div>
         <div class="procura">
-          <button type="submit" name="botao-procura"><img src="icon-img/procurar.png" alt=""></button>
+          <button type="submit" name="botao-procura"><span>Pesquisar</span></button>
         </div>
       <div class="cadastrar">
-        <button type="button" onclick="openForm()"> <img src="icon-img/user.png" alt=""><span>Entrar</span></button>
+        <button type="button" onclick="openForm()"><span>Entrar</span></button>
       </div>
       </form>
     </nav>
