@@ -31,17 +31,13 @@ margin: 20px auto;
 
 button{
 cursor: pointer;
-}
-
-#cadastro{
-display: none;
+transition: 0.2s;
 }
 
 .container{
   padding: 0 20px;
   padding-top: 20px;
   margin: auto;
-  width: 100%;
   display: flex;
   justify-content: center;
   background-color:rgb(0, 117, 255);
@@ -56,22 +52,47 @@ justify-content: space-around;
 flex-flow: row wrap;
 }
 
-.procura{
-padding: 8px;
+.cadastrar button{
+  color: white;
+  font-size: 1.5rem;
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
 }
 
-.procura span, .cadastrar span{
-color: white;
-font-size: 1.5rem;
-border: solid 1px white;
-border-radius: 5px;
-padding: 12px;
+.procura button{
+  color: white;
+  font-size: 1.5rem;
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 12px;
+  width: 100%;
+}
+
+.cadastrar button:hover ,.cadastrar button:focus{
+  background-color: black;
+  color: white;
+}
+
+.procura button:hover{
+  background-color: white;
+  color: rgb(0, 117, 255);
+}
+
+.cadastrar button span{
+vertical-align:  text-top;
+}
+
+.cadastrar button img{
+  width: 30px;
+  margin-right: 5px;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
-  margin: 10px;
+  margin: 2px;
 }
 
 button:focus{
@@ -91,7 +112,7 @@ outline: none;
   margin: 5px;
 }
 
-.nav-da-pesquisa input{
+.nav-da-pesquisa input , button{
   margin: 5px 0;
   font-size: 1rem;
   min-height: 3rem;
@@ -103,11 +124,9 @@ outline: none;
 }
 
 .nav-da-pesquisa button{
-margin: 25px auto;
+margin: 20px auto;
 background-color: inherit;
-border: none;
-width: 2rem;
-height: 2rem;
+width: auto;
 }
 
 #quartos, #hospedes{
@@ -121,12 +140,6 @@ width: 5rem;
 
 .nav-da-pesquisa img{
   width: 100%;
-}
-
-.cadastrar button{
-  background-color: inherit;
-  font-size: 1.2rem;
-  color: white;
 }
 
 .grid-main{
@@ -438,7 +451,7 @@ min-height: 35px;
 @media (max-width:1199px){
 
 .grid-main .div{
-  min-width: calc((100% - 40px)/2);
+  min-width: calc((100% - 80px)/2);
 }
 
 .nav-da-pesquisa{
@@ -457,16 +470,12 @@ width: calc( 50% - 10px  );
 width: 100%;
 }
 
-.hospedes, .cadastrar{
-width: calc( 30% - 10px );
+.hospedes{
+width: 30%;
 }
 
 .section-comentario{
 width: calc( ( 100% - 40px )/2);
-}
-
-.cadastrar{
-
 }
 
 .footer_info{
@@ -487,30 +496,30 @@ flex-wrap: wrap;
   }
 
   .section-comentario,.grid-main .div{
-  width: 90%;
+  width: 80%;
   }
-
-  .hospedes{
-  width: calc(30% - 10px);
-  }
-
 
   .footer_info{
   display: none;
   }
 
-  .cadastrar{
-  padding: 10px 5px;
+  .hospedes{
+  width: 25%;
   }
+
 }
 
-@media (max-width:440px){
+@media (max-width:500px){
 
   .calendario{
   width: 100%;
   }
 
-  .cadastrar, .hospedes{
+  .cadastrar button, .procura button{
+  width: 100%;
+  }
+
+  .cadastrar, .hospedes, .procura{
   width: calc(50% - 10px);
   }
 

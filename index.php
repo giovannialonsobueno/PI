@@ -54,7 +54,7 @@
           <button type="submit" name="botao-procura"><span>Pesquisar</span></button>
         </div>
       <div class="cadastrar">
-        <button type="button" onclick="openForm()"><span>Entrar</span></button>
+        <button type="button" onclick="openForm()"><img src="icon-img/user.png" alt=""><span>Entrar</span></button>
       </div>
       </form>
     </nav>
@@ -62,7 +62,7 @@
      <!-- pop up do botão de cadastro a ser adicionado -->
             <script>
             function openForm() {
-              document.getElementById("cadastro").style.display = "block";
+              document.getElementById("cadastro").style.display = "flex";
             }
 
             function closeForm() {
@@ -70,17 +70,21 @@
             }
             </script>
     <div id="cadastro">
-  <form action="/action_page.php" class="form-container">
-    <h1>Login</h1>
-
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit" class="btn">Login</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      <link rel="stylesheet" href="css/login.css">
+      <form class="bloco-login" action="" method="post">
+    <span class="faca-login">Faça login ou crie uma conta</span> <br>
+  <div class="form-group">
+    <label class="label" for="email">Escreva seu E-mail:</label>
+    <input type="email" name="email" placeholder="meunome@exemplo.com">
+  </div>
+  <div class="form-group">
+    <label class="label" for="senha">Escreva sua senha:</label>
+    <input type="password" name="senha" placeholder="senha123">
+  </div>
+    <button type="submit" class="primario">Entrar</button>
+    <span class="faca-login">Ainda não tem uma conta?</span><br>
+    <button class="secundario">Cadastrar</button>
+    <button class="fechar" type="button" onclick="closeForm()">x</button>
   </form>
 </div>
 
