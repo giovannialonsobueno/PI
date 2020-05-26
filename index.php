@@ -54,38 +54,65 @@
           <button type="submit" name="botao-procura"><span>Pesquisar</span></button>
         </div>
       <div class="cadastrar">
-        <button type="button" onclick="openForm()"><img src="icon-img/user.png" alt=""><span>Entrar</span></button>
+        <button type="button" onclick="abrirLogin()"><img src="icon-img/user.png" alt=""><span>Entrar</span></button>
       </div>
       </form>
     </nav>
   </header>
      <!-- pop up do botão de cadastro a ser adicionado -->
             <script>
-            function openForm() {
-              document.getElementById("cadastro").style.display = "flex";
+            function abrirLogin() {
+              document.getElementById("login").style.display = "flex";
             }
 
-            function closeForm() {
-              document.getElementById("cadastro").style.display = "none";
+            function fecharLogin() {
+              document.getElementById("login").style.display = "none";
+            }
+
+            function abrirCadastro() {
+              document.getElementById("bloco_cadastro").style.display = "flex";
+            }
+
+            function fecharCadastro() {
+              document.getElementById("bloco_cadastro").style.display = "none";
             }
             </script>
-    <div id="cadastro">
+    <div id="login">
       <link rel="stylesheet" href="css/login.css">
-      <form class="bloco-login" action="" method="post">
-    <span class="faca-login">Faça login ou crie uma conta</span> <br>
+      <form id="bloco-login" action="" method="post">
+    <span class="faca-login">Faça login ou crie uma conta</span><br>
   <div class="form-group">
-    <label class="label" for="email">Escreva seu E-mail:</label>
-    <input type="email" name="email" placeholder="meunome@exemplo.com">
+    <label for="email">Nome ou e-mail:</label>
+    <input type="email" name="email" placeholder="meunome@gmail.com">
   </div>
   <div class="form-group">
-    <label class="label" for="senha">Escreva sua senha:</label>
+    <label for="senha">Senha:</label>
     <input type="password" name="senha" placeholder="senha123">
   </div>
     <button type="submit" class="primario">Entrar</button>
     <span class="faca-login">Ainda não tem uma conta?</span><br>
-    <button class="secundario">Cadastrar</button>
-    <button class="fechar" type="button" onclick="closeForm()">x</button>
+    <button onclick="abrirCadastro()" class="secundario">Cadastrar</button>
+    <button class="fechar" type="button" onclick="fecharLogin()">X</button>
   </form>
+</div>
+
+<div id="bloco_cadastro">
+  <link rel="stylesheet" href="css/login.css">
+  <form class="bloco-login" action="" method="post">
+<span class="faca-login">teste</span><br>
+<div class="form-group">
+<label for="email">Nome ou e-mail:</label>
+<input type="email" name="email" placeholder="meunome@gmail.com">
+</div>
+<div class="form-group">
+<label for="senha">Senha:</label>
+<input type="password" name="senha" placeholder="senha123">
+</div>
+<button type="submit" class="primario">Entrar</button>
+<span class="faca-login">Ainda não tem uma conta?</span><br>
+<button onclick="fecharLogin()" onclick="" class="secundario">Cadastrar</button>
+<button class="fechar" type="button" onclick="fecharLogin()">X</button>
+</form>
 </div>
 
   <img class="banner" src="img/banner1.jpg" alt="">
