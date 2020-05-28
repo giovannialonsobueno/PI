@@ -125,7 +125,6 @@
     <button type="submit" class="primario">Cadastrar</button>
   </form>
     <button onclick="voltarLogin()" class="secundario">Voltar</button>
-    <button class="fechar" type="button" onclick="fecharLogin()">X</button>
   </div>
 
 </div>
