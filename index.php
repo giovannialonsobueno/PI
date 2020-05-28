@@ -54,7 +54,6 @@
           <button type="submit" name="botao-procura"><span>Pesquisar</span></button>
         </div>
       <div class="cadastrar">
-        <button type="button" onclick="abrirLogin()"><img src="icon-img/user.png" alt=""><span>Entrar</span></button>
         <button type="button" onclick="abrirLogin()"><span>Entrar</span></button>
       </div>
       </form>
@@ -63,23 +62,24 @@
             <script>
 
             function abrirLogin() {
-              document.getElementById("login").style.display = "flex";
               document.getElementById("lightbox").style.display = "flex";
             }
 
             function fecharLogin() {
-              document.getElementById("login").style.display = "none";
+              document.getElementById("lightbox").style.display = "none";
               document.getElementById("login").style.display = "flex";
               document.getElementById("cadastro").style.display = "none";
             }
 
             function abrirCadastro() {
+              document.getElementById("login").style.display = "none";
               document.getElementById("cadastro").style.display = "flex";
 
             }
 
             function voltarLogin() {
               document.getElementById("login").style.display = "flex";
+              document.getElementById("cadastro").style.display = "none";
             }
             </script>
 <div id="lightbox">
