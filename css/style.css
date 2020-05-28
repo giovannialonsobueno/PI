@@ -48,8 +48,8 @@ transition: 0.2s;
 .container form{
 width: 100%;
 display: flex;
-justify-content: space-around;
-flex-flow: row wrap;
+justify-content: space-between;
+flex-flow: row;
 }
 
 .cadastrar button{
@@ -57,7 +57,7 @@ flex-flow: row wrap;
   font-size: 1.5rem;
   border: solid 1px white;
   border-radius: 5px;
-  padding: 8px;
+  padding:12px 8px;
   width: 100%;
 }
 
@@ -66,7 +66,7 @@ flex-flow: row wrap;
   font-size: 1.5rem;
   border: solid 1px white;
   border-radius: 5px;
-  padding: 12px;
+  padding:12px 8px;
   width: 100%;
 }
 
@@ -112,7 +112,7 @@ outline: none;
   margin: 5px;
 }
 
-.nav-da-pesquisa input , button{
+.nav-da-pesquisa input{
   margin: 5px 0;
   font-size: 1rem;
   min-height: 3rem;
@@ -152,11 +152,11 @@ width: 5rem;
 
 .grid-main .div {
   background-color: rgba(255, 255, 255, 0.8);
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: left;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  width: calc((100% - 80px)/4);
+  width: calc((100% - 40px)/4);
   box-shadow: 1px 8px 16px rgba(68,68,68,0.2);
   border: 1px solid #cccccc;
   margin: 10px auto;
@@ -234,9 +234,8 @@ width: 5rem;
 }
 
 .bloco-de-preco .preco {
-  display: flex;
   justify-content: flex-start;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 5px;
   margin-left: 5px;
   font-family: Arial, sans-serif;
@@ -266,10 +265,9 @@ width: 5rem;
 
 .desconto{
   background-color:#e69500;
-  padding: 4px;
-  max-height: 3rem;
+  padding: 2px;
   margin: auto;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: white;
   margin-left: 15px;
 }
@@ -280,10 +278,6 @@ width: 5rem;
   border-top-left-radius: 19px;
   border-top-right-radius: 19px;
   object-fit: cover;
-}
-
-.bloco-de-preco .bloco-desconto{
-  margin-top: 5px;
 }
 
 .titulo {
@@ -448,7 +442,12 @@ width: 40px;
 min-height: 35px;
 }
 
-@media (max-width:1199px){
+@media (max-width:1000px){
+
+.nav-da-pesquisa form
+{
+flex-wrap: wrap;
+}
 
 .grid-main .div{
   min-width: calc((100% - 80px)/2);

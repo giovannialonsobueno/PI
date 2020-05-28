@@ -55,32 +55,39 @@
         </div>
       <div class="cadastrar">
         <button type="button" onclick="abrirLogin()"><img src="icon-img/user.png" alt=""><span>Entrar</span></button>
+        <button type="button" onclick="abrirLogin()"><span>Entrar</span></button>
       </div>
       </form>
     </nav>
   </header>
-     <!-- pop up do botão de cadastro a ser adicionado -->
             <script>
+
             function abrirLogin() {
               document.getElementById("login").style.display = "flex";
+              document.getElementById("lightbox").style.display = "flex";
             }
 
             function fecharLogin() {
               document.getElementById("login").style.display = "none";
+              document.getElementById("login").style.display = "flex";
+              document.getElementById("cadastro").style.display = "none";
             }
 
             function abrirCadastro() {
-              document.getElementById("bloco_cadastro").style.display = "flex";
+              document.getElementById("cadastro").style.display = "flex";
+
             }
 
-            function fecharCadastro() {
-              document.getElementById("bloco_cadastro").style.display = "none";
+            function voltarLogin() {
+              document.getElementById("login").style.display = "flex";
             }
             </script>
-    <div id="login">
+<div id="lightbox">
+
       <link rel="stylesheet" href="css/login.css">
-      <form id="bloco-login" action="" method="post">
-    <span class="faca-login">Faça login ou crie uma conta</span><br>
+
+  <div id="login">
+      <form action="" method="post">
   <div class="form-group">
     <label for="email">Nome ou e-mail:</label>
     <input type="email" name="email" placeholder="meunome@gmail.com">
@@ -90,29 +97,37 @@
     <input type="password" name="senha" placeholder="senha123">
   </div>
     <button type="submit" class="primario">Entrar</button>
-    <span class="faca-login">Ainda não tem uma conta?</span><br>
+      <span class="faca-login">Ainda não tem uma conta?</span><br>
+  </form>
     <button onclick="abrirCadastro()" class="secundario">Cadastrar</button>
     <button class="fechar" type="button" onclick="fecharLogin()">X</button>
-  </form>
 </div>
 
-<div id="bloco_cadastro">
-  <link rel="stylesheet" href="css/login.css">
-  <form class="bloco-login" action="" method="post">
-<span class="faca-login">teste</span><br>
-<div class="form-group">
-<label for="email">Nome ou e-mail:</label>
-<input type="email" name="email" placeholder="meunome@gmail.com">
-</div>
-<div class="form-group">
-<label for="senha">Senha:</label>
-<input type="password" name="senha" placeholder="senha123">
-</div>
-<button type="submit" class="primario">Entrar</button>
-<span class="faca-login">Ainda não tem uma conta?</span><br>
-<button onclick="fecharLogin()" onclick="" class="secundario">Cadastrar</button>
-<button class="fechar" type="button" onclick="fecharLogin()">X</button>
-</form>
+<div id="cadastro">
+    <span class="faca-login">Crie uma conta</span>
+  <form action="" method="post">
+  <div class="form-group">
+    <label for="nome">Nome</label><br>
+    <input type="text" name="nome" placeholder="nome">
+  </div>
+  <div class="form-group">
+    <label for="email">E-mail:</label><br>
+    <input type="email" name="email" placeholder="meunome@gmail.com">
+  </div>
+  <div class="form-group">
+    <label for="senha">Senha:</label><br>
+    <input type="password" name="senha" placeholder="senha123">
+  </div>
+  <div class="form-group">
+    <label for="senha">Confirmação de senha</label><br>
+    <input type="password" name="senha" placeholder="senha123">
+  </div>
+    <button type="submit" class="primario">Cadastrar</button>
+  </form>
+    <button onclick="voltarLogin()" class="secundario">Voltar</button>
+    <button class="fechar" type="button" onclick="fecharLogin()">X</button>
+  </div>
+
 </div>
 
   <img class="banner" src="img/banner1.jpg" alt="">
@@ -135,8 +150,7 @@
         <div class="bloco-de-preco">
           <p class="descricao-preco">Preço por noite a partir de:</p>
           <div class="preco-g">
-          <span class="real">R$</span>
-          <p class="preco">660,00</p>
+          <p class="preco">R$660,00</p>
           <span class="valor-total">R$980</span>
           <span class="desconto">-30%</span>
         </div>
@@ -161,8 +175,7 @@
         <div class="bloco-de-preco">
           <p class="descricao-preco">Preço por noite a partir de:</p>
           <div class="preco-g">
-          <span class="real">R$</span>
-          <p class="preco">660,00</p>
+          <p class="preco">R$660,00</p>
           <span class="valor-total">R$980</span>
           <span class="desconto">-30%</span>
         </div>
@@ -187,8 +200,7 @@
         <div class="bloco-de-preco">
           <p class="descricao-preco">Preço por noite a partir de:</p>
           <div class="preco-g">
-          <span class="real">R$</span>
-          <p class="preco">660,00</p>
+          <p class="preco">R$660,00</p>
           <span class="valor-total">R$980</span>
           <span class="desconto">-30%</span>
           </div>
@@ -213,8 +225,7 @@
         <div class="bloco-de-preco">
           <p class="descricao-preco">Preço por noite a partir de:</p>
           <div class="preco-g">
-          <span class="real">R$</span>
-          <p class="preco">660,00</p>
+          <p class="preco">R$660,00</p>
           <span class="valor-total">R$980</span>
           <span class="desconto">-30%</span>
         </div>
@@ -242,8 +253,7 @@
         <div class="bloco-de-preco">
           <p class="descricao-preco">Preço por noite a partir de:</p>
           <div class="preco-g">
-          <span class="real">R$</span>
-          <p class="preco">660,00</p>
+          <p class="preco">R$660,00</p>
           <span class="valor-total">R$980</span>
           <span class="desconto">-30%</span>
         </div>
@@ -268,8 +278,7 @@
         <div class="bloco-de-preco">
           <p class="descricao-preco">Preço por noite a partir de:</p>
           <div class="preco-g">
-          <span class="real">R$</span>
-          <p class="preco">660,00</p>
+          <p class="preco">R$660,00</p>
           <span class="valor-total">R$980</span>
           <span class="desconto">-30%</span>
         </div>
@@ -294,8 +303,7 @@
         <div class="bloco-de-preco">
           <p class="descricao-preco">Preço por noite a partir de:</p>
           <div class="preco-g">
-          <span class="real">R$</span>
-          <p class="preco">660,00</p>
+          <p class="preco">R$660,00</p>
           <span class="valor-total">R$980</span>
           <span class="desconto">-30%</span>
         </div>
@@ -320,8 +328,7 @@
         <div class="bloco-de-preco">
           <p class="descricao-preco">Preço por noite a partir de:</p>
           <div class="preco-g">
-          <span class="real">R$</span>
-          <p class="preco">660,00</p>
+          <p class="preco">R$660,00</p>
           <span class="valor-total">R$980</span>
           <span class="desconto">-30%</span>
           </div>
@@ -349,8 +356,7 @@
         <div class="bloco-de-preco">
           <p class="descricao-preco">Preço por noite a partir de:</p>
           <div class="preco-g">
-          <span class="real">R$</span>
-          <p class="preco">660,00</p>
+          <p class="preco">R$660,00</p>
           <span class="valor-total">R$980</span>
           <span class="desconto">-30%</span>
         </div>
@@ -375,8 +381,7 @@
         <div class="bloco-de-preco">
           <p class="descricao-preco">Preço por noite a partir de:</p>
           <div class="preco-g">
-          <span class="real">R$</span>
-          <p class="preco">660,00</p>
+          <p class="preco">R$660,00</p>
           <span class="valor-total">R$980</span>
           <span class="desconto">-30%</span>
         </div>
@@ -401,8 +406,7 @@
         <div class="bloco-de-preco">
           <p class="descricao-preco">Preço por noite a partir de:</p>
           <div class="preco-g">
-          <span class="real">R$</span>
-          <p class="preco">660,00</p>
+          <p class="preco">R$660,00</p>
           <span class="valor-total">R$980</span>
           <span class="desconto">-30%</span>
         </div>
@@ -427,8 +431,7 @@
         <div class="bloco-de-preco">
           <p class="descricao-preco">Preço por noite a partir de:</p>
           <div class="preco-g">
-          <span class="real">R$</span>
-          <p class="preco">660,00</p>
+          <p class="preco">R$660,00</p>
           <span class="valor-total">R$980</span>
           <span class="desconto">-30%</span>
         </div>
