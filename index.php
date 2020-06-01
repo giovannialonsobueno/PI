@@ -131,114 +131,12 @@
 
   <img class="banner" src="img/banner1.jpg" alt="">
     <h2 class="titulo-promocao">As melhores promoções para você</h2>
-    <section class="grid-main">
-      <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
-        <div class="info-bloco">
-          <span class="tipo-produto">Hospedagem</span>
-          <p class="nome-produto">Esmeralda Praia Hotel</p>
-          <div class="rating-and-stars">
-              <span class="number-rating">4.5</span>
-            <div class="star-rating">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
-              </i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          </div>
-          <span class="nome-lugar">Fortaleza</span>
-        </div>
-        <hr class="hr-top">
-        <div class="bloco-de-preco">
-          <p class="descricao-preco">Preço por noite a partir de:</p>
-          <div class="preco-g">
-          <p class="preco">R$660,00</p>
-          <span class="valor-total">R$980</span>
-          <span class="desconto">-30%</span>
-        </div>
-        </div>
-          <button class="ver_mais" type="button" name="ver_mais">Ver mais</button>
-      </div>
-
-      <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
-        <div class="info-bloco">
-          <span class="tipo-produto">Hospedagem</span>
-          <p class="nome-produto">Esmeralda Praia Hotel</p>
-          <div class="rating-and-stars">
-              <span class="number number-rating">4.5</span>
-            <div class="star-rating">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
-              </i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          </div>
-          <span class="nome-lugar">Natal</span>
-        </div>
-        <hr class="hr-top">
-        <div class="bloco-de-preco">
-          <p class="descricao-preco">Preço por noite a partir de:</p>
-          <div class="preco-g">
-          <p class="preco">R$660,00</p>
-          <span class="valor-total">R$980</span>
-          <span class="desconto">-30%</span>
-        </div>
-        </div>
-        <button class="ver_mais" type="button" name="ver_mais">Ver mais</button>
-      </div>
-
-      <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
-        <div class="info-bloco">
-          <span class="tipo-produto">Hospedagem</span>
-          <p class="nome-produto">Esmeralda Praia Hotel</p>
-          <div class="rating-and-stars">
-              <span class="number number-rating">4.5</span>
-            <div class="star-rating">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
-              </i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          </div>
-          <span class="nome-lugar">Natal</span>
-        </div>
-        <hr class="hr-top">
-        <div class="bloco-de-preco">
-          <p class="descricao-preco">Preço por noite a partir de:</p>
-          <div class="preco-g">
-          <p class="preco">R$660,00</p>
-          <span class="valor-total">R$980</span>
-          <span class="desconto">-30%</span>
-          </div>
-        </div>
-        <button class="ver_mais" type="button" name="ver_mais">Ver mais</button>
-      </div>
-
-      <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
-        <div class="info-bloco">
-          <span class="tipo-produto">Hospedagem</span>
-          <p class="nome-produto">Esmeralda Praia Hotel</p>
-          <div class="rating-and-stars">
-              <span class="number number-rating">4.5</span>
-            <div class="star-rating">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
-              </i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          </div>
-          <span class="nome-lugar">Natal</span>
-        </div>
-        <hr class="hr-top">
-        <div class="bloco-de-preco">
-          <p class="descricao-preco">Preço por noite a partir de:</p>
-          <div class="preco-g">
-          <p class="preco">R$660,00</p>
-          <span class="valor-total">R$980</span>
-          <span class="desconto">-30%</span>
-        </div>
-        </div>
-      <button class="ver_mais" type="button" name="ver_mais">Ver mais</button>
-      </div>
-  </section>
-
-
+    
       <section class="grid-main">
       <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
         <div class="info-bloco">
           <span class="tipo-produto">Hospedagem</span>
-          <p class="nome-produto">Esmeralda Praia Hotel</p>
+          <p class="nome-produto">Esmeralda Praia</p>
           <div class="rating-and-stars">
               <span class="number-rating">4.5</span>
             <div class="star-rating">
@@ -263,7 +161,7 @@
       <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
         <div class="info-bloco">
           <span class="tipo-produto">Hospedagem</span>
-          <p class="nome-produto">Esmeralda Praia Hotel</p>
+          <p class="nome-produto">Esmeralda Praia</p>
           <div class="rating-and-stars">
               <span class="number number-rating">4.5</span>
             <div class="star-rating">
@@ -288,7 +186,7 @@
       <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
         <div class="info-bloco">
           <span class="tipo-produto">Hospedagem</span>
-          <p class="nome-produto">Esmeralda Praia Hotel</p>
+          <p class="nome-produto">Esmeralda Praia</p>
           <div class="rating-and-stars">
               <span class="number number-rating">4.5</span>
             <div class="star-rating">
@@ -313,7 +211,7 @@
       <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
         <div class="info-bloco">
           <span class="tipo-produto">Hospedagem</span>
-          <p class="nome-produto">Esmeralda Praia Hotel</p>
+          <p class="nome-produto">Esmeralda Praia</p>
           <div class="rating-and-stars">
               <span class="number number-rating">4.5</span>
             <div class="star-rating">
@@ -341,7 +239,7 @@
       <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
         <div class="info-bloco">
           <span class="tipo-produto">Hospedagem</span>
-          <p class="nome-produto">Esmeralda Praia Hotel</p>
+          <p class="nome-produto">Esmeralda Praia</p>
           <div class="rating-and-stars">
               <span class="number-rating">4.5</span>
             <div class="star-rating">
@@ -366,7 +264,7 @@
       <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
         <div class="info-bloco">
           <span class="tipo-produto">Hospedagem</span>
-          <p class="nome-produto">Esmeralda Praia Hotel</p>
+          <p class="nome-produto">Esmeralda Praia</p>
           <div class="rating-and-stars">
               <span class="number number-rating">4.5</span>
             <div class="star-rating">
@@ -391,7 +289,7 @@
       <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
         <div class="info-bloco">
           <span class="tipo-produto">Hospedagem</span>
-          <p class="nome-produto">Esmeralda Praia Hotel</p>
+          <p class="nome-produto">Esmeralda Praia</p>
           <div class="rating-and-stars">
               <span class="number number-rating">4.5</span>
             <div class="star-rating">
@@ -416,7 +314,7 @@
       <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
         <div class="info-bloco">
           <span class="tipo-produto">Hospedagem</span>
-          <p class="nome-produto">Esmeralda Praia Hotel</p>
+          <p class="nome-produto">Esmeralda Praia</p>
           <div class="rating-and-stars">
               <span class="number number-rating">4.5</span>
             <div class="star-rating">
