@@ -163,9 +163,8 @@ width: 5rem;
 }
 
 .info-bloco {
-  flex-grow: 1;
-  position: relative;
   padding: 24px;
+  min-height: 40%;
 }
 
 .info-bloco .tipo-produto {

@@ -131,7 +131,7 @@
 
   <img class="banner" src="img/banner1.jpg" alt="">
     <h2 class="titulo-promocao">As melhores promoções para você</h2>
-    
+
       <section class="grid-main">
       <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
         <div class="info-bloco">
