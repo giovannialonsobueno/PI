@@ -39,10 +39,10 @@ function voltarLogin() {
 </script>
 <header>
   <nav class="nav-da-pesquisa">
-        <form class="" action="pesquisa.php" method="post">
+        <form  action="pesquisa.php" method="post">
       <div class="lugar">
         <label for="local">Local</label><br>
-        <input type="text" name="local" placeholder="Onde quer ir?"><br>
+        <input id="pesquisa" type="text" name="local" placeholder="Onde quer ir?"><br>
       </div>
       <div class="calendario">
         <label for="entrada">Entrada</label><br>
@@ -74,8 +74,15 @@ function voltarLogin() {
     <link rel="stylesheet" href="css/login.css">
 <div id="login">
     <form action="" method="post">
+
+  <div class="login-top">
+    <h2>Login</h2>
+    <button class="fechar" type="button" onclick="fecharLogin()">X</button>
+
+  </div>
+  <hr>
 <div class="form-group">
-  <label for="email">Nome ou e-mail:</label>
+  <label class="sub-titulo" for="email">Nome ou e-mail:</label>
   <input type="email" name="email" placeholder="meunome@gmail.com">
 </div>
 <div class="form-group">
@@ -86,7 +93,7 @@ function voltarLogin() {
     <span class="faca-login">Ainda não tem uma conta?</span><br>
 </form>
   <button onclick="abrirCadastro()" class="secundario">Cadastrar</button>
-  <button class="fechar" type="button" onclick="fecharLogin()">X</button>
+
 </div>
 
 <div id="cadastro">
