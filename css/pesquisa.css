@@ -1,0 +1,71 @@
+
+section h2{
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+}
+
+.nav-filtros{
+display: flex;
+justify-content: space-between;
+}
+
+.nav-filtros a{
+  font-weight: bold;
+  text-decoration:none;
+  margin: auto;
+  color: white;
+  border: solid 1px rgb(0, 117, 255);
+  background-color:rgb(0, 117, 255);
+  transition: 0.2s;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  padding: 10px 30px;
+
+}
+
+.nav-filtros a:hover{
+  color: rgb(0, 117, 255);
+  background-color: white;
+}
+
+.resultado-pesquisa {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 3vh;
+  margin-top: 4vh;
+  margin-right: 60%;
+  width: 60%;
+}
+
+.resultado-pesquisa img {
+  width: 40%;
+}
+
+.resultado-pesquisa .descricao {
+  margin-left: 2vh;
+  margin-right: 2vh;
+  width: 45%;
+}
+
+.rtn-i {
+  display: flex;
+}
+
+.resultado-pesquisa .rtn-i i {
+ display: flex;
+ justify-content: flex-start;
+ color: #E16C02;
+ font-size: 1rem;
+ margin-right: 5px;
+}
+
+.resultado-pesquisa .rtn-i .rtn {
+  margin-right: 5px;
+}
+
+.resultado-pesquisa .rtn-i .price {
+  display: flex;
+  margin-top: 30vh;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}

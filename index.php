@@ -6,129 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/837f81fff7.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <title>Welcome - Home Page </title>
 </head>
 <body>
-  <script>
-     $(function(){
-      $('#entrada').datepicker({
-                        buttonImage:"icon-img/calendario.png",
-                        showOn: "button",
-                        buttonImageOnly: true
-              });
-     });
- $(function(){
-  $('#saida').datepicker({
-                    buttonImage:"icon-img/calendario.png",
-                    showOn: "button",
-                    buttonImageOnly: true
-          });
- });
-</script>
-  <header class="container">
-    <nav class="nav-da-pesquisa">
-          <form class="" method="post">
-        <div class="lugar">
-          <label for="local">Local</label><br>
-          <input type="text" name="local" placeholder="Onde quer ir?"><br>
-        </div>
-        <div class="calendario">
-          <label for="entrada">Entrada</label><br>
-          <input id="entrada" type="date" name="entrada">
-        </div>
-        <div class="calendario">
-          <label for="saida">Saída</label><br>
-          <input id="saida" type="date" name="saida">
-        </div>
-        <div class="hospedes">
-          <label for="quartos">Quartos</label><br>
-          <input type="number" id="quartos">
-        </div>
-        <div class="hospedes">
-          <label for="hospedes">Hóspedes</label><br>
-          <input type="number" id="hospedes">
-        </div>
-        <div class="procura">
-          <button type="submit" name="botao-procura"><span>Pesquisar</span></button>
-        </div>
-      <div class="cadastrar">
-        <button type="button" onclick="abrirLogin()"><span>Entrar</span></button>
-      </div>
-      </form>
-    </nav>
-  </header>
-            <script>
-
-            function abrirLogin() {
-              document.getElementById("lightbox").style.display = "flex";
-            }
-
-            function fecharLogin() {
-              document.getElementById("lightbox").style.display = "none";
-              document.getElementById("login").style.display = "flex";
-              document.getElementById("cadastro").style.display = "none";
-            }
-
-            function abrirCadastro() {
-              document.getElementById("login").style.display = "none";
-              document.getElementById("cadastro").style.display = "flex";
-
-            }
-
-            function voltarLogin() {
-              document.getElementById("login").style.display = "flex";
-              document.getElementById("cadastro").style.display = "none";
-            }
-            </script>
-<div id="lightbox">
-
-      <link rel="stylesheet" href="css/login.css">
-
-  <div id="login">
-      <form action="" method="post">
-  <div class="form-group">
-    <label for="email">Nome ou e-mail:</label>
-    <input type="email" name="email" placeholder="meunome@gmail.com">
-  </div>
-  <div class="form-group">
-    <label for="senha">Senha:</label>
-    <input type="password" name="senha" placeholder="senha123">
-  </div>
-    <button type="submit" class="primario">Entrar</button>
-      <span class="faca-login">Ainda não tem uma conta?</span><br>
-  </form>
-    <button onclick="abrirCadastro()" class="secundario">Cadastrar</button>
-    <button class="fechar" type="button" onclick="fecharLogin()">X</button>
-</div>
-
-<div id="cadastro">
-    <span class="faca-login">Crie uma conta</span>
-  <form action="" method="post">
-  <div class="form-group">
-    <label for="nome">Nome</label><br>
-    <input type="text" name="nome" placeholder="nome">
-  </div>
-  <div class="form-group">
-    <label for="email">E-mail:</label><br>
-    <input type="email" name="email" placeholder="meunome@gmail.com">
-  </div>
-  <div class="form-group">
-    <label for="senha">Senha:</label><br>
-    <input type="password" name="senha" placeholder="senha123">
-  </div>
-  <div class="form-group">
-    <label for="senha">Confirmação de senha</label><br>
-    <input type="password" name="senha" placeholder="senha123">
-  </div>
-    <button type="submit" class="primario">Cadastrar</button>
-  </form>
-    <button onclick="voltarLogin()" class="secundario">Voltar</button>
-  </div>
-
-</div>
-
+  <?php include("includes/header.php"); ?>
   <img class="banner" src="img/banner1.jpg" alt="">
     <h2 class="titulo-promocao">As melhores promoções para você</h2>
 
@@ -388,34 +269,6 @@
       </div>
     </div>
   </section>
-  <footer>
-    <div class="footer_info">
-      <h3>conheça</h3>
-    <a href="https://theuselessweb.com/" target="_blank">Quem somos</a>
-    <a href="https://theuselessweb.com/" target="_blank">Trabalhe conosco</a>
-    <a href="https://theuselessweb.com/" target="_blank"></a>
-    </div>
-
-    <div class="footer_info">
-      <h3>viagens</h3>
-    <a href="https://theuselessweb.com/" target="_blank">Hotéis</a>
-    <a href="https://theuselessweb.com/" target="_blank">Passagens aéreas</a>
-    </div>
-
-    <div class="footer_info">
-      <h3>fale conosco</h3>
-      <a href="https://theuselessweb.com/" target="_blank">FAQ</a>
-      <a href="https://theuselessweb.com/" target="_blank"></a>
-    </div>
-
-    <div id="social_info" class="footer_info">
-      <h3>Redes sociais</h3>
-      <a href="#"><img src="icon-img/facebook_logo.png" alt=""></a>
-      <a href="#"><img src="icon-img/twitter_logo.png" alt=""> </a>
-      <a href="#"><img src="icon-img/instagram_logo.png" alt=""> </a>
-      <a href="#"><img src="icon-img/linkedin_logo.png" alt=""> </a>
-      <a href="#"><img src="icon-img/youtube_logo.png" alt=""> </a>
-    </div>
-  </footer>
+ <?php include("includes/footer.php"); ?>
 </body>
 </html>
