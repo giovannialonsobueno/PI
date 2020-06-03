@@ -60,9 +60,7 @@ function voltarLogin() {
         <label for="hospedes">Hóspedes</label><br>
         <input type="number" id="hospedes">
       </div>
-      <div class="spaco">
-        <h1>  </h1>
-      </div>
+      
       <div class="procura">
         <button type="submit" name="botao-procura"><span>Pesquisar</span></button>
       </div>

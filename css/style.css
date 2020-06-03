@@ -461,6 +461,8 @@ width: 40px;
 min-height: 35px;
 }
 
+
+
 @media (max-width:1000px){
 
 .nav-da-pesquisa form
@@ -503,7 +505,7 @@ flex-wrap: wrap;
 
 }
 
-@media (max-width:700px){
+@media (max-width:750px){
   header form,.nav-da-pesquisa,
   .calendario, #hospedes, #quartos,{
   width: 100%;
@@ -527,7 +529,7 @@ flex-wrap: wrap;
 
 }
 
-@media (max-width:500px){
+@media (max-width:610px){
 
   .calendario{
   width: 100%;
@@ -538,7 +540,7 @@ flex-wrap: wrap;
   }
 
   .cadastrar, .hospedes, .procura{
-  width: calc(50% - 10px);
+  width: calc(45% - 10px);
   }
 
 }
