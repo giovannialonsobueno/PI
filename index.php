@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
@@ -223,50 +223,50 @@
 
   <section class="coments">
     <div class="section-comentario">
-        <div class="img-nome-horario">
+        <div class="perfil">
           <img src="destinos/P2.jpg" alt="foto">
           <span class="nome">Priscila Alcantara</span>
           <hr>
+        </div>
           <div class="comment-area">
           <span class="horario">1 semana atrás</span><br>
           <span class="comentario">Ótima vista para o mar, a parte da piscina ótima estrutura, os quartos são aconchegante, não está tão em conta a diária como era com os antigos gestores, mas vale a pena ir pelo menos uma vez na vida rsrsrsrs.. </span>
-        </div>
       </div>
     </div>
 
     <div class="section-comentario">
-        <div class="img-nome-horario">
+        <div class="perfil">
           <img src="destinos/P3.jpg" alt="foto">
           <span class="nome">Maria Clara</span>
           <hr>
+        </div>
           <div class="comment-area">
           <span class="horario">2 semana atrás</span><br>
-          <span class="comentario">Ótima vista para o mar, a parte da piscina ótima estrutura, os quartos são aconchegante, não está tão em conta a diária como era com os antigos gestores, mas vale a pena ir pelo menos uma vez Ótima vista para o mar, a parte da piscina ótima estrutura, os quartos são aconchegante, não está tão em conta a diária como era com os antigos gestores, mas vale a pena ir pelo menos uma vez  na vida rsrsrsrs.. </span>
-        </div>
+          <span class="comentario">Ótima vista para o mar, a parte da piscina ótima estrutura, os quartos são aconchegante, não está tão em conta a diária como era com os antigos gestores, mas vale a pena ir pelo menos uma vez na vida rsrsrsrs.. </span>
       </div>
     </div>
 
     <div class="section-comentario">
-        <div class="img-nome-horario">
+        <div class="perfil">
           <img src="destinos/P1.png" alt="foto">
           <span class="nome">Gabriel Martins</span>
           <hr>
+        </div>
           <div class="comment-area">
           <span class="horario">2 meses atrás</span><br>
           <span class="comentario">Ótima vista para o mar, a parte da piscina ótima estrutura, os quartos são aconchegante, não está tão em conta a diária como era com os antigos gestores, mas vale a pena ir pelo menos uma vez na vida rsrsrsrs.. </span>
-        </div>
       </div>
     </div>
 
     <div class="section-comentario">
-        <div class="img-nome-horario">
+        <div class="perfil">
           <img src="destinos/P4.jpeg" alt="foto">
           <span class="nome">joyce Mascarenhas</span>
           <hr>
+        </div>
           <div class="comment-area">
           <span class="horario">3 semana atrás</span><br>
           <span class="comentario">Ótima vista para o mar, a parte da piscina ótima estrutura, os quartos são aconchegante, não está tão em conta a diária como era com os antigos gestores, mas vale a pena ir pelo menos uma vez na vida rsrsrsrs.. </span>
-        </div>
       </div>
     </div>
   </section>

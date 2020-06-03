@@ -232,7 +232,7 @@ width: 100%;
 .bloco-de-preco{
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 90%;
   margin: 15px auto;
 }
 
@@ -268,7 +268,7 @@ width: 100%;
 
 .bloco-de-preco .valor-total {
   opacity: 0.4;
-  font-size: 1rem;
+  font-size: 0.8rem;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
