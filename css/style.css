@@ -52,22 +52,28 @@ justify-content: space-between;
 flex-flow: row;
 }
 
+
 .cadastrar button{
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border: solid 1px white;
   border-radius: 5px;
-  padding:12px 5px;
+  padding:12px 27px;
   width: 100%;
+  position: relative;
+  top: 4px;
 }
 
 .procura button{
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border: solid 1px white;
   border-radius: 5px;
-  padding:12px 5px;
+  padding:12px 10px;
   width: 100%;
+  position: relative;
+  top: 4px;
+
 }
 
 .cadastrar button:hover ,.cadastrar button:focus{
@@ -105,13 +111,13 @@ outline: none;
   margin: 0 auto;
   flex-flow: row;
   justify-content: center;
-  width: 100%;
+  width: 90%;
 }
 
 
 
 .nav-da-pesquisa div , .nav-da-pesquisa button{
-  margin: 5px;
+  margin: 4px;
 }
 
 .nav-da-pesquisa input{
@@ -125,8 +131,12 @@ outline: none;
   padding: 0 10px;
 }
 
-.nav-da-pesquisa input #pesquisa{
-  width: 50%;
+.lugar{
+  width: 35%;
+}
+
+ #pesquisa{
+  width: 100%;
 }
 
 .nav-da-pesquisa button{
@@ -136,7 +146,7 @@ width: auto;
 }
 
 #quartos, #hospedes{
-width: 5rem;
+width: 100%;
 }
 
 .nav-da-pesquisa label {
@@ -229,6 +239,7 @@ width: 5rem;
 .bloco-de-preco .descricao-preco {
   font-size: 1rem;
   font-family: Arial, sans-serif;
+  margin: 0 auto;
 }
 
 .bloco-de-preco .preco-g {
