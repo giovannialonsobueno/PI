@@ -46,12 +46,11 @@ header{
 }
 
 header form{
-width: 100%;
+width: 90%;
 display: flex;
 justify-content: space-between;
-flex-flow: row;
+flex-flow: row wrap;
 }
-
 
 .cadastrar button{
   color: white;
@@ -98,23 +97,23 @@ vertical-align:  text-top;
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
-  margin: 2px;
 }
 
 button:focus, input:focus{
 outline: none;
 }
 
-
 .nav-da-pesquisa{
   display: flex;
   margin: 0 auto;
   flex-flow: row;
   justify-content: center;
-  width: 90%;
+  width: 100%;
 }
 
-
+.lugar{
+  width: 100%;
+}
 
 .nav-da-pesquisa div , .nav-da-pesquisa button{
   margin: 4px;
@@ -131,10 +130,6 @@ outline: none;
   padding: 0 10px;
 }
 
-.lugar{
-  width: 35%;
-}
-
  #pesquisa{
   width: 100%;
 }
@@ -149,6 +144,9 @@ width: auto;
 width: 100%;
 }
 
+.hospedes{
+width: 14%;
+}
 .nav-da-pesquisa label {
   font-weight: bold;
   color: white;
@@ -250,7 +248,7 @@ width: 100%;
 
 .bloco-de-preco .preco {
   justify-content: flex-start;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-top: 5px;
   margin-left: 5px;
   font-family: Arial, sans-serif;
@@ -268,7 +266,7 @@ width: 100%;
 
 .bloco-de-preco .valor-total {
   opacity: 0.4;
-  font-size: 1rem;
+  font-size: 0.8rem;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -282,9 +280,9 @@ width: 100%;
   background-color:#e69500;
   padding: 2px;
   margin: auto;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: white;
-  margin-left: 15px;
+  margin-left: 5px;
 }
 
 .grid-main div img{
@@ -365,8 +363,8 @@ width: 100%;
 
 .img-nome-horario img {
   margin: 10px;
-  border-radius: 50%;
-  width: 70px;
+  border-radius: 50px;
+  width: 60px;
   height: 60px;
   display: block;
 
@@ -540,7 +538,7 @@ flex-wrap: wrap;
   }
 
   .cadastrar, .hospedes, .procura{
-  width: calc(45% - 10px);
+  width: calc(50% - 10px);
   }
 
 }
