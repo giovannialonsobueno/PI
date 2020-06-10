@@ -1,0 +1,247 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+header{
+  width: 100%;
+  height: 190px;
+}
+
+.header-A{
+  width: 100%;
+  height: 40%;
+  background-color: #198da9;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.header-A img{
+  height: 100%;
+  margin-left: 3%;
+}
+
+.header-A h1{
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.header-A .espaco{
+  width: 65%;
+}
+
+.header-A button{
+  width: 80px;
+  height: 25px;
+  margin-left: 5px;
+  background-color: rgba(255, 0, 0, 0);
+  border: 1px solid white;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  bottom: 20px;
+
+}
+
+
+
+.header-B{
+  width: 100%;
+  height: 60%;
+  background-color: #198da9;
+}
+
+.header-B form{
+  display: flex;
+  align-items: center;
+}
+
+.input1{
+  width: 30%;
+  margin-top: 20px;
+  height: 70px;
+  margin-left: 3%;
+
+
+
+}
+
+.input2{
+  width: 15%;
+  margin-top: 20px;
+  height: 70px;
+  margin-left: 10px;
+
+
+}
+.input3{
+  width: 10%;
+  margin-top: 20px;
+  height: 70px;
+  margin-left: 10px;
+
+}
+
+
+.input1 input{
+  width: 100%;
+  height: 70%;
+  border-radius: 5px;
+  border: none;
+  padding-left: 20px;
+  font-size: 20px;
+  color: grey;
+}
+
+.input1 label, .input2 label, .input3 label {
+  color: white;
+  margin-left: 7px;
+  font-size: 12px;
+}
+
+.input2 input{
+  width: 100%;
+  height: 70%;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+  font-size: 20px;
+  color: grey;
+
+}
+
+.box-select{
+  width: 100%;
+  height: 70%;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  height: 70px;
+
+
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: white;
+
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  color: black;
+  content: "";
+  top: 14px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: grey transparent transparent transparent;
+
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent grey transparent;
+  top: 7px;
+  color: black;
+
+
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+
+  padding: 3px 5px;
+  border: 1px solid grey;
+  border-color: transparent transparent rgba(255, 255, 255, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+  font-size: 18px;
+  padding-top: 15px;
+  color: grey;
+
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: white;
+  top: 60%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+
+
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+  color: grey;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: grey;
+}
+
+/* .input3 input{
+  width: 100%;
+  height: 70%;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+  font-size: 20px;
+} */
+
+.header-B form button{
+  width: 10%;
+  height: 50px;
+  margin-left: 10px;
+  position: relative;
+  top: 17px;
+  border-radius: 10px;
+  background-color: rgb(255, 0, 0, 0);
+  border: 2px solid white;
+  color: white;
+  font-size: 15px;
+  position: relative;
+
+}
+
+/* .header-B form select{
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  color: grey;
+
+} */
+
+.header-B form button img{
+  width: 15px;
+  margin-right: 10px;
+}
+
+.espaco2{
+  width: 2.5%;
+}
