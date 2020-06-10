@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
+.comentario::-webkit-scrollbar {
+  width: 5px;
+}
+
+.comentario::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #888;
+}
+
+.comentario::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -310,12 +323,11 @@ FIM CARDS BRASIL
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  overflow: scroll;
   margin: 0 auto;
   margin-bottom: 20px;
 }
 
-.section-comentario {
+.section-comentario{
   line-height: 1rem;
   width: 100%;
   display: flex;
@@ -329,7 +341,6 @@ FIM CARDS BRASIL
   padding: 10px;
   height:auto;
   margin: 10px auto;
-  overflow: scroll;
 }
 
 .section-comentario .img-nome-horario {
@@ -346,16 +357,12 @@ FIM CARDS BRASIL
   width: 80px;
   height: 80px;
   display: block;
-
-
 }
 
 .section-comentario hr{
   color: black;
   width: 90%;
   margin-top: 8px;
-
-
 }
 
 .horario{
@@ -378,20 +385,13 @@ text-align: center;
   font-size: 0.8rem;
   margin: 5px auto;
   overflow: scroll;
-
 }
-
 .comment-area{
   margin:10px auto;
-  width: 90%;
+  width:90%;
   display: flex;
   flex-flow: row wrap;
-  overflow: scroll;
 }
-
-
-
-
 
 
 footer{
