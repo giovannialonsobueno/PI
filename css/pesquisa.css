@@ -1,18 +1,25 @@
 
+.pesquisa{
+width: 90%;
+}
+
 section h2{
   font-family: Arial, sans-serif;
   font-size: 2rem;
+  margin: auto;
 }
 
 .nav-filtros{
 display: flex;
-justify-content: space-between;
+justify-content: flex-start;
+align-items: flex-start;
+width: 90%;
+margin: auto;
 }
 
 .nav-filtros a{
   font-weight: bold;
   text-decoration:none;
-  margin: auto;
   color: white;
   border: solid 1px rgb(0, 117, 255);
   background-color:rgb(0, 117, 255);
@@ -20,7 +27,7 @@ justify-content: space-between;
   border-radius: 25px;
   font-size: 1.2rem;
   padding: 10px 30px;
-
+  margin: 5px;
 }
 
 .nav-filtros a:hover{
@@ -30,20 +37,16 @@ justify-content: space-between;
 
 .resultado-pesquisa {
   display: flex;
-  justify-content: flex-start;
-  margin-left: 3vh;
-  margin-top: 4vh;
-  margin-right: 60%;
-  width: 60%;
+  justify-content: space-between;
+  width: 90%;
+  margin: 10px auto;
 }
 
 .resultado-pesquisa img {
-  width: 40%;
+  width: 35%;
 }
 
 .resultado-pesquisa .descricao {
-  margin-left: 2vh;
-  margin-right: 2vh;
   width: 45%;
 }
 
@@ -52,11 +55,8 @@ justify-content: space-between;
 }
 
 .resultado-pesquisa .rtn-i i {
- display: flex;
- justify-content: flex-start;
  color: #E16C02;
  font-size: 1rem;
- margin-right: 5px;
 }
 
 .resultado-pesquisa .rtn-i .rtn {
@@ -65,7 +65,6 @@ justify-content: space-between;
 
 .resultado-pesquisa .rtn-i .price {
   display: flex;
-  margin-top: 30vh;
   font-family: Arial, sans-serif;
   font-weight: bold;
 }
