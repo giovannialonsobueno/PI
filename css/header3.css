@@ -1,3 +1,7 @@
+button:focus, input:focus{
+  outline: none;
+}
+
 *{
   box-sizing: border-box;
 }
@@ -32,6 +36,11 @@ header{
   font-size: 20px;
   margin-left: 10px;
 }
+
+.header-A h1:hover{
+
+}
+
 .header-A .espaco{
   width: 65%;
 }

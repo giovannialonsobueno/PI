@@ -10,7 +10,7 @@
     <header>
       <div class="header-A">
         <img src="img/logo.png" alt="">
-        <h1>ESTA VAGO</h1>
+        <h1><a href="#">ESTA VAGO</a></h1>
         <div class="espaco">
         </div>
         <button type="button" name="button">Cadastro</button>
@@ -73,9 +73,8 @@
                 </div>
 
             </div>
-            <!-- <input type="text" name="" value=""> -->
           </div>
-          <button type="button" name="button"><img src="icon-img/lupa.png">Pesquisar</button>
+          <button type="button" name="button">Pesquisar</button>
 
         </form>
       </div>

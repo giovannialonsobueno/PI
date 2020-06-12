@@ -1,16 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 .comentario::-webkit-scrollbar {
-  width: 5px;
-}
-
-.comentario::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background: #888;
-}
-
-.comentario::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  display: none;
 }
 
 *{
@@ -51,7 +42,7 @@ transition: 0.2s;
 /* fim cabeçalho
    inicio cards de promoções*/
 .grid-main{
-  width: 95%;
+  width: 99%;
   display: flex;
   justify-content: space-around;
   margin: 10px auto;
@@ -68,15 +59,14 @@ transition: 0.2s;
   box-shadow: 1px 8px 16px rgba(68,68,68,0.2);
   border: 1px solid #cccccc;
   margin: 10px auto;
+  height: auto;
 }
 
 .info-bloco {
   padding: 24px;
-  min-height: 40%;
 }
 
 .info-bloco .tipo-produto {
-  margin: auto;
   color: #666666;
   font-size: 0.8rem;
   letter-spacing: 1px;
@@ -99,7 +89,7 @@ transition: 0.2s;
 
 .info-bloco .number-rating{
   margin-right: 8px;
-  padding: 5px;
+  padding: 3px;
   background-color:#03a691;
   color: white;
   font-size: 1rem;
@@ -123,14 +113,14 @@ transition: 0.2s;
 .bloco-de-preco{
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
-  margin: 15px auto;
+  width: 90%;
+  margin: 2px auto 15px auto;
 }
 
 .bloco-de-preco .descricao-preco {
   font-size: 1rem;
   font-family: Arial, sans-serif;
-  margin: 0 auto;
+  margin: 5px auto;
 }
 
 .bloco-de-preco .preco-g {
@@ -140,10 +130,8 @@ transition: 0.2s;
 }
 
 .bloco-de-preco .preco {
-  justify-content: flex-start;
-  font-size: 1.2rem;
-  margin-top: 5px;
-  margin-left: 5px;
+  font-size: 1.3rem;
+  margin: auto;
   font-family: Arial, sans-serif;
 }
 
@@ -153,15 +141,14 @@ transition: 0.2s;
   align-items: center;
   font-size: 1rem;
   margin-top: 15px;
-  margin-left: 10px;
   font-family: Arial, sans-serif;
 }
 
 .bloco-de-preco .valor-total {
   opacity: 0.4;
-  font-size: 1rem;
+  font-size: 0.8rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: flex-end;
   font-family: Arial, sans-serif;
   margin-bottom: 5px;
@@ -169,13 +156,19 @@ transition: 0.2s;
   text-decoration: line-through;
 }
 
+.promocao{
+  display: flex;
+  flex-flow: column wrap;
+  height: auto;
+}
+
 .desconto{
   background-color:#e69500;
-  padding: 2px;
+  padding: 5px;
   margin: auto;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   color: white;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .grid-main div img{
@@ -206,8 +199,10 @@ transition: 0.2s;
 }
 
 .ver_mais{
+  text-align: center;
+  display: block;
   width: 100%;
-  padding: 10px;
+  padding: 8px;
   border: none;
   background-color:#03a691;
   color: white;
@@ -287,10 +282,8 @@ FIM CARDS BRASIL
   display: flex;
   align-items: center;
   margin: 0 auto;
-
-
-
 }
+
 .card-info img{
   height: 70px;
   width: 70px;
@@ -300,8 +293,6 @@ FIM CARDS BRASIL
 .box-texto{
   display: block;
   margin-left: 5px;
-
-
 }
 
 .box-texto h2{
@@ -393,7 +384,6 @@ text-align: center;
   flex-flow: row wrap;
 }
 
-
 footer{
   display: flex;
   justify-content: space-around;
@@ -427,7 +417,6 @@ margin-bottom: 0.5rem;
 font-size: 0.8rem;
 margin: 5px;
 transition: 0.2s;
-
 }
 
 .footer_info a:hover{
@@ -437,27 +426,21 @@ color: #33403c;
 #social_info{
 display: flex;
 flex-flow: row wrap;
-/* align-self: center; */
 text-align: center;
-
 }
 
 #social_info a {
 margin: auto;
 width: auto;
-
 }
 
 #social_info img{
 margin: 5px auto;
 width: 40px;
 min-height: 30px;
-
 }
 
-
-
-@media (max-width:1000px){
+@media (min-width:1200px){
 
 .nav-da-pesquisa form
 {
