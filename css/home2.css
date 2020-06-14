@@ -64,6 +64,7 @@ transition: 0.2s;
 
 .info-bloco {
   padding: 24px;
+  margin: auto;
 }
 
 .info-bloco .tipo-produto {
@@ -115,12 +116,15 @@ transition: 0.2s;
   flex-wrap: wrap;
   width: 90%;
   margin: 2px auto 15px auto;
+  height: 65px;
 }
 
 .bloco-de-preco .descricao-preco {
+  width: 100%;
   font-size: 1rem;
   font-family: Arial, sans-serif;
   margin: 5px auto;
+  text-align: center;
 }
 
 .bloco-de-preco .preco-g {
@@ -388,11 +392,10 @@ footer{
   display: flex;
   justify-content: space-around;
   width: 100%;
-  height: 250px;
   min-height: 50px;
   font-family: Arial, sans-serif;
   font-size: 1.6rem;
-  background-color:#198da9;
+  background-color:rgb(0, 117, 255);
   color: white;
   padding: 20px;
 }
@@ -415,17 +418,19 @@ margin-bottom: 0.5rem;
 
 .footer_info a{
 font-size: 0.8rem;
-margin: 5px;
+margin: 0px;
 transition: 0.2s;
+
 }
 
 .footer_info a:hover{
-color: #33403c;
+color:#00e600;
 }
 
 #social_info{
 display: flex;
 flex-flow: row wrap;
+align-self: center;
 text-align: center;
 }
 
@@ -437,87 +442,37 @@ width: auto;
 #social_info img{
 margin: 5px auto;
 width: 40px;
-min-height: 30px;
-}
-
-@media (min-width:1200px){
-
-.nav-da-pesquisa form
-{
-flex-wrap: wrap;
-}
-
-.grid-main .div{
-  min-width: calc((100% - 80px)/2);
-}
-
-.nav-da-pesquisa{
-flex-wrap: wrap;
-}
-
-.lugar{
-width: 100%;
-}
-
-.calendario{
-width: calc( 50% - 10px  );
-}
-
-.nav-da-pesquisa input, #quartos, #hospedes{
-width: 100%;
-}
-
-.hospedes{
-width: 30%;
-}
-
-.section-comentario{
-width: calc( ( 100% - 40px )/2);
-}
-
-.footer_info{
-width: 100%;
-flex-wrap: wrap;
-}
-
+min-height: 35px;
 }
 
 @media (max-width:750px){
-  header form,.nav-da-pesquisa,
-  .calendario, #hospedes, #quartos,{
-  width: 100%;
-  }
-
-  .banner{
-  display: none;
-  }
 
   .section-comentario,.grid-main .div{
-  width: 80%;
+  width: calc( 50% - 20px );
+  }
+
+  footer{
+    flex-flow: wrap;
+    padding: 20px;
   }
 
   .footer_info{
-  display: none;
+    width: calc( (100% - 20px) / 3 );
   }
 
-  .hospedes{
-  width: 25%;
+  #social_info{
+  margin: 20px auto;
   }
 
 }
 
-@media (max-width:610px){
+@media (max-width:500px){
 
-  .calendario{
-  width: 100%;
+  .section-comentario,.grid-main .div{
+  width: 95%;
   }
 
-  .cadastrar button, .procura button{
-  width: 100%;
+  .footer_info{
+    display: none;
   }
-
-  .cadastrar, .hospedes, .procura{
-  width: calc(45% - 10px);
-  }
-
 }

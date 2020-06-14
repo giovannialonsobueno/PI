@@ -1,4 +1,4 @@
-<?php include("produtos/hoteis.php"); ?>
+<?php include("produtos/servicos.php"); ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -16,14 +16,14 @@
   </video>
     <h2 class="titulo-promocao">As melhores promoções para você</h2>
       <section class="grid-main">
-        <?php foreach($hoteis as $item):
+        <?php foreach($servicos as $item):
         if ($item["desconto"]) {
         $valor = $item["preco"] - ( $item["desconto"]/100 * $item["preco"]);
         } else {
           $valor = $item["preco"];
         }
         $_GET['id'] = $item['id'];?>
-      <div class="div"> <img src="img-lugar/<?php echo $item["foto"];?>" alt="<?php echo $item["nome"];?>">
+      <div class="div"> <img src="fotos_locais/<?php echo $item["foto"];?>" alt="<?php echo $item["nome"];?>">
         <div class="info-bloco">
           <span class="tipo-produto"><?php echo $item["servico"];?></span>
           <p class="nome-produto"><?php echo $item["nome"];?></p>
@@ -43,7 +43,7 @@
           <div class="preco-g">
           <p class="preco">R$<?php echo number_format($valor, 2, ',', '.');?></p>
         <?php if ($item["desconto"]): ?>
-          <div class="promocao">      
+          <div class="promocao">
           <span class="valor-total">R$<?php echo number_format($item["preco"], 2, ',', '.');?></span>
           <span class="desconto">-<?php echo $item["desconto"];?>%</span>
           </div>
