@@ -9,7 +9,8 @@
   <title>Welcome - Home Page</title>
 </head>
 <body>
-  <?php include("includes/header3.php"); ?>
+  <?php include("includes/header.php"); ?>
+  <?php include("includes/login.php"); ?>
   <video width="100%" height="100%" muted autoplay loop>
     <source src="img/estaVago.mp4" type="video/mp4">
   </video>
