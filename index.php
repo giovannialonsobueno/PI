@@ -4,9 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/home2.css">
-  <link rel="stylesheet" href="css/header3.css">
-  <script src="https://kit.fontawesome.com/837f81fff7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
   <title>Welcome - Home Page</title>
 </head>
 <body>
@@ -22,24 +21,39 @@
         } else {
           $valor = $item["preco"];
         }
+        switch ($item["servico"]) {
+          case 1:
+            $servico = "Hospedagem";
+            $descricao_preco = "Diárias a partir de:";
+            break;
+          case 2:
+            $servico = "Turismo";
+            $descricao_preco = "Viajens a partir de:";
+            break;
+        }
         $_GET['id'] = $item['id'];?>
       <div class="div"> <img src="fotos_locais/<?php echo $item["foto"];?>" alt="<?php echo $item["nome"];?>">
         <div class="info-bloco">
-          <span class="tipo-produto"><?php echo $item["servico"];?></span>
-          <p class="nome-produto"><?php echo $item["nome"];?></p>
+          <div class="produto">
+            <span class="tipo-produto"><?php echo $servico;?></span>
+            <p class="nome-produto"><?php echo $item["nome"];?></p>
+          </div>
           <div class="rating-and-stars">
               <span class="number-rating"><?php echo $item["avaliacao"];?></span>
             <div class="star-rating">
-              <?php for ($i=0; $i < round($item["avaliacao"], 0, PHP_ROUND_HALF_DOWN); $i++) {?>
-                <i class='fas fa-star'></i>
+              <?php for ($i=0; $i < 5; $i++){?>
+                <?php if ($i < round($item["avaliacao"], 0, PHP_ROUND_HALF_DOWN)): ?>
+                  <i>&#9733;</i>
+                <?php else: ?>
+                  <i>&#9734;</i>
+                <?php endif; ?>
               <?php } ?>
             </div>
           </div>
-          <span class="nome-lugar"><?php echo $item["local"];?></span>
         </div>
         <hr class="hr-top">
         <div class="bloco-de-preco">
-          <p class="descricao-preco">Diárias a partir de:</p>
+          <p class="descricao-preco"><?php echo $descricao_preco; ?></p>
           <div class="preco-g">
           <p class="preco">R$<?php echo number_format($valor, 2, ',', '.');?></p>
         <?php if ($item["desconto"]): ?>

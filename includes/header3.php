@@ -1,20 +1,95 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../css/header3.css">
-    <title></title>
-  </head>
-  <body>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script>
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+   $(function(){
+    $('#entrada').datepicker({
+                      buttonImage:"icon-img/calendario.png",
+                      showOn: "button",
+                      buttonImageOnly: true
+            });
+   });
+$(function(){
+$('#saida').datepicker({
+                  buttonImage:"icon-img/calendario.png",
+                  showOn: "button",
+                  buttonImageOnly: true
+        });
+});
 
-    <header>
+function abrirLogin() {
+  document.getElementById("lightbox").style.display = "flex";
+}
+
+function fechar() {
+  document.getElementById("lightbox").style.display = "none";
+}
+
+function abrirCadastro() {
+document.getElementById("lightbox").style.display = "flex";
+document.getElementById("cadastro").style.display = "flex";
+}
+
+function voltarLogin() {
+  document.getElementById("login").style.display = "flex";
+  document.getElementById("cadastro").style.display = "none";
+}
+</script>
+
+<!-- <div id="lightbox">
+    <link rel="stylesheet" href="../css/login.css">
+<div id="login">
+    <form action="" method="post">
+
+  <div class="login-top">
+    <h2>Login</h2>
+    <button class="fechar" type="button" onclick="fechar()">X</button>
+  </div>
+  <hr>
+<div class="form-group">
+  <label class="sub-titulo" for="email">Nome ou e-mail:</label>
+  <input type="email" name="email" placeholder="meunome@gmail.com">
+</div>
+<div class="form-group">
+  <label for="senha">Senha:</label>
+  <input type="password" name="senha" placeholder="senha123">
+</div>
+  <button type="submit" class="primario">Entrar</button>
+</form>
+</div>
+
+<div id="cadastro">
+  <span class="faca-login">Crie uma conta</span>
+<form action="" method="post">
+<div class="form-group">
+  <label for="nome">Nome</label><br>
+  <input type="text" name="nome" placeholder="nome">
+</div>
+<div class="form-group">
+  <label for="email">E-mail:</label><br>
+  <input type="email" name="email" placeholder="meunome@gmail.com">
+</div>
+<div class="form-group">
+  <label for="senha">Senha:</label><br>
+  <input type="password" name="senha" placeholder="senha123">
+</div>
+<div class="form-group">
+  <label for="senha">Confirmação de senha</label><br>
+  <input type="password" name="senha" placeholder="senha123">
+</div>
+  <button type="submit" class="primario">Cadastrar</button>
+</form>
+  <button onclick="voltarLogin()" class="secundario">Voltar</button>
+</div>
+</div> -->
+
+  <header>
       <div class="header-A">
         <img src="img/logo.png" alt="">
         <h1><a href="#">ESTA VAGO</a></h1>
         <div class="espaco">
         </div>
-        <button type="button" name="button">Cadastro</button>
-        <button type="button" name="button">Login</button>
+        <button type="button" onclick="abrirCadastro()" name="cadastro">Cadastro</button>
+        <button type="button" onclick="abrirLogin()" name="login">Login</button>
         <div class="espaco2">
         </div>
       </div>
@@ -37,58 +112,30 @@
             <label>Hospedes</label>
             <div class="box-select">
               <div class="custom-select" style="width:calc(100% - 10px);height: 70px;">
-                  <select>
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                  </select>
+                <select>
+                  <?php for ($i=0; $i < 10; $i++) { ?>
+                  <option value="<?php echo $i;?>"><?php echo $i;?></option>
+                  <?php } ?>
+                </select>
                 </div>
-
             </div>
-            <!-- <input type="text" name="" value=""> -->
           </div>
           <div class="input3">
             <label>Quartos</label>
             <div class="box-select">
               <div class="custom-select" style="width:calc(100% - 10px);height: 70px;">
                   <select>
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
+                    <?php for ($i=0; $i < 10; $i++) { ?>
+                    <option value="<?php echo $i;?>"><?php echo $i;?></option>
+                    <?php } ?>
                   </select>
                 </div>
-
             </div>
           </div>
           <button type="button" name="button">Pesquisar</button>
-
         </form>
       </div>
     </header>
-    <main>
-      <!-- <video width="101%" height="100%" autoplay loop>
-        <source src="img/estaVago.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      </video> -->
-    </main>
-
-
-
-  </body>
 
   <script>
 var x, i, j, l, ll, selElmnt, a, b, c;
@@ -170,4 +217,3 @@ function closeAllSelect(elmnt) {
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
 </script>
-</html>
