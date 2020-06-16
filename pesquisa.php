@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 
-    <link rel="stylesheet" href="css/header3.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/pesquisa.css">
     <link rel="stylesheet" href="css/footer.css">
 
@@ -11,7 +11,7 @@
     <title></title>
   </head>
   <body>
-    <?php include("includes/header3.php"); ?>
+    <?php include("includes/header.php"); ?>
 
     <main>
       <section>

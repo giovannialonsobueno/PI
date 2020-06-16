@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/home2.css">
-  <link rel="stylesheet" href="css/header3.css">
+  <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
   <script src="https://kit.fontawesome.com/837f81fff7.js" crossorigin="anonymous"></script>
   <title>Welcome - Home Page </title>
 </head>
 <body>
-  <?php include("includes/header3.php"); ?>
+  <?php include("includes/header.php"); ?>
   <video width="100.03%" height="100%" muted autoplay loop>
     <source src="img/estaVago.mp4" type="video/mp4">
   </video>
