@@ -103,16 +103,8 @@
                       <span>Academia</span>
                     </div>
 
-
-
                   </div>
               </form>
-
-
-
-
-
-
 
         </div>
 

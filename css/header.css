@@ -31,10 +31,12 @@ header{
   margin-left: 3%;
 }
 
-.header-A h1{
+.header-A h1 a{
   color: white;
   font-size: 20px;
   margin-left: 10px;
+  text-decoration: none;
+  font-family:arial;
 }
 
 .header-A h1:hover{
