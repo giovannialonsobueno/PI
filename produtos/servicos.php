@@ -1,0 +1,28 @@
+<?php
+$servicos =[
+    ["id"=>1,"servico"=>1,"nome"=>"Esmeralda Praia",
+     "avaliacao"=>4.5,"local"=>"Brasil","preco"=>900,"desconto"=>30,
+     "info"=>"","foto"=>"esmeralda-praia-hotel.jpg"],
+    ["id"=>2,"servico"=>2,"nome"=>"Algarve",
+     "avaliacao"=>3.9,"local"=>"Portugal","preco"=>1200,"desconto"=>35,
+     "info"=>"","foto"=>"algarvePortugal.jpg"],
+    ["id"=>3,"servico"=>2,"nome"=>"Lagos de Plitvice",
+     "avaliacao"=>4.8,"local"=>"Croácia","preco"=>700,"desconto"=>"",
+     "info"=>"","foto"=>"LagosDePlitviceCroacia.jpg"],
+    ["id"=>4,"servico"=>2,"nome"=>"Valletta",
+     "avaliacao"=>4.1,"local"=>"Malta","preco"=>1500,"desconto"=>35,
+     "info"=>"","foto"=>"ValetaMalta.jpg"],
+    ["id"=>5,"servico"=>2,"nome"=>"Banff",
+      "avaliacao"=>3.6,"local"=>"Alberta","preco"=>1000,"desconto"=>15,
+      "info"=>"","foto"=>"Banff-AlbertaCanada.jpg"],
+    ["id"=>6,"servico"=>2,"nome"=>"Amalfi",
+      "avaliacao"=>4.5,"local"=>"Italia","preco"=>800,"desconto"=>"",
+      "info"=>"","foto"=>"Amalfi-Italia.jpg"],
+    ["id"=>7,"servico"=>2,"nome"=>"Castelo de Colomares",
+      "avaliacao"=>2.8,"local"=>"Espanha","preco"=>1270,"desconto"=>35,
+      "info"=>"","foto"=>"CastiloDeColomares-Espanha.jpg"],
+    ["id"=>8,"servico"=>2,"nome"=>"Praga",
+      "avaliacao"=>3.5,"local"=>"Republica Tcheca","preco"=>990,"desconto"=>15,
+      "info"=>"","foto"=>"PragaRepublicaTcheca.jpg"],
+  ];
+?>

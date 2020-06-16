@@ -1,8 +1,7 @@
+<?php include("produtos/servicos.php"); ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/home2.css">
@@ -15,216 +14,64 @@
   <?php include("includes/header3.php"); ?>
   <video width="100.03%" height="100%" muted autoplay loop>
     <source src="img/estaVago.mp4" type="video/mp4">
-  Your browser does not support the video tag.
   </video>
     <h2 class="titulo-promocao">As melhores promoções para você</h2>
-
       <section class="grid-main">
-      <div class="div"> <img src="img-lugar\esmeralda-praia-hotel.jpg" alt="">
+        <?php foreach($servicos as $item):
+        if ($item["desconto"]) {
+        $valor = $item["preco"] - ( $item["desconto"]/100 * $item["preco"]);
+        } else {
+          $valor = $item["preco"];
+        }
+        switch ($item["servico"]) {
+          case 1:
+            $servico = "Hospedagem";
+            $descricao_preco = "Diárias a partir de:";
+            break;
+          case 2:
+            $servico = "Turismo";
+            $descricao_preco = "Viajens a partir de:";
+            break;
+        }
+        $_GET['id'] = $item['id'];?>
+      <div class="div"> <img src="fotos_locais/<?php echo $item["foto"];?>" alt="<?php echo $item["nome"];?>">
         <div class="info-bloco">
-          <span class="tipo-produto">Hospedagem</span>
-          <p class="nome-produto">Esmeralda Praia</p>
+          <div class="produto">
+            <span class="tipo-produto"><?php echo $servico;?></span>
+            <p class="nome-produto"><?php echo $item["nome"];?></p>
+          </div>
           <div class="rating-and-stars">
-              <span class="number-rating">4.5</span>
+              <span class="number-rating"><?php echo $item["avaliacao"];?></span>
             <div class="star-rating">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
-              </i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <?php for ($i=0; $i < 5; $i++){?>
+                <?php if ($i < round($item["avaliacao"], 0, PHP_ROUND_HALF_DOWN)): ?>
+                  <i>&#9733;</i>
+                <?php else: ?>
+                  <i>&#9734;</i>
+                <?php endif; ?>
+              <?php } ?>
+            </div>
           </div>
-          </div>
-          <span class="nome-lugar">Natal</span>
         </div>
         <hr class="hr-top">
         <div class="bloco-de-preco">
-          <p class="descricao-preco">Preço por noite a partir de:</p>
+          <p class="descricao-preco"><?php echo $descricao_preco; ?></p>
           <div class="preco-g">
-          <p class="preco">R$660,00</p>
-          <span class="valor-total">R$980</span>
-          <span class="desconto">-30%</span>
+          <p class="preco">R$<?php echo number_format($valor, 2, ',', '.');?></p>
+        <?php if ($item["desconto"]): ?>
+          <div class="promocao">
+          <span class="valor-total">R$<?php echo number_format($item["preco"], 2, ',', '.');?></span>
+          <span class="desconto">-<?php echo $item["desconto"];?>%</span>
+          </div>
+        <?php endif; ?>
+          </div>
         </div>
-        </div>
-        <button class="ver_mais" type="button" name="ver_mais">Ver mais</button>
+        <a href="#" class="ver_mais">Ver mais</a>
       </div>
-
-      <div class="div"> <img src="destinos/algarvePortugal1024x768.jpg" alt="">
-        <div class="info-bloco">
-          <span class="tipo-produto">Hospedagem</span>
-          <p class="nome-produto">Alvarenga</p>
-          <div class="rating-and-stars">
-              <span class="number number-rating">5.0</span>
-            <div class="star-rating">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
-              </i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          </div>
-          <span class="nome-lugar">Portugal</span>
-        </div>
-        <hr class="hr-top">
-        <div class="bloco-de-preco">
-          <p class="descricao-preco">Preço por noite a partir de:</p>
-          <div class="preco-g">
-          <p class="preco">R$1050,00</p>
-          <span class="valor-total">R$1550</span>
-          <span class="desconto">-30%</span>
-        </div>
-        </div>
-        <button class="ver_mais" type="button" name="ver_mais">Ver mais</button>
-      </div>
-
-      <div class="div"> <img src="destinos/Banff-AlbertaCanada.jpg" alt="">
-        <div class="info-bloco">
-          <span class="tipo-produto">Hospedagem</span>
-          <p class="nome-produto">Banff</p>
-          <div class="rating-and-stars">
-              <span class="number number-rating">5.0</span>
-            <div class="star-rating">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
-              </i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          </div>
-          <span class="nome-lugar">Canada</span>
-        </div>
-        <hr class="hr-top">
-        <div class="bloco-de-preco">
-          <p class="descricao-preco">Preço por noite a partir de:</p>
-          <div class="preco-g">
-          <p class="preco">R$1780,00</p>
-          <span class="valor-total">R$2210,00</span>
-          <span class="desconto">-30%</span>
-        </div>
-        </div>
-        <button class="ver_mais" type="button" name="ver_mais">Ver mais</button>
-      </div>
-
-      <div class="div"> <img src="destinos/PragaRepublicaTcheca.jpg" alt="">
-        <div class="info-bloco">
-          <span class="tipo-produto">Hospedagem</span>
-          <p class="nome-produto">Praga</p>
-          <div class="rating-and-stars">
-              <span class="number number-rating">4.5</span>
-            <div class="star-rating">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
-              </i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          </div>
-          <span class="nome-lugar">Republica Tcheca</span>
-        </div>
-        <hr class="hr-top">
-        <div class="bloco-de-preco">
-          <p class="descricao-preco">Preço por noite a partir de:</p>
-          <div class="preco-g">
-          <p class="preco">R$1660,00</p>
-          <span class="valor-total">R$1980</span>
-          <span class="desconto">-30%</span>
-          </div>
-        </div>
-        <button class="ver_mais" type="button" name="ver_mais">Ver mais</button>
-      </div>
-  </section>
-
-      <section class="grid-main">
-      <div class="div"> <img src="destinos/CastiloDeColomares-Espanha.jpg" alt="">
-        <div class="info-bloco">
-          <span class="tipo-produto">Hospedagem</span>
-          <p class="nome-produto">Castilho de Colomares</p>
-          <div class="rating-and-stars">
-              <span class="number-rating">4.5</span>
-            <div class="star-rating">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
-              </i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          </div>
-          <span class="nome-lugar">Espanha</span>
-        </div>
-        <hr class="hr-top">
-        <div class="bloco-de-preco">
-          <p class="descricao-preco">Preço por noite a partir de:</p>
-          <div class="preco-g">
-          <p class="preco">R$1360,00</p>
-          <span class="valor-total">R$980</span>
-          <span class="desconto">-30%</span>
-        </div>
-        </div>
-        <button class="ver_mais" type="button" name="ver_mais">Ver mais</button>
-      </div>
-
-      <div class="div"> <img src="destinos/StuolagilCanyon-Islandia.jpg" alt="">
-        <div class="info-bloco">
-          <span class="tipo-produto">Hospedagem</span>
-          <p class="nome-produto">Sttuolagi Canyon</p>
-          <div class="rating-and-stars">
-              <span class="number number-rating">4.5</span>
-            <div class="star-rating">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
-              </i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          </div>
-          <span class="nome-lugar">Islandia</span>
-        </div>
-        <hr class="hr-top">
-        <div class="bloco-de-preco">
-          <p class="descricao-preco">Preço por noite a partir de:</p>
-          <div class="preco-g">
-          <p class="preco">R$1660,00</p>
-          <span class="valor-total">R$1180</span>
-          <span class="desconto">-30%</span>
-        </div>
-        </div>
-        <button class="ver_mais" type="button" name="ver_mais">Ver mais</button>
-      </div>
-
-      <div class="div"> <img src="destinos/BudapesteHungria.jpg" alt="">
-        <div class="info-bloco">
-          <span class="tipo-produto">Hospedagem</span>
-          <p class="nome-produto">Budapeste</p>
-          <div class="rating-and-stars">
-              <span class="number number-rating">4.5</span>
-            <div class="star-rating">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
-              </i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          </div>
-          <span class="nome-lugar">Hungria</span>
-        </div>
-        <hr class="hr-top">
-        <div class="bloco-de-preco">
-          <p class="descricao-preco">Preço por noite a partir de:</p>
-          <div class="preco-g">
-          <p class="preco">R$1060,00</p>
-          <span class="valor-total">R$1480</span>
-          <span class="desconto">-30%</span>
-        </div>
-        </div>
-        <button class="ver_mais" type="button" name="ver_mais">Ver mais</button>
-      </div>
-
-      <div class="div"> <img src="destinos/ValetaMalta.jpg" alt="">
-        <div class="info-bloco">
-          <span class="tipo-produto">Hospedagem</span>
-          <p class="nome-produto">Valeta</p>
-          <div class="rating-and-stars">
-              <span class="number number-rating">4.5</span>
-            <div class="star-rating">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
-              </i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          </div>
-          <span class="nome-lugar">Malta</span>
-        </div>
-        <hr class="hr-top">
-        <div class="bloco-de-preco">
-          <p class="descricao-preco">Preço por noite a partir de:</p>
-          <div class="preco-g">
-          <p class="preco">R$2660,00</p>
-          <span class="valor-total">R$1980</span>
-          <span class="desconto">-30%</span>
-        </div>
-        </div>
-        <button class="ver_mais" type="button" name="ver_mais">Ver mais</button>
-      </div>
+      <?php endforeach;?>
   </section>
 
 <h2>Conheça o Brasil</h2>
-
 <section class="brasil">
   <div class="card-brasil" style="background-image: url('destinos/brasil1.jpg');">
     <button type="button" name="button" style="background-color: #0ca879;">Fernando de Noronha</button>
