@@ -31,8 +31,7 @@
             $servico = "Turismo";
             $descricao_preco = "Viajens a partir de:";
             break;
-        }
-        $_GET['id'] = $item['id'];?>
+        }?>
       <div class="div"> <img src="fotos_locais/<?php echo $item["foto"];?>" alt="<?php echo $item["nome"];?>">
         <div class="info-bloco">
           <div class="produto">
@@ -65,7 +64,7 @@
         <?php endif; ?>
           </div>
         </div>
-        <a href="#" class="ver_mais">Ver mais</a>
+        <a href="item.php?id=<?php echo $item["id"];?>" class="ver_mais">Ver mais</a>
       </div>
       <?php endforeach;?>
   </section>
