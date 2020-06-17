@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.titulo{
+  display: flex;
+  width: 100%;
+  height: 150px;
+  margin-top: 40px;
+}
+
+.box-esq{
+  width: 50%;
+  height: 100%;
+
+
+}
+
+.box-esq h1{
+  color: grey;
+  font-size: 40px;
+}
+
+.box-esq span{
+  color: grey;
+}
+
+.rating-and-stars {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.number-rating{
+  margin-right: 8px;
+  padding: 5px;
+  background-color:#03a691;
+  color: white;
+  font-size: 1rem;
+}
+
+.star-rating{
+  display: flex;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+
+
+
+.star-rating i{
+  color: orange;
+  font-size: 1rem;
+}
+
+
+.box-dir{
+  width: 50%;
+  height: 100%;
+  text-align: right;
+}
+
+.box-dir span{
+  color: grey;
+}
+
+.box-dir button{
+  width: 200px;
+  height: 35px;
+  margin-top: 15px;
+  border: none;
+  color: white;
+  background-color: #0085a8;
+  font-size: 14px;
+}
+
+/* =============================== FIM TITULO ================================= */
+
+
+.img{
+  width: 100%;
+  height: 500px;
+  display: flex;
+
+}
+
+.img .box-img-esq{
+  width: 70%;
+  height: 100%;
+}
+
+.box-img-esq img{
+  width: 99%;
+  height: 100%;
+}
+
+.img .box-img-dir{
+  width: 30%;
+  height: 100%;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+.img-down:hover, .img-top:hover, .box-img-esq img:hover{
+  position: relative;
+  bottom: 5px;
+  box-shadow: 1px 8px 16px rgba(68,68,68,0.6);
+}
+.box-img-dir img{
+  height: 240px;
+  width: 100%;
+
+}
+
+.img-down{
+  margin-top: 15px;
+}
+
+.buttom-verMais{
+  width: 100%;
+  text-align: right;
+}
+
+.buttom-verMais button{
+  width: 60px;
+  height: 60px;
+  background-color: #a829e3;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 25px;
+  padding-bottom: 10px;
+  position: relative;
+  bottom: 30px;
+}
+
+.buttom-verMais button:hover{
+  background-color: #0085a8;
+  bottom: 35px;
+  box-shadow: 1px 8px 16px rgba(68,68,68,0.6);
+}
+
+/* ==============================FIM IMAGENS=============================== */
+
+main h2{
+  color: grey;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+
+.card-quarto{
+  width: 100%;
+  height: 200px;
+  box-shadow: 1px 8px 16px rgba(68,68,68,0.2);
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.card-quarto:hover{
+  position: relative;
+  bottom: 5px;
+  box-shadow: 1px 8px 16px rgba(68,68,68,0.6);
+}
+
+.img-card{
+  width: 20%;
+}
+
+.img-card img{
+  height: 100%;
+  width: 100%;
+}
+
+.card-info{
+  margin-left: 20px;
+  width: 55%;
+  height: 100%;
+  display: block;
+  border-right: 1px dotted grey;
+  padding-right: 50px;
+
+}
+
+.card-info h1{
+  margin-bottom: 15px;
+}
+
+.card-info span{
+  color: grey;
+  font-family: monospace;
+}
+
+.card-info h4{
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.config-quarto{
+  display: flex;
+}
+
+.wi-fi{
+  margin-right: 20px;
+}
+
+.card-preco{
+  width: 25%;
+  height: 100%;
+  text-align: center;
+}
+
+.card-preco h4{
+  margin-top: 20px;
+  color: green;
+  margin-bottom: 15px;
+}
+
+.card-preco p{
+  color: grey;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.card-preco h1{
+  color: orange;
+  font-size: 40px;
+
+}
+
+.card-preco button{
+  width: 75%;
+  height: 35px;
+  border: none;
+  color: white;
+  background-color: #0085a8;
+
+}
+
+/* ++++++++++++++++++++++++++++++++++++++ FIM CARD HOTEL ++++++++++++++++++++++++++++++++ */
+
+
+
+
+.card-info-hotel{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #cfe3e8;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 1px 8px 16px rgba(68,68,68,0.2);
+}
+
+.box-titulo-hotel{
+  width: 100%;
+  height: 80px;
+
+}
+
+
+
+
+.box-titulo-hotel h1{
+  color: grey;
+  margin: 20px;
+}
+
+.titulo-dir{
+  text-align: right;
+  display: flex;
+  color: grey;
+  margin: 20px;
+
+}
+
+.card-info-hotel hr{
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border: 1px solid #73b7c9;
+}
+
+
+.info{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.info-esq{
+  width: 70%;
+  height: 100%;
+  font-family: arial;
+  text-align: justify;
+  color: grey;
+  margin: 20px;
+  padding-top: 55px;
+}
+
+.info-dir{
+  width: 30%;
+  height: 100%;
+}
+
+.info-dir p{
+  color: grey;
+  text-align: justify;
+  margin-right: 20px;
+}
