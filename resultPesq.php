@@ -2,18 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/resultadoPesquisa.css">
-    <link rel="stylesheet" href="css/footer.css">
-
     <script src="https://kit.fontawesome.com/837f81fff7.js" crossorigin="anonymous"></script>
     <title></title>
   </head>
   <body>
     <?php include("includes/header.php"); ?>
-
   <main>
-
     <div class="titulo">
 
       <div class="box-esq">
@@ -21,8 +16,8 @@
         <span>Rua dos patriotas, 857 - Santos</span>
 
         <div class="star-rating">
-          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
-          </i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
       </div>
 
@@ -30,9 +25,7 @@
         <span>Diarias a partir de</span>
         <h1>R$ 299</h1>
         <button type="button" name="button">Ver quartos</button>
-
       </div>
-
     </div>
 
     <section class="img">

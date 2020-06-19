@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="css/header.css">
   <header>
       <div class="header-A">
         <img src="img/logo.png" alt="">
@@ -12,7 +13,7 @@
       </div>
 
       <div class="header-B">
-        <form class="" action="index.html" method="post">
+        <form class="" action="resultPesq.php" method="post">
           <div class="input1">
             <label for="">Local</label>
             <input type="text" name="" value="">
@@ -49,7 +50,7 @@
                 </div>
             </div>
           </div>
-          <button type="button" name="button">Pesquisar</button>
+          <button type="submit" name="button">Pesquisar</button>
         </form>
       </div>
     </header>

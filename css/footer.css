@@ -24,7 +24,6 @@ text-align: left;
 min-width: calc( ( 100% - 120px )/4);
 display: flex;
 flex-flow: column;
-
 }
 
 .footer_info h3{
@@ -41,8 +40,7 @@ font-size: 0.8rem;
 margin: 5px;
 transition: 0.2s;
 color: white;
-text-decoration: none; 
-
+text-decoration: none;
 }
 
 .footer_info a:hover{
@@ -52,20 +50,12 @@ color: #33403c;
 #social_info{
 display: flex;
 flex-flow: row wrap;
-/* align-self: center; */
 text-align: center;
-
-}
-
-#social_info a {
-margin: auto;
-width: auto;
-
+justify-content: center;
 }
 
 #social_info img{
-margin: 5px auto;
+margin: 5px 0;
 width: 40px;
 min-height: 30px;
-
 }
