@@ -1,0 +1,8 @@
+<?php
+
+    define("DB_NAME","estavago");
+    define("DB_USER","___usuario_do_bd____");
+    define("DB_PASS","___senha_do_bd___");
+    define("DB_HOST","___host_d_db____");
+    define("DB_PORT", "___porta_do_db____");
+?>

@@ -1,3 +1,23 @@
+<?php
+    include_once("classes/Usuario.php");
+
+    $loginOk = true;
+
+    if($_POST) {
+        $usuario = Usuario::login($_POST['email'],$_POST['senha']);
+        if($usuario) {
+            // Marcar o usuário como logado
+            session_start();
+            $_SESSION['logado'] = true;
+
+            // Redirecionar usuário para página interna
+            header('location: index.php');
+        } else {
+            // Variável pare validação de campos
+            $loginOk = false;
+        }
+    }
+?>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script>
 
