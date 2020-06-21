@@ -10,7 +10,6 @@
     <?php include("includes/header.php"); ?>
   <main>
     <div class="titulo">
-
       <div class="box-esq">
         <h1>Saint Patric Hotel</h1>
         <span>Rua dos patriotas, 857 - Santos</span>
@@ -50,18 +49,15 @@
     <h2>Quartos</h2>
 
     <section class="card-quarto">
-
       <div class="img-card">
         <img src="img-lugar/quarto.JPG" alt="">
       </div>
-
       <div class="card-info">
         <h1>Standart Room - Duplo</h1>
         <span>Apartamento com quarto, banheiro, sala com sofá cama e cozinha americana equipada (fogão, frigobar e microondas). </span>
         <h4>Disponiveis no quarto:</h4>
 
         <div class="config-quarto">
-
           <div class="wi-fi">
             <i class="fas fa-wifi"></i>
           <span>wi-fi</span>
@@ -91,15 +87,12 @@
         <h1>245</h1>
         <p style="color:green;">√ Cancelamento Gratuito</p>
         <button type="button" name="button">Reservar</button>
-
       </div>
-
     </section>
 
 
 
     <section class="card-quarto">
-
       <div class="img-card">
         <img src="img-lugar/quarto.JPG" alt="">
       </div>
@@ -110,7 +103,6 @@
         <h4>Disponiveis no quarto:</h4>
 
         <div class="config-quarto">
-
           <div class="wi-fi">
             <i class="fas fa-wifi"></i>
           <span>wi-fi</span>
@@ -131,7 +123,6 @@
         <span>café da manha</span>
         </div>
         </div>
-
       </div>
 
       <div class="card-preco">
@@ -144,12 +135,9 @@
 
 
     </section class="info-hotel">
-
       <div class="card-info-hotel">
-
         <div class="box-titulo-hotel">
           <h1>Informações do Hotel</h1>
-
             <div class="titulo-dir">
               <div class="wi-fi">
                 <i class="fas fa-calendar-alt"></i>
@@ -162,9 +150,7 @@
           </div>
             </div>
         </div>
-
         <hr>
-
         <div class="info">
           <div class="info-esq">
             <p>Esta acomodação fica a 4 minutos a pé da praia. Estes apartamentos modernos, situados na pacífica cidade de Santos, ficam a apenas 1 quarteirão da Praia do Gonzaga e próximos a restaurantes, shoppings, cinema e mercados. 72 UHs Tipo Flat Sala, quarto, banheiro, cozinha americana. Ar condicionado, internet banda larga, TV a cabo e telefone automatizado. ÁREAS DO HOTEL: Restaurante – andar “R” Sala de reuniões climatizada e equipada. Estacionamento com manobristas. Piscina em área descoberta, com deck com vista para o mar – andar cobertura.</p>
@@ -184,16 +170,9 @@
                 *Se você optar pelos créditos para utilizar em futuras viagens, poderá efetuar o cancelamento gratuito (com exceção do dia do check-in e semanas de feriados) até a véspera do check-in - sem qualquer cobrança de multa.</p>
 
           </div>
-
         </div>
-
       </div>
-
-    <section>
-
-    </section>
-
-
+    <section></section>
   </main>
     <?php include("includes/footer.php"); ?>
   </body>

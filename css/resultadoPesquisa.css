@@ -38,6 +38,18 @@ main{
   color: grey;
 }
 
+.valor-total {
+  opacity: 0.4;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-family: Arial, sans-serif;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  text-decoration: line-through;
+}
+
 .rating-and-stars {
   margin-top: 8px;
   display: flex;
