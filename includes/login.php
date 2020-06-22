@@ -1,22 +1,42 @@
 <?php
-    include_once("classes/Usuario.php");
+        //login
+        // include_once("classes/Usuario.php");
+        //
+        // $loginOk = true;
+        //
+        // if($_POST) {
+        //     $usuario = Usuario::login($_POST['email'],$_POST['senha']);
+        //     if($usuario) {
+        //         // Marcar o usuário como logado
+        //         session_start();
+        //         $_SESSION['logado'] = true;
+        //
+        //         // Redirecionar usuário para página interna
+        //         header('location: index.php');
+        //     } else {
+        //         // Variável pare validação de campos
+        //         $loginOk = false;
+        //     }
+        // }
 
-    $loginOk = true;
-
-    if($_POST) {
-        $usuario = Usuario::login($_POST['email'],$_POST['senha']);
-        if($usuario) {
-            // Marcar o usuário como logado
-            session_start();
-            $_SESSION['logado'] = true;
-
-            // Redirecionar usuário para página interna
-            header('location: index.php');
-        } else {
-            // Variável pare validação de campos
-            $loginOk = false;
-        }
-    }
+        //cadastro
+        // Testando para verificar o envio do formulário
+        // if($_POST){
+        //
+        //     // Criar um objeto da classe usuário
+        //     extract($_POST);
+        //     $usuario = new Usuario($nome, $email, $senha);
+        //
+        //     // Salvar o objeto no banco de dados
+        //     $usuario->save();
+        //
+        //     // Criar uma session para marcar o usuário como logado
+        //     session_start();
+        //     $_SESSION['logado'] = true;
+        //
+        //     // Direcionar ele para página interna
+        //     header('location: feed.php');
+        // }
 ?>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script>

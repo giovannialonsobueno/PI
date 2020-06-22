@@ -5,13 +5,11 @@ include_once(__DIR__."/DB.php");
 class Usuario {
 
     private $nome;
-    private $username;
     private $email;
     private $senha;
 
-    public function __construct($nome, $username, $email, $senha){
+    public function __construct($nome, $email, $senha){
         $this->nome = $nome;
-        $this->username = $username;
         $this->email = $email;
         $this->senha = $senha;
     }
@@ -22,7 +20,7 @@ class Usuario {
         $db = new DB();
 
         // Escrever a string de consulta
-        $sql = "INSERT INTO usuarios (nome, username, email, senha) VALUES (:nome, :username, :email, :senha)";
+        $sql = "INSERT INTO usuarios (nome, email, senha) VALUES (:nome, :email, :senha)";
 
         // Preparar a consulta
         $consulta = $db->prepare($sql);
@@ -30,7 +28,6 @@ class Usuario {
         // Executar a consulta
         $consulta->execute(
             [':nome' => $this->nome,
-             ':username' => $this->username,
              ':email' => $this->email,
              ':senha' => $this->senha]);
         $db = null;
@@ -40,7 +37,7 @@ class Usuario {
         $db = new DB();
 
         // Criando a string consulta
-        $sql = "SELECT nome, username, email, senha FROM usuarios WHERE email = :email";
+        $sql = "SELECT nome, email, senha FROM usuarios WHERE email = :email";
 
         // Cria consulta
         $consulta = $db->prepare($sql);
@@ -69,7 +66,7 @@ class Usuario {
         }
 
         // Criar um objeto Usuario e retorna-lo
-        $usuario = new Usuario($linha['nome'], $linha['username'], $linha['email'], $linha['senha']);
+        $usuario = new Usuario($linha['nome'], $linha['email'], $linha['senha']);
         return $usuario;
     }
 

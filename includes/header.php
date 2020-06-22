@@ -3,7 +3,7 @@
   <header>
       <div class="header-A">
         <img src="img/logo.png" alt="">
-        <h1><a href="#">ESTA VAGO</a></h1>
+        <h1><a href="#">ESTAVAGO</a></h1>
         <div class="espaco">
         </div>
         <button type="button" onclick="abrirCadastro()" name="cadastro">Cadastro</button>
