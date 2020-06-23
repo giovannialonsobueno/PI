@@ -1,9 +1,10 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link rel="stylesheet" href="css/header.css">
+<?php include("login.php"); ?>
   <header>
       <div class="header-A">
         <img src="img/logo.png" alt="">
-        <h1><a href="#">ESTAVAGO</a></h1>
+        <h1><a href="index.php">ESTAVAGO</a></h1>
         <div class="espaco">
         </div>
         <button type="button" onclick="abrirCadastro()" name="cadastro">Cadastro</button>
@@ -13,7 +14,7 @@
       </div>
 
       <div class="header-B">
-        <form class="" action="resultPesq.php" method="post">
+        <form class="" action="pesquisa.php" method="post">
           <div class="input1">
             <label for="">Local</label>
             <input type="text" name="" value="">

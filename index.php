@@ -31,6 +31,9 @@
             break;
         }?>
       <div class="div"> <img src="fotos_locais/<?php echo $item["foto"];?>" alt="<?php echo $item["nome"];?>">
+      <!-- <?php if ($item['desconto']): ?>
+      <span class="desconto">-<?php echo $item["desconto"];?>%</span>
+      <?php endif; ?> -->
         <div class="info-bloco">
           <div class="produto">
             <span class="tipo-produto"><?php echo $servico;?></span>
@@ -55,10 +58,7 @@
           <div class="preco-g">
           <p class="preco">R$<?php echo number_format($valor, 2, ',', '.');?></p>
         <?php if ($item["desconto"]): ?>
-          <div class="promocao">
           <span class="valor-total">R$<?php echo number_format($item["preco"], 2, ',', '.');?></span>
-          <span class="desconto">-<?php echo $item["desconto"];?>%</span>
-          </div>
         <?php endif; ?>
           </div>
         </div>
