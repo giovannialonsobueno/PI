@@ -1,0 +1,201 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+header{
+  width: 100%;
+  height: 70px;
+  background-color: #0085a8;
+  display: flex;
+
+}
+
+header img{
+  width: 65px;
+  height: 65px;
+  margin-left: 20px;
+}
+
+header h1{
+  margin-left: 10px;
+  color: white;
+  font-family: arial;
+}
+
+
+main{
+  width: 90%;
+  height: 100%;
+  margin: 0  auto;
+  margin-top: 40px;
+  margin-bottom: 50px;
+
+}
+
+.card-reserva{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid grey; */
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 1px 8px 16px rgba(68,68,68,0.2);
+  padding-bottom: 50px;
+
+
+}
+
+.titulo h1{
+  margin: 0px;
+  margin-top: 10px;
+  color: grey;
+}
+
+.titulo p{
+  padding-bottom: 20px;
+  font-size: 12px;
+  color: grey;
+}
+
+.card-info{
+  width: 100%;
+  height: 250px;
+  display: flex;
+
+}
+
+.img img{
+  width: 300px;
+  height: 250px;
+  margin-right: 20px;
+
+}
+
+.info h1, p{
+  margin: 0;
+  color: grey;
+
+}
+
+.info h4{
+  color: green;
+  margin: 0px;
+  font-family: Montserrat;
+}
+
+.card-reserva p{
+  margin-bottom: 10px;
+  font-family: Montserrat;
+  color: grey;
+}
+
+.card-reserva span{
+  font-weight: bolder;
+
+}
+
+.total{
+  width: 100%;
+  display: flex;
+  align-content:space-between;
+
+}
+.total h1{
+  width: 50%;
+  color: grey;
+
+}
+.V2{
+  width: 50%;
+  text-align: right;
+  color: grey;
+}
+
+main form h2{
+  margin: 0;
+  color: grey;
+}
+
+main h1{
+  color: grey;
+}
+
+
+main form p{
+  margin-top: 15px;
+  font-size: 12px;
+  color: grey;
+}
+
+main form input{
+  width: 70%;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  font-size: 13px;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.dados{
+  display: flex;
+  width: 71%;
+}
+
+.cpf{
+  width: 100%;
+  color: grey;
+}
+
+.cpf input{
+  width: 98%;
+}
+
+input:focus {
+    outline: none !important;
+    border:1px solid #24a2ab;
+    box-shadow: 0 0 5px #719ECE;
+}
+
+main form select{
+  width: 130px;
+  font-size: 20px;
+}
+
+.termos{
+  display: flex;
+
+}
+
+
+
+.check input{
+  width: 15px;
+  margin-right: 10px;
+
+}
+
+
+
+
+main form button{
+
+  width: 200px;
+  height: 50px;
+  margin-top: 25px;
+  border: none;
+  background-color: #24a2ab;
+  color: white;
+  font-size: 18px;
+  margin-left: calc(50% - 100px);
+
+}
+
+hr{
+  border: 1px solid #24a2ab;
+}
