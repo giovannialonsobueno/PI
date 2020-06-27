@@ -103,15 +103,10 @@ main{
   width: 100%;
   display: flex;
   align-content:space-between;
-
 }
+
 .total h1{
-  width: 50%;
-  color: grey;
-
-}
-.V2{
-  width: 50%;
+  width: 100%;
   text-align: right;
   color: grey;
 }

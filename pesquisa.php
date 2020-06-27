@@ -55,7 +55,6 @@
                   <div class="slidecontainer">
                     <p>Valor R$:<span id="demo"></span></p>
                     <input type="range" min="1" max="1000" value="500" class="slider" id="myRange">
-
                   </div>
 
 
