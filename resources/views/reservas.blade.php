@@ -14,7 +14,6 @@
     </header>
 
     <main>
-
       <section class="card-reserva">
 
         <div class="titulo">
