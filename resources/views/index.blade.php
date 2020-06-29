@@ -8,7 +8,7 @@
   <title>Welcome - Home Page</title>
 </head>
 <body>
-  <?php include("includes/header.php"); ?>
+  <?php include("includes/header.blade.php"); ?>
   <video width="100%" height="100%" muted autoplay loop>
     <source src="img/estaVago.mp4" type="video/mp4">
   </video>
@@ -62,7 +62,7 @@
         <?php endif; ?>
           </div>
         </div>
-        <a href="item.php?id=<?php echo $item["id"];?>" class="ver_mais">Ver mais</a>
+        <a href="/item{{$item["id"]}}" class="ver_mais">Ver mais</a>
       </div>
       <?php endforeach;?>
   </section>
@@ -170,6 +170,6 @@
       </div>
     </div>
   </section>
- <?php include("includes/footer.php"); ?>
+ <?php include("includes/footer.blade.php"); ?>
 </body>
 </html>

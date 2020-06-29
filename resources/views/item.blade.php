@@ -9,7 +9,7 @@
   <title>Welcome - Home Page</title>
 </head>
 <body>
-  <?php include("includes/header.php"); ?>
+  <?php include("includes/header.blade.php"); ?>
     <main>
     <?php $hotel = call_pdt($_GET['id']);
     switch ($hotel["tipo"]) {
@@ -62,6 +62,6 @@
         <button type="button" onclick="abrir()" name="button">+</button>
       </section>
     </main>
- <?php include("includes/footer.php"); ?>
+ <?php include("includes/footer.blade.php"); ?>
 </body>
 </html>
