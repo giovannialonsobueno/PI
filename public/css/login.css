@@ -31,7 +31,7 @@ display: none;
 .cancel button{
   width: 30px;
   height: 30px;
-  border: 2px solid yellow;
+  border: 2px solid white;
   border-radius: 50%;
   font-size: 15px;
   background-color: #198da9;
@@ -100,7 +100,7 @@ hr{
   height: 40px;
   border: none;
   border-radius: 5px;
-  background-color: #D41C6D;
+  background-image: linear-gradient(to right, #eb9526, #ebbe09);
   color: white;
   font-size: 18px;
   font-family: sans-serif;
@@ -121,7 +121,7 @@ hr{
 }
 
 #cadastre-se{
-  color: #D41C6D;
+  color: #ebbe09;
   margin-left: auto;
 
 }
@@ -175,12 +175,13 @@ hr{
 
 .formulario-Cad button{
   width: 100%;
-  height: 40px;
-  margin-top: 7px;
+  height: 45px;
+  margin-top: 10px;
   border-radius: 5px;
   border: none;
   color: white;
-  background-color: #D41C6D;
+  background-color: #ebbe09;
+  background-image: linear-gradient(to right, #eb9526, #ebbe09);
   font-size: 18px;
   margin-bottom: 8px;
 }
