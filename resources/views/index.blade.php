@@ -62,7 +62,7 @@
         <?php endif; ?>
           </div>
         </div>
-        <a href="/item{{$item["id"]}}" class="ver_mais">Ver mais</a>
+        <a href="/item/{{$item["id"]}}" class="ver_mais">Ver mais</a>
       </div>
       <?php endforeach;?>
   </section>

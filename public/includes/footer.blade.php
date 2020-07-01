@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="/css/footer.css">
 <footer>
   <div class="footer_info">
     <h3>conheça</h3>
@@ -28,10 +28,10 @@
 
   <div id="social_info" class="footer_info">
     <h3>Redes sociais</h3>
-    <a href="#"><img src="icon-img/facebook_logo.png" alt=""></a>
-    <a href="#"><img src="icon-img/twitter_logo.png" alt=""> </a>
-    <a href="#"><img src="icon-img/instagram_logo.png" alt=""> </a>
-    <a href="#"><img src="icon-img/linkedin_logo.png" alt=""> </a>
-    <a href="#"><img src="icon-img/youtube_logo.png" alt=""> </a>
+    <a href="#"><img src="/icon-img/facebook_logo.png" alt=""></a>
+    <a href="#"><img src="/icon-img/twitter_logo.png" alt=""> </a>
+    <a href="#"><img src="/icon-img/instagram_logo.png" alt=""> </a>
+    <a href="#"><img src="/icon-img/linkedin_logo.png" alt=""> </a>
+    <a href="#"><img src="/icon-img/youtube_logo.png" alt=""> </a>
   </div>
 </footer>

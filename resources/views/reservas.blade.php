@@ -3,13 +3,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/reserva.css">
+    <link rel="stylesheet" href="/css/reserva.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <title></title>
   </head>
   <body>
     <header>
-      <img src="img/logo.png" alt="">
+      <img src="/img/logo.png" alt="">
       <h1>Esta Vago</h1>
     </header>
 
@@ -17,7 +17,7 @@
       <section class="card-reserva">
 
         <div class="titulo">
-          <?php $quarto = call_pdt($_GET['id']);
+          <?php $quarto = call_pdt($_ID);
             extract($quarto["horario"]);
             extract($quarto["comodidades"]);?>
           <h1><?php echo $quarto["nome"];?></h1>
@@ -27,7 +27,7 @@
         <div class="card-info">
 
           <div class="img">
-            <img src="hoteis/<?php echo $quarto["fotos"][0];?>" alt="">
+            <img src="/hoteis/<?php echo $quarto["fotos"][0];?>" alt="">
           </div>
 
           <div class="info">

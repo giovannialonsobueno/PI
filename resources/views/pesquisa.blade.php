@@ -7,7 +7,7 @@
     <title></title>
   </head>
   <body>
-    <?php include("includes/header.php"); ?>
+    <?php include("includes/header.blade.php"); ?>
     <main>
       <section>
         <div class="filtro">
@@ -173,6 +173,6 @@
         output.innerHTML = this.value;
       }
       </script>
-  <?php include("includes/footer.php"); ?>
+  <?php include("includes/footer.blade.php"); ?>
   </body>
 </html>
