@@ -63,48 +63,88 @@ function abrirCadastro() {
 <div id="lightbox">
     <link rel="stylesheet" href="/css/login.css">
 <div id="login">
-    <form action="" method="post">
-  <div class="login-top">
-    <h2>Login</h2>
-    <button class="fechar" type="button" onclick="fechar()">X</button>
-  </div>
+
+  <div class="card-login">
+    <div class="cancel">
+      <button type="button" onclick="fechar()"name="button">X</button>
+
+    </div>
+    <div class="img">
+      <img src="img/logo.png" alt="">
+      <h3>Esta Vago</h3>
+    </div>
+
   <hr>
-<div class="form-group">
-  <label class="sub-titulo" for="email">Nome ou e-mail:</label>
-  <input type="email" name="email" placeholder="meunome@gmail.com">
-</div>
-<div class="form-group">
-  <label for="senha">Senha:</label>
-  <input type="password" name="senha" placeholder="senha123">
-</div>
-  <button type="submit" class="primario">Entrar</button>
-</form>
+
+  <div class="formulario">
+    <h3>Login</h3>
+    <form class="" action="index.html" method="post">
+
+      <input type="email" name="" value="" placeholder="E-mail">
+      <input type="password" name="" value="" placeholder="Senha">
+      <button type="button" name="button">Entrar</button>
+
+    </form>
+    <div class="info-rodape">
+      <a href="#">Esqueceu sua senha?</a>
+      <a id="cadastre-se"href="#" onclick="abrirCadastro()">Cadastre-se</a>
+
+    </div>
+
+  </div>
+
+  </div>
 </div>
 
 <div id="cadastro">
-<form action="" method="post">
-  <div class="login-top">
-    <h2>Cadastro</h2>
-    <button class="fechar" type="button" onclick="fechar()">X</button>
-  </div>
+  <div class="card-login">
+    <div class="cancel">
+      <button type="button" onclick="fechar()"name="button">X</button>
+
+    </div>
+    <div class="img">
+      <img src="img/logo.png" alt="">
+      <h3>Esta Vago</h3>
+    </div>
+
   <hr>
-<div class="form-group">
-  <label for="nome">Nome</label><br>
-  <input type="text" name="nome" placeholder="nome">
-</div>
-<div class="form-group">
-  <label for="email">E-mail:</label><br>
-  <input type="email" name="email" placeholder="meunome@gmail.com">
-</div>
-<div class="form-group">
-  <label for="senha">Senha:</label><br>
-  <input type="password" name="senha" placeholder="senha123">
-</div>
-<div class="form-group">
-  <label for="senha">Confirmação de senha</label><br>
-  <input type="password" name="senha" placeholder="senha123">
-</div>
-  <button type="submit" class="primario">Cadastrar</button>
-</form>
+
+  <div class="formulario-Cad">
+    <h3>Cadastro</h3>
+    <form class="" action="index.html" method="post">
+      <p>Nome Completo</p>
+      <input type="text" name="" value="" placeholder="nome">
+
+      <p>E-mail</p>
+      <input type="email" name="" value="" placeholder="email">
+
+      <div class="box-senha">
+
+        <div class="senha">
+          <p>Senha</p>
+          <input type="text" name="" value="" placeholder="senha">
+        </div>
+
+        <div class="conf-senha">
+          <p>Confirme a Senha</p>
+          <input type="text" name="" value="" placeholder="confirmar senha">
+        </div>
+
+      </div>
+
+
+      <button type="button" name="button">Cadastrar</button>
+
+    </form>
+    <div class="info-rodape-cad">
+      <a href="#" onclick="abrirLogin()">Ja tem uma conta?</a>
+
+
+    </div>
+
+  </div>
+
+  </div>
+
 </div>
 </div>
