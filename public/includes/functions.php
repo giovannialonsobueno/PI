@@ -1,6 +1,7 @@
 <?php
 setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
 date_default_timezone_set('America/Sao_Paulo');
+function call_pdt($i){
   $hoteis = [
     ["id"=>1,
 "preco"=>200,
@@ -329,9 +330,6 @@ date_default_timezone_set('America/Sao_Paulo');
     ],
 
   ];
-
-function call_pdt($i){
-  global $hoteis;
   foreach($hoteis as $item){if ($item["id"] == $i) {
   return $item;}}
 }

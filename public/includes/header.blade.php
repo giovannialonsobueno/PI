@@ -1,20 +1,18 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="/css/header.css">
 <?php include("login.blade.php"); ?>
   <header>
       <div class="header-A">
-        <img src="img/logo.png" alt="">
-        <h1><a href="index.php">ESTAVAGO</a></h1>
-        <div class="espaco">
-        </div>
-        <button type="button" onclick="abrirCadastro()" name="cadastro">Cadastro</button>
-        <button type="button" onclick="abrirLogin()" name="login">Login</button>
-        <div class="espaco2">
+        <img src="/img/logo.png" alt="">
+        <h1><a href="/">ESTAVAGO</a></h1>
+        <div class="botoes_header">
+          <button type="button" onclick="abrirCadastro()" name="cadastro">Cadastro</button>
+          <button type="button" onclick="abrirLogin()" name="login">Login</button>
         </div>
       </div>
 
       <div class="header-B">
-        <form class="" action="pesquisa.php" method="post">
+        <form class="" action="/pesquisa" method="post">
           <div class="input1">
             <label for="">Local</label>
             <input type="text" name="" value="">

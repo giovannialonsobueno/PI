@@ -2,15 +2,20 @@
 namespace App\Http\Controllers;
   use Illuminate\Http\Request;
     class Controles extends Controller{
+      function home(){ return view('index'); }
 
-      public function home(){
-        return view('index');
-        }
+      function item($id){ return view('item',["_ID"=>$id]);}
 
-      function favorito(){ return view('favorito'); }
-      function cadastro(){ return view('cadastro'); }
+      function pesquisa(){ return view('pesquisa'); }
+
       function login(){ return view('login'); }
+
       function produto(){ return view('produto'); }
-      function item(){ return view('item'); }
+
+      function reserva(){ return view('reserva'); }
+
+      function reservas($id){ return view('reservas',["_ID"=>$id]); }
+
+      function Rpesq(){ return view('resultadoPesquisa'); }
   }
  ?>

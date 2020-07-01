@@ -44,10 +44,6 @@
 
         </div>
 
-
-
-
-
         <div class="total">
           <h1>Total</h1>
           <h1 class="V2">R$ 525.00</h1>

@@ -3,7 +3,7 @@ button:focus, input:focus{
 }
 
 #saida, #entrada{
-font-size: 1.5rem;
+font-size: 1rem;
 }
 
 *{
@@ -19,6 +19,7 @@ header{
   width: 100%;
   height: 190px;
   background-color: #0085a8;
+  font-size: 16px;
 }
 
 .header-A{
@@ -28,11 +29,17 @@ header{
   display: flex;
   align-items: center;
   padding-top: 10px;
+  margin-left: auto;
 }
 
 .header-A img{
   height: 100%;
   margin-left: 3%;
+}
+
+.botoes_header{
+margin-left: auto;
+margin-right: 4.5%;
 }
 
 .header-A h1 a{
@@ -41,14 +48,6 @@ header{
   margin-left: 10px;
   text-decoration: none;
   font-family:arial;
-}
-
-.header-A h1:hover{
-
-}
-
-.header-A .espaco{
-  width: 65%;
 }
 
 .header-A button{
@@ -61,7 +60,6 @@ header{
   border-radius: 8px;
   position: relative;
   bottom: 20px;
-
 }
 
 .header-B{
@@ -80,9 +78,6 @@ header{
   margin-top: 20px;
   height: 70px;
   margin-left: 3%;
-
-
-
 }
 
 .input2{
@@ -90,15 +85,13 @@ header{
   margin-top: 20px;
   height: 70px;
   margin-left: 10px;
-
-
 }
+
 .input3{
   width: 10%;
   margin-top: 20px;
   height: 70px;
   margin-left: 10px;
-
 }
 
 
@@ -254,8 +247,4 @@ header{
 .header-B form button img{
   width: 15px;
   margin-right: 10px;
-}
-
-.espaco2{
-  width: 2.5%;
 }
