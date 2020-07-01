@@ -7,7 +7,7 @@
     <title></title>
   </head>
   <body>
-    <?php include("includes/header.blade.php"); ?>
+    @include("includes/header")
   <main>
     <div class="titulo">
       <div class="box-esq">
@@ -168,12 +168,11 @@
                 *Para semanas de feriados será cobrada multa de 50%.
                 *No dia do check-in ou posterior ao mesmo será cobrada multa de 100%.
                 *Se você optar pelos créditos para utilizar em futuras viagens, poderá efetuar o cancelamento gratuito (com exceção do dia do check-in e semanas de feriados) até a véspera do check-in - sem qualquer cobrança de multa.</p>
-
           </div>
         </div>
       </div>
     <section></section>
   </main>
-    <?php include("includes/footer.blade.php"); ?>
+    @include("includes/footer")
   </body>
 </html>

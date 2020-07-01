@@ -1,4 +1,4 @@
-<?php include("includes/functions.php"); ?>
+@include("includes/functions")
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -17,35 +17,44 @@
       <section class="card-reserva">
 
         <div class="titulo">
-          <?php $quarto = call_pdt($_ID);
+          @php
+            $quarto = call_pdt($_ID);
             extract($quarto["horario"]);
-            extract($quarto["comodidades"]);?>
-          <h1><?php echo $quarto["nome"];?></h1>
-          <p><?php echo $quarto["endereco"];?></p>
+            extract($quarto["comodidades"]);
+          @endphp
+          <h1>{{$quarto["nome"]}}</h1>
+          <p>{{$quarto["endereco"]}}</p>
         </div>
 
         <div class="card-info">
 
           <div class="img">
-            <img src="/hoteis/<?php echo $quarto["fotos"][0];?>" alt="">
+            <img src="/hoteis/{{$quarto["fotos"][0]}}" alt="">
           </div>
 
           <div class="info">
             <h1>Standart Room</h1>
-            <p><span>Entrada:</span> <span> <?php echo strftime('%A, %d de %B as %H:%Mh', strtotime($entrada)); ?> </span></p>
-            <p><span>Saida:</span> <span> <?php echo strftime('%A, %d de %B as %H:%Mh', strtotime($saida)); ?> </span></p>
+            <p><span>Entrada:</span> <span> {{strftime('%A, %d de %B as %H:%Mh', strtotime($entrada))}}</span></p>
+            <p><span>Saida:</span> <span> {{strftime('%A, %d de %B as %H:%Mh', strtotime($saida))}}</span></p>
             <p><span>Hospedes:</span> Max <span> 2 pessoas</span></p>
-            <?php if ($cafe):?><p><span>Alimentação:</span> Café da manha</p><?php endif; ?>
-            <p><span><?php echo $quarto['noites']?> Noites x R$ <?php echo number_format($quarto['preco'], 2,',', '.') ?> :</span> R$ <?php echo number_format($quarto['preco'] *2, 2,',', '.') ?> </p>
-            <?php if (!$cancelar): ?><p><h4>Cancelamento Gratuito</h4></p>
-                <?php else: ?> <p><span>Taxa de cancelamento: R$ <?php echo number_format($cancelar, 2,',', '.'); ?> </span></p> <?php endif; ?>
-            <?php if ($taxa_reg): ?><p><span>Taxa de registro: R$ <?php echo number_format($taxa_reg, 2,',', '.'); ?> </span></p>
-              <?php else: ?><p><h4>Sem taxa de registro</h4></p> <?php endif; ?>
+            @if ($cafe)<p><span>Alimentação:</span> Café da manha</p>@endif
+            <p><span>{{$quarto['noites']}} Noites x R$ {{number_format($quarto['preco'], 2,',', '.')}} :</span> R$ {{number_format($quarto['preco'] *2, 2,',', '.')}}</p>
+              @if (!$cancelar)
+                <p><h4>Cancelamento Gratuito</h4></p>
+              @else
+                <p><span>Taxa de cancelamento: R$ {{number_format($cancelar, 2,',', '.')}} </span></p> @endif
+            @if (!$taxa_reg)
+            <p><h4>Sem taxa de registro</h4></p>
+            @else
+              <p><span>Taxa de registro: R$ {{number_format($taxa_reg, 2,',', '.')}}</span></p>
+            @endif
           </div>
         </div>
-        <?php $total = $taxa_reg + ($quarto['preco'] * $quarto['hospedes']) ?>
+        @php
+        $total = $taxa_reg + ($quarto['preco'] * $quarto['hospedes']);
+        @endphp
         <div class="total">
-          <h1>Total: R$ <?php echo number_format($total, 2,',', '.');  ?></h1>
+          <h1>Total: R$ {{number_format($total, 2,',', '.')}}</h1>
         </div>
         <hr>
         <h1>DADOS DA RESERVA</h1>
@@ -66,12 +75,9 @@
             </div>
           </div>
 
-          <h1></h1>
-
           <hr>
 
           <h1>DADOS DE PAGAMENTO</h1>
-
           <div class="dados">
             <div class="cpf">
               <p>Numero do Cartão</p>
@@ -105,25 +111,12 @@
               <input type="text" name="" value=""placeholder="dd/mm/aa">
             </div>
           </div>
-
-
-
-
           <p>Numero de Parcelas</p>
 
             <select>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
+              @for ($i=0; $i <= 12; $i++)
+              <option value="{{$i}}">1</option>
+              @endfor
             </select>
 
             <div class="termos">
@@ -132,14 +125,9 @@
               </div>
               <div class="cpf">
                 <p>Deseja salvar os dados do cartão?</p>
-
               </div>
             </div>
-
-
-            <h1></h1>
             <hr>
-
 
             <div class="termos">
               <div class="check">
@@ -147,29 +135,11 @@
               </div>
               <div class="cpf">
                 <p>Li e aceito as condições da  política de cancelamento, termos de uso, política de privacidade</p>
-
               </div>
             </div>
-
-
-
             <button type="button" name="button">Concluir</button>
-
-
         </form>
-
-
-
-
-
-
-
       </section>
-
-
-
     </main>
-
   </body>
-
 </html>

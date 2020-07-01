@@ -2,12 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/pesquisa.css">
+    <link rel="stylesheet" href="/css/pesquisa.css">
     <script src="https://kit.fontawesome.com/837f81fff7.js" crossorigin="anonymous"></script>
     <title></title>
   </head>
   <body>
-    <?php include("includes/header.blade.php"); ?>
+    @include("includes/header")
     <main>
       <section>
         <div class="filtro">
@@ -173,6 +173,6 @@
         output.innerHTML = this.value;
       }
       </script>
-  <?php include("includes/footer.blade.php"); ?>
+  @include("includes/footer")
   </body>
 </html>

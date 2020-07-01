@@ -1,5 +1,5 @@
 <?php
-$servicos =[
+$servicos = [
     ["id"=>1,"servico"=>1,"nome"=>"Esmeralda Praia",
      "avaliacao"=>4.5,"local"=>"Brasil","preco"=>900,"desconto"=>30,
      "info"=>"Esta acomodação fica a 2 minutos a pé da praia. Oferecendo um parque aquático com iluminação especial e acesso direto á Praia de Ponta Negra, o Esmeralda Praia Hotel apresenta vista panorâmica do Morro do Careca. Você pode desfrutar do regime de meia-pensão com café da manhã gratuito, jantar temático com música ao vivo e chá da tarde. O Esmeralda Praia Hotel dispõe de quartos espaçosos com uma varanda grande, ar-condicionado, TV a cabo e frigobar. Algumas acomodações contam com vista do mar. O WiFi gratuito está disponível em todas as áreas. O restaurante no local também serve um buffet de almoço bem como pratos nacionais e internacionais à la carte. A piscina possui jatos de hidromassagem e sistemas de iluminação para cromoterapia. Os adultos podem relaxar com os serviços do spa, enquanto as crianças podem se divertir no miniclube. O Esmeralda Praia fica próximo a lojas, restaurantes e bares. O Shopping Center Artesanato está a 400 metros, e o Shopping Sea Way fica a 2,2 km do local. O Aeroporto Internacional de São Gonçalo do Amarante está a 33 km do hotel. Praia de Ponta Negra é uma ótima escolha para viajantes interessados em caminhadas na praia, praias e paisagens.",
