@@ -1,6 +1,5 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link rel="stylesheet" href="/css/header.css">
-@include("includes/login")
   <header>
       <div class="header-A">
         <img src="/img/logo.png" alt="">
@@ -56,28 +55,25 @@
 
   <script>
 var x, i, j, l, ll, selElmnt, a, b, c;
-/*look for any elements with the class "custom-select":*/
+
 x = document.getElementsByClassName("custom-select");
 l = x.length;
 for (i = 0; i < l; i++) {
   selElmnt = x[i].getElementsByTagName("select")[0];
   ll = selElmnt.length;
-  /*for each element, create a new DIV that will act as the selected item:*/
+
   a = document.createElement("DIV");
   a.setAttribute("class", "select-selected");
   a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
   x[i].appendChild(a);
-  /*for each element, create a new DIV that will contain the option list:*/
+
   b = document.createElement("DIV");
   b.setAttribute("class", "select-items select-hide");
+
   for (j = 1; j < ll; j++) {
-    /*for each option in the original select element,
-    create a new DIV that will act as an option item:*/
     c = document.createElement("DIV");
     c.innerHTML = selElmnt.options[j].innerHTML;
     c.addEventListener("click", function(e) {
-        /*when an item is clicked, update the original select box,
-        and the selected item:*/
         var y, i, k, s, h, sl, yl;
         s = this.parentNode.parentNode.getElementsByTagName("select")[0];
         sl = s.length;
@@ -101,8 +97,6 @@ for (i = 0; i < l; i++) {
   }
   x[i].appendChild(b);
   a.addEventListener("click", function(e) {
-      /*when the select box is clicked, close any other select boxes,
-      and open/close the current select box:*/
       e.stopPropagation();
       closeAllSelect(this);
       this.nextSibling.classList.toggle("select-hide");
@@ -110,8 +104,6 @@ for (i = 0; i < l; i++) {
     });
 }
 function closeAllSelect(elmnt) {
-  /*a function that will close all select boxes in the document,
-  except the current select box:*/
   var x, y, i, xl, yl, arrNo = [];
   x = document.getElementsByClassName("select-items");
   y = document.getElementsByClassName("select-selected");
@@ -130,7 +122,149 @@ function closeAllSelect(elmnt) {
     }
   }
 }
-/*if the user clicks anywhere outside the select box,
-then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
 </script>
+
+<?php
+        //login
+        // include_once("classes/Usuario.php");
+        //
+        // $loginOk = true;
+        //
+        // if($_POST) {
+        //     $usuario = Usuario::login($_POST['email'],$_POST['senha']);
+        //     if($usuario) {
+        //         // Marcar o usuário como logado
+        //         session_start();
+        //         $_SESSION['logado'] = true;
+        //
+        //         // Redirecionar usuário para página interna
+        //         header('location: index.php');
+        //     } else {
+        //         // Variável pare validação de campos
+        //         $loginOk = false;
+        //     }
+        // }
+
+        //cadastro
+        // Testando para verificar o envio do formulário
+        // if($_POST){
+        //
+        //     // Criar um objeto da classe usuário
+        //     extract($_POST);
+        //     $usuario = new Usuario($nome, $email, $senha);
+        //
+        //     // Salvar o objeto no banco de dados
+        //     $usuario->save();
+        //
+        //     // Criar uma session para marcar o usuário como logado
+        //     session_start();
+        //     $_SESSION['logado'] = true;
+        //
+        //     // Direcionar ele para página interna
+        //     header('location: feed.php');
+        // }
+?>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script>
+
+function abrirLogin() {
+  document.getElementById("lightbox").style.display = "flex";
+  document.getElementById("login").style.display = "flex";
+  document.getElementById("cadastro").style.display = "none";
+}
+
+function fechar() {
+  document.getElementById("lightbox").style.display = "none";
+  document.getElementById("login").style.display = "none";
+  document.getElementById("cadastro").style.display = "none";
+}
+
+function abrirCadastro() {
+  document.getElementById("lightbox").style.display = "flex";
+  document.getElementById("login").style.display = "none";
+  document.getElementById("cadastro").style.display = "flex";
+}
+</script>
+
+<div id="lightbox">
+    <link rel="stylesheet" href="/css/login.css">
+<div id="login">
+
+  <div class="card-login">
+    <div class="cancel">
+      <button type="button" onclick="fechar()"name="button">X</button>
+
+    </div>
+    <div class="img">
+      <img src="img/logo.png" alt="">
+      <h3>Esta Vago</h3>
+    </div>
+
+  <hr>
+
+  <div class="formulario">
+    <h3>Login</h3>
+    <form class="" action="index.html" method="post">
+
+      <input type="email" name="" value="" placeholder="E-mail">
+      <input type="password" name="" value="" placeholder="Senha">
+      <button type="button" name="button">Entrar</button>
+
+    </form>
+    <div class="info-rodape">
+      <a href="#">Esqueceu sua senha?</a>
+      <a id="cadastre-se"href="#" onclick="abrirCadastro()">Cadastre-se</a>
+
+    </div>
+
+  </div>
+
+  </div>
+</div>
+
+<div id="cadastro">
+  <div class="card-login">
+    <div class="cancel">
+      <button type="button" onclick="fechar()"name="button">X</button>
+
+    </div>
+    <div class="img">
+      <img src="img/logo.png" alt="">
+      <h3>Esta Vago</h3>
+    </div>
+
+  <hr>
+
+  <div class="formulario-Cad">
+    <h3>Cadastro</h3>
+    <form class="" action="index.html" method="post">
+      <p>Nome Completo</p>
+      <input type="text" name="" value="" placeholder="nome">
+
+      <p>E-mail</p>
+      <input type="email" name="" value="" placeholder="email">
+
+      <div class="box-senha">
+
+        <div class="senha">
+          <p>Senha</p>
+          <input type="text" name="" value="" placeholder="senha">
+        </div>
+
+        <div class="conf-senha">
+          <p>Confirme a Senha</p>
+          <input type="text" name="" value="" placeholder="confirmar senha">
+        </div>
+      </div>
+
+      <button type="button" name="button">Cadastrar</button>
+
+    </form>
+    <div class="info-rodape-cad">
+      <a href="#" onclick="abrirLogin()">Ja tem uma conta?</a>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
