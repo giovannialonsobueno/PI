@@ -1,3 +1,4 @@
+/* login e cadastro */
 
 #lightbox{
 z-index: 999;
@@ -192,10 +193,7 @@ hr{
 
 }
 
-
-
-
-/* #cadastro .form-group{
+#cadastro .form-group{
 width: calc(100% - 0px);
 }
 
@@ -239,7 +237,7 @@ color: #007BFF;
 .secundario:hover{
 color: #fff;
 background-color: #007BFF;
-} */
+}
 
 @media (max-width:650px) {
   #cadastro .form-group{
