@@ -292,6 +292,8 @@ main h2{
   height: 70px;
   display: flex;
   margin-top: 10px;
+
+
 }
 
 .set-data form{
@@ -338,6 +340,8 @@ color: grey;
      border:1px solid #24a2ab;
      box-shadow: 0 0 5px #719ECE;
  }
+
+
 
 /* ====================================== fim selecionar data ======================== */
 
