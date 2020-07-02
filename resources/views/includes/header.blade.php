@@ -125,7 +125,7 @@ function closeAllSelect(elmnt) {
 document.addEventListener("click", closeAllSelect);
 </script>
 
-<!-- <?php
+<?php
         //login
         // include_once("classes/Usuario.php");
         //
@@ -164,7 +164,7 @@ document.addEventListener("click", closeAllSelect);
         //     // Direcionar ele para página interna
         //     header('location: feed.php');
         // }
-?> -->
+?>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script>
 
