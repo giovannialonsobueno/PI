@@ -23,7 +23,7 @@
       <div class="box-dir">
         <span>Diarias a partir de</span>
         <h1>R$ 299</h1>
-        <button type="button" name="button">Ver quartos</button>
+        <a href="Rpesq#Quartos disponiveis"> <button type="button" name="button">Ver quartos</button></a>
       </div>
     </div>
 
@@ -46,7 +46,72 @@
       <button type="button" name="button">+</button>
     </section>
 
-    <h2>Quartos</h2>
+    <h2> <a name="Quartos disponiveis">Quartos</a> </h2>
+
+
+    <!-- ============================ div oculta ====================== -->
+
+    <div class="data">
+
+      <div class="disponibilidade">
+        <h1>Disponibilidade</h1>
+        <p>Selecione da data da sua viagem</p>
+      </div>
+
+      <div class="set-data">
+
+      <form class="" action="index.html" method="post">
+
+        <div class="entrada">
+          <p>Entrada</p>
+          <input type="text" name="" value="">
+        </div>
+
+        <div class="entrada">
+          <p>Saida</p>
+          <input type="text" name="" value="">
+        </div>
+
+        <div class="hospedes">
+          <p>Quartos</p>
+          <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+
+          </select>
+        </div>
+
+        <div class="hospedes">
+          <p>Hospedes</p>
+          <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+
+
+          </select>
+        </div>
+
+        <button type="button" name="button">Consultar</button>
+
+      </form>
+
+      </div>
+
+    </div>
+
+
+    <!-- ==================== fim div oculta ========================== -->
 
     <section class="card-quarto">
       <div class="img-card">

@@ -254,7 +254,96 @@ main h2{
   background-color: #0085a8;
 }
 
+
+
+
 /* ++++++++++++++++++++++++++++++++++++++ FIM CARD HOTEL ++++++++++++++++++++++++++++++++ */
+
+
+.data{
+  width: 100%;
+  height: 70px;
+  border: 1px solid #AADFE8  ;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  display: flex;
+  padding-right: 15px;
+
+}
+
+.disponibilidade{
+  width: 40%;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.disponibilidade h1{
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.disponibilidade p{
+  font-family: sans-serif;
+  color: grey;
+}
+
+.set-data{
+  width: 60%;
+  height: 70px;
+  display: flex;
+  margin-top: 10px;
+
+
+}
+
+.set-data form{
+  display: flex;
+  margin-left: auto;
+}
+
+.entrada, .hospedes{
+
+  margin-right: 10px;
+
+}
+
+.entrada p, .hospedes p{
+font-size: 13px;
+color: grey;
+}
+
+.entrada input{
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+ .hospedes select{
+   width: 80px;
+   height: 30px;
+   border-radius: 5px;
+   border: 1px solid grey;
+ }
+
+ .set-data form button{
+   width: 120px;
+   height: 30px;
+   margin-top: 15px;
+   border-radius: 5px;
+   border: none;
+   color: white;
+   background-color:  #0085a8;
+ }
+
+ input:focus {
+     outline: none !important;
+     border:1px solid #24a2ab;
+     box-shadow: 0 0 5px #719ECE;
+ }
+
+
+
+/* ====================================== fim selecionar data ======================== */
 
 .card-info-hotel{
   width: 100%;
