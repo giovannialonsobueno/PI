@@ -1,6 +1,5 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link rel="stylesheet" href="/css/header.css">
-@include('includes/login')
   <header>
       <div class="header-A">
         <img src="/img/logo.png" alt="">
@@ -174,7 +173,7 @@ function abrirLogin() {
   document.getElementById("cadastro").style.display = "none";
 }
 
-function fechar() {
+function fecharLogin() {
   document.getElementById("lightbox").style.display = "none";
   document.getElementById("login").style.display = "none";
   document.getElementById("cadastro").style.display = "none";
@@ -187,19 +186,17 @@ function abrirCadastro() {
 }
 </script>
 
-
-
 <div id="lightbox">
     <link rel="stylesheet" href="css/login.css">
 <div id="login">
 
   <div class="card-login">
     <div class="cancel">
-      <button type="button" onclick="fechar()"name="button">X</button>
+      <button type="button" onclick="fecharLogin()"name="button">X</button>
 
     </div>
     <div class="img2">
-      <img src="img/logo.png" alt="">
+      <img src="/img/logo.png" alt="">
       <h3>Esta Vago</h3>
     </div>
 
@@ -207,7 +204,7 @@ function abrirCadastro() {
 
   <div class="formulario">
     <h3>Login</h3>
-    <form class="" action="index.html" method="post">
+    <form class="" action="" method="post">
 
       <input type="email" name="" value="" placeholder="E-mail">
       <input type="password" name="" value="" placeholder="Senha">
@@ -217,22 +214,19 @@ function abrirCadastro() {
     <div class="info-rodape">
       <a href="#">Esqueceu sua senha?</a>
       <a id="cadastre-se"href="#" onclick="abrirCadastro()">Cadastre-se</a>
-
     </div>
-
-  </div>
-
+    </div>
   </div>
 </div>
 
 <div id="cadastro">
   <div class="card-login">
     <div class="cancel">
-      <button type="button" onclick="fechar()"name="button">X</button>
+      <button type="button" onclick="fecharLogin()"name="button">X</button>
 
     </div>
     <div class="img2">
-      <img src="img/logo.png" alt="">
+      <img src="/img/logo.png" alt="">
       <h3>Esta Vago</h3>
     </div>
 
@@ -240,7 +234,7 @@ function abrirCadastro() {
 
   <div class="formulario-Cad">
     <h3>Cadastro</h3>
-    <form class="" action="index.html" method="post">
+    <form class="" action="" method="post">
       <p>Nome Completo</p>
       <input type="text" name="" value="" placeholder="nome">
 
