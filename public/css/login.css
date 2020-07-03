@@ -187,7 +187,9 @@ hr{
 
 .info-rodape-cad a{
   color: white;
-  font-size: 12px;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
 
 }
 

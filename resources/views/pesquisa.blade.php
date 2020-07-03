@@ -131,7 +131,7 @@
             </div>
               </div>
 
-              <div class="cancel">
+              <div class="cancel2">
                 <i class="fas fa-check-circle"></i>
               <span>Cancelamento Gratis</span>
             </div>

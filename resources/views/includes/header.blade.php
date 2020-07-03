@@ -187,8 +187,10 @@ function abrirCadastro() {
 }
 </script>
 
+
+
 <div id="lightbox">
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="css/login.css">
 <div id="login">
 
   <div class="card-login">

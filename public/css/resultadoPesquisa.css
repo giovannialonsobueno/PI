@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 button:hover{
@@ -393,6 +394,7 @@ color: grey;
   color: grey;
   margin: 20px;
   padding-top: 55px;
+
 }
 
 .info-dir{
