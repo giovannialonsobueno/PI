@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/resultadoPesquisa.css">
+    <link rel="stylesheet" href="css/resultadoPesquisa.css">
     <script src="https://kit.fontawesome.com/837f81fff7.js" crossorigin="anonymous"></script>
     <title></title>
   </head>
@@ -52,7 +52,6 @@
     <!-- ============================ div oculta ====================== -->
 
     <div class="data">
-
       <div class="disponibilidade">
         <h1>Disponibilidade</h1>
         <p>Selecione da data da sua viagem</p>
@@ -75,39 +74,23 @@
         <div class="hospedes">
           <p>Quartos</p>
           <select>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-
+            @for ($i=0; $i <= 5; $i++)
+              <option value="{{$i}}">{{$i}}</option>
+            @endfor
           </select>
         </div>
 
         <div class="hospedes">
           <p>Hospedes</p>
           <select>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-
-
+            @for ($i=0; $i <= 10; $i++)
+              <option value="{{$i}}">{{$i}}</option>
+            @endfor
           </select>
         </div>
-
         <button type="button" name="button">Consultar</button>
-
       </form>
-
       </div>
-
     </div>
 
 

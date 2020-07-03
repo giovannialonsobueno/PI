@@ -57,9 +57,102 @@
         </div>
       </section>
       <section class="buttom-verMais">
+<script>
+function abrir() {
+  document.getElementById("fundo").style.display = "flex";
+}
+function fechar() {
+  document.getElementById("fundo").style.display = "none";
+}
+</script>
         <button type="button" onclick="abrir()" name="button">+</button>
       </section>
+<div class="data">
+  <div class="disponibilidade">
+    <h1>Disponibilidade</h1>
+    <p>Selecione da data da sua viagem</p>
+  </div>
+
+  <div class="set-data">
+
+  <form class="" action="index.html" method="post">
+
+    <div class="entrada">
+      <p>Entrada</p>
+      <input type="text" name="" value="">
+    </div>
+
+    <div class="entrada">
+      <p>Saida</p>
+      <input type="text" name="" value="">
+    </div>
+
+    <div class="hospedes">
+      <p>Quartos</p>
+      <select>
+        @for ($i=0; $i <= 5; $i++)
+          <option value="{{$i}}">{{$i}}</option>
+        @endfor
+      </select>
+    </div>
+
+    <div class="hospedes">
+      <p>Hospedes</p>
+      <select>
+        @for ($i=0; $i <= 10; $i++)
+          <option value="{{$i}}">{{$i}}</option>
+        @endfor
+      </select>
+    </div>
+    <button type="button" name="button">Consultar</button>
+  </form>
+  </div>
+</div>
     </main>
+{{-- banner rotativo --}}
+<script>
+function abrir() {
+  document.getElementById("fundo").style.display = "block";
+}
+function fechar() {
+  document.getElementById("fundo").style.display = "none";
+}
+</script>
+<div id="fundo">
+<h1>{{$hotel["nome"]}}</h1>
+<div class="banners">
+<button type="button" onclick="fechar()"  class="fechar" name="button"><i class="fa fa-times-circle"></i></button>
+<body>
+
+<div class="slider">
+      @for ($i=0; $i < sizeof($hotel['fotos']); $i++)
+        <img class="slides" src="/hoteis/{{$hotel["fotos"][$i]}}">
+      @endfor
+  <button class="w3-button w3-black slider_esquerda" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black slider_direita" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("slides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+</div>
+</div>
  @include("includes/footer")
 </body>
 </html>

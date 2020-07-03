@@ -1,4 +1,3 @@
-
 <?php
         //login
         // include_once("classes/Usuario.php");
@@ -48,7 +47,7 @@ function abrirLogin() {
   document.getElementById("cadastro").style.display = "none";
 }
 
-function fechar() {
+function fecharLogin() {
   document.getElementById("lightbox").style.display = "none";
   document.getElementById("login").style.display = "none";
   document.getElementById("cadastro").style.display = "none";
@@ -63,45 +62,42 @@ function abrirCadastro() {
 
 <div id="lightbox">
     <link rel="stylesheet" href="/css/login.css">
-<div id="login">
-
-  <div class="card-login">
-    <div class="cancel">
-      <button type="button" onclick="fechar()"name="button">X</button>
-
-    </div>
+  <div id="login">
+    <div id="login" class="card-login">
+      <div class="cancel">
+        <button type="button" onclick="fecharLogin()" name="button">X</button>
+      </div>
     <div class="img">
-      <img src="img/logo.png" alt="">
+      <img src="/img/logo.png" alt="">
       <h3>Esta Vago</h3>
     </div>
 
   <hr>
 
-  <div class="formulario">
-    <h3>Login</h3>
-    <form class="" action="" method="post">
+    <div class="formulario">
+      <h3>Login</h3>
+      <form class="" action="" method="post">
+        <input type="email" name="" value="" placeholder="E-mail">
+        <input type="password" name="" value="" placeholder="Senha">
+        <button type="button" name="button">Entrar</button>
+      </form>
 
-      <input type="email" name="" value="" placeholder="E-mail">
-      <input type="password" name="" value="" placeholder="Senha">
-      <button type="button" name="button">Entrar</button>
-
-    </form>
-    <div class="info-rodape">
-      <a href="#">Esqueceu sua senha?</a>
-      <a id="cadastre-se"href="#" onclick="abrirCadastro()">Cadastre-se</a>
+      <div class="info-rodape">
+          <a href="#">Esqueceu sua senha?</a>
+          <a id="cadastre-se"href="#" onclick="abrirCadastro()">Cadastre-se</a>
+      </div>
     </div>
-  </div>
   </div>
 </div>
 
 <div id="cadastro">
   <div class="card-login">
     <div class="cancel">
-      <button type="button" onclick="fechar()"name="button">X</button>
+      <button type="button" onclick="fecharLogin()()" name="button">X</button>
     </div>
 
     <div class="img">
-      <img src="img/logo.png" alt="">
+      <img src="/img/logo.png" alt="">
       <h3>Esta Vago</h3>
     </div>
 
@@ -115,24 +111,23 @@ function abrirCadastro() {
 
       <p>E-mail</p>
       <input type="email" name="" value="" placeholder="email">
-      <div class="box-senha">
+    <div class="box-senha">
         <div class="senha">
-          <p>Senha</p>
-          <input type="text" name="" value="" placeholder="senha">
+            <p>Senha</p>
+            <input type="text" name="" value="" placeholder="senha">
         </div>
 
         <div class="conf-senha">
-          <p>Confirme a Senha</p>
-          <input type="text" name="" value="" placeholder="confirmar senha">
+            <p>Confirme a Senha</p>
+            <input type="text" name="" value="" placeholder="confirmar senha">
         </div>
       </div>
-
       <button type="button" name="button">Cadastrar</button>
     </form>
-    <div class="info-rodape-cad">
-      <a href="#" onclick="abrirLogin()">Já tem uma conta?</a>
+        <div class="info-rodape-cad">
+          <a href="#" onclick="abrirLogin()">Já tem uma conta?</a>
+        </div>
+      </div>
     </div>
   </div>
-  </div>
-</div>
 </div>

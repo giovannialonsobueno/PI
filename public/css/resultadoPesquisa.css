@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 button:hover{
@@ -292,8 +293,6 @@ main h2{
   height: 70px;
   display: flex;
   margin-top: 10px;
-
-
 }
 
 .set-data form{
@@ -304,7 +303,6 @@ main h2{
 .entrada, .hospedes{
 
   margin-right: 10px;
-
 }
 
 .entrada p, .hospedes p{
@@ -323,7 +321,7 @@ color: grey;
    height: 30px;
    border-radius: 5px;
    border: 1px solid grey;
- }
+ } */
 
  .set-data form button{
    width: 120px;
@@ -393,6 +391,7 @@ color: grey;
   color: grey;
   margin: 20px;
   padding-top: 55px;
+
 }
 
 .info-dir{
@@ -404,4 +403,81 @@ color: grey;
   color: grey;
   text-align: justify;
   margin-right: 20px;
+}
+/* Banner rotativo/com slides */
+
+#fundo{
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color:white;
+}
+
+.fechar{
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-color: inherit;
+  border: none;
+  color: black;
+  transition: 0.2s;
+}
+
+.fechar:hover{
+color: red;
+}
+
+.slides {
+  display:none;
+  border-radius: 10px;
+}
+
+.slider {
+  margin:auto;
+  width:60%;
+  height:75vh;
+}
+
+.slider img {
+  width:100%;
+  height:100%;
+}
+
+#fundo h1{
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  color: gray;
+  font-size: 2.5rem;
+}
+
+.slider_esquerda{
+  position:absolute;
+  top:45%;
+  left:0%;
+}
+
+.slider_direita{
+  position:absolute;
+  top:45%;
+  right:0%;
+}
+
+.slider_esquerda, .slider_direita{
+  width: 100px;
+  height: 100px;
+  color:gray;
+  background-color: inherit;
+  border: none;
+  border-radius: 10px;
+  font-size: 3rem;
+  transition: 0.2s;
+}
+
+.slider_esquerda:hover, .slider_direita:hover{
+color: black;
 }

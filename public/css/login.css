@@ -45,19 +45,18 @@ display: none;
   border-color: #D41C6D;
 }
 
-.img{
+.img2{
   width: 100%;
   text-align: center;
 
 }
 
-.img img{
+.img2 img{
   width: 80px;
   height: 80px;
-
 }
 
-.img h3{
+.img2 h3{
   color: white;
   font-family: arial;
   margin-bottom: 0px;;
@@ -189,7 +188,9 @@ hr{
 
 .info-rodape-cad a{
   color: white;
-  font-size: 12px;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
