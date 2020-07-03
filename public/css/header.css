@@ -136,8 +136,6 @@ margin-right: 4.5%;
   position: relative;
   font-family: Arial;
   height: 70px;
-
-
 }
 
 .custom-select select {
@@ -146,7 +144,6 @@ margin-right: 4.5%;
 
 .select-selected {
   background-color: white;
-
 }
 
 /*style the arrow inside the select element:*/
