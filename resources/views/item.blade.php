@@ -54,18 +54,8 @@
           <div class="img-down">
             <img src="/hoteis/{{$hotel["fotos"][2]}}" alt="">
           </div>
+        <button type="button" class="button-verMais" onclick="abrir()" name="button">Ver mais</button>
         </div>
-      </section>
-      <section class="buttom-verMais">
-<script>
-function abrir() {
-  document.getElementById("fundo").style.display = "flex";
-}
-function fechar() {
-  document.getElementById("fundo").style.display = "none";
-}
-</script>
-        <button type="button" onclick="abrir()" name="button">+</button>
       </section>
 <div class="data">
   <div class="disponibilidade">
