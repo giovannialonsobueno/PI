@@ -54,7 +54,7 @@
           <div class="img-down">
             <img src="/hoteis/{{$hotel["fotos"][2]}}" alt="">
           </div>
-        <button type="button" class="button-verMais" onclick="abrir()" name="button">Ver mais</button>
+        <button type="button" class="button-verMais" onclick="abrir()" name="button"> <img src="/hoteis/{{$hotel["fotos"][3]}}" alt=""> <span>Ver mais</span> </button>
         </div>
       </section>
 <div class="data">
@@ -108,41 +108,75 @@ function fechar() {
   document.getElementById("fundo").style.display = "none";
 }
 </script>
+<style>
+
+.fundo{
+z-index: -10;
+position: fixed;
+background-color: black;
+width: 100%;
+height: 100%;
+object-fit: cover;
+filter: brightness(50%);
+}
+
+</style>
 <div id="fundo">
+  @for ($i=0; $i < sizeof($hotel['fotos']); $i++)
+    <img class="fundo" src="/hoteis/{{$hotel["fotos"][$i]}}">
+  @endfor
+<img src="" alt="">
 <h1>{{$hotel["nome"]}}</h1>
 <div class="banners">
 <button type="button" onclick="fechar()"  class="fechar" name="button"><i class="fa fa-times-circle"></i></button>
 <body>
 
 <div class="slider">
-      @for ($i=0; $i < sizeof($hotel['fotos']); $i++)
-        <img class="slides" src="/hoteis/{{$hotel["fotos"][$i]}}">
-      @endfor
-  <button class="w3-button w3-black slider_esquerda" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black slider_direita" onclick="plusDivs(1)">&#10095;</button>
+          @for ($i=0; $i < sizeof($hotel['fotos']); $i++)
+            <img class="slides" src="/hoteis/{{$hotel["fotos"][$i]}}">
+          @endfor
+      <button class="slider_esquerda" onclick="plusDivs(-1);plusBG(-1)">&#10094;</button>
+      <button class="slider_direita" onclick="plusDivs(1);plusBG(1)">&#10095;</button>
+    </div>
+  </div>
 </div>
 
 <script>
 var slideIndex = 1;
+var slideBG = 1;
 showDivs(slideIndex);
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
 }
 
+function plusBG(n){
+  showBG(slideBG += n);
+}
+
 function showDivs(n) {
   var i;
-  var x = document.getElementsByClassName("slides");
+  var x = document.getElementsByClassName('slides');
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
   x[slideIndex-1].style.display = "block";
-}
+  }
+
+  function showBG(n) {
+    var i;
+    var x = document.getElementsByClassName('fundo');
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+    }
+
 </script>
-</div>
-</div>
  @include("includes/footer")
 </body>
 </html>
