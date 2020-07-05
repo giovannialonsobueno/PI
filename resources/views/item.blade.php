@@ -122,9 +122,6 @@ filter: brightness(50%);
 
 </style>
 <div id="fundo">
-  @for ($i=0; $i < sizeof($hotel['fotos']); $i++)
-    <img class="fundo" src="/hoteis/{{$hotel["fotos"][$i]}}">
-  @endfor
 <img src="" alt="">
 <h1>{{$hotel["nome"]}}</h1>
 <div class="banners">
@@ -143,15 +140,10 @@ filter: brightness(50%);
 
 <script>
 var slideIndex = 1;
-var slideBG = 1;
 showDivs(slideIndex);
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
-}
-
-function plusBG(n){
-  showBG(slideBG += n);
 }
 
 function showDivs(n) {
@@ -164,18 +156,6 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";
   }
-
-  function showBG(n) {
-    var i;
-    var x = document.getElementsByClassName('fundo');
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    x[slideIndex-1].style.display = "block";
-    }
-
 </script>
  @include("includes/footer")
 </body>
