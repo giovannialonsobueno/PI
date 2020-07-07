@@ -65,7 +65,7 @@
 
   <div class="set-data">
 
-  <form class="" action="index.html" method="post">
+  <form class="" action="" method="post">
 
     <div class="entrada">
       <p>Entrada</p>
@@ -78,18 +78,18 @@
     </div>
 
     <div class="hospedes">
-      <p>Quartos</p>
+      <p>Hospedes</p>
       <select>
-        @for ($i=0; $i <= 5; $i++)
+        @for ($i=0; $i <= 10; $i++)
           <option value="{{$i}}">{{$i}}</option>
         @endfor
       </select>
     </div>
 
     <div class="hospedes">
-      <p>Hospedes</p>
+      <p>Quartos</p>
       <select>
-        @for ($i=0; $i <= 10; $i++)
+        @for ($i=0; $i <= 5; $i++)
           <option value="{{$i}}">{{$i}}</option>
         @endfor
       </select>
@@ -108,21 +108,7 @@ function fechar() {
   document.getElementById("fundo").style.display = "none";
 }
 </script>
-<style>
-
-.fundo{
-z-index: -10;
-position: fixed;
-background-color: black;
-width: 100%;
-height: 100%;
-object-fit: cover;
-filter: brightness(50%);
-}
-
-</style>
 <div id="fundo">
-<img src="" alt="">
 <h1>{{$hotel["nome"]}}</h1>
 <div class="banners">
 <button type="button" onclick="fechar()"  class="fechar" name="button"><i class="fa fa-times-circle"></i></button>

@@ -220,7 +220,9 @@ text-align: center;
 display: none;
 }
 
-
+#id, #cadastro{
+display: none;
+}
 
 .card-login{
   width: 600px;
@@ -248,8 +250,8 @@ display: none;
 }
 
 .cancel button:hover{
-  background-color: #D41C6D;
-  border-color: #D41C6D;
+  background-color: red;
+  border-color: red;
 }
 
 .img2{
@@ -330,7 +332,6 @@ hr{
 #cadastre-se{
   color: #ebbe09;
   margin-left: auto;
-
 }
 
 /* ==================== Cadastro ========================= */

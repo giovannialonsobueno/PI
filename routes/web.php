@@ -15,11 +15,9 @@ Route::get('/Rpesq', 'Controles@Rpesq');
 Route::get('/item/{id}', 'Controles@item');
 
 Route::get('/reservas/{id}', 'Controles@reservas');
+
+Route::post('/cadastro', 'UsuariosController@store');
+
+Route::post('/login', 'UsuariosController@login');
 ///////////////////////////////
 Route::get('/laravel', function () { return view('welcome');});
-
-Route::get('/teste', function () { return view('teste');});
-
-Route::get('/teste2', function () { return view('teste2');});
-
-Route::post('/testectr','Teste@formSubmit');
