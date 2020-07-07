@@ -210,7 +210,7 @@ function abrirCadastro() {
 
         <div class="conf-senha">
           <p>Confirme a Senha</p>
-          <input type="password" name="" placeholder="confirmar senha">
+          <input type="password" name="confirmar" placeholder="confirmar senha">
         </div>
       </div>
       <button type="submit" name="button">Cadastrar</button>

@@ -16,7 +16,7 @@ Route::get('/item/{id}', 'Controles@item');
 
 Route::get('/reservas/{id}', 'Controles@reservas');
 
-Route::post('/cadastro', 'UsuariosController@store');
+Route::post('/cadastro', 'UsuariosController@cadastro');
 
 Route::post('/login', 'UsuariosController@login');
 ///////////////////////////////

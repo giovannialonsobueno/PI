@@ -8,16 +8,17 @@ use Illuminate\Support\Facades\Auth;
 use App\User;
 class UsuariosController extends Controller
 {
-  function store(Request $request){
+  function cadastro(Request $request){
   $user = new User();
   $user->nome = $request->nome;
   $user->email = $request->email;
   $user->senha = Hash::make($request->senha);
   if ($request->senha == $request->confirmar) {
-    // code...
-  }
   $user->save();
   return "usuario criado com sucesso";
+  } else {
+    return"deu ruim";
+  }
   }
 
   function login(Request $request){
