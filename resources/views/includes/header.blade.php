@@ -5,13 +5,18 @@
         <img src="/img/logo.png" alt="">
         <h1><a href="/">ESTAVAGO</a></h1>
         <div class="botoes_header">
+          @auth
+          <button><a href="/logout">Sair</a></button>
+          @endauth
+          @guest
           <button type="button" onclick="abrirCadastro()" name="cadastro">Cadastro</button>
-          <button type="button" onclick="abrirLogin()" name="login">Login</button>
+          <button type="button" onclick="abrirLogin()" name="login">Entrar</button>
+          @endguest
         </div>
       </div>
 
       <div class="header-B">
-        <form class="" action="/pesquisa" method="post">
+        <form action="/pesquisa" method="post">
           <div class="input1">
             <label for="">Local</label>
             <input type="text" name="" value="">
