@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  /* background-color: #def5ff; */
+}
+
+main{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title{
+  width: 90%;
+  height: 50px;
+  background-color: #198da9;
+  border: 1px solid #198da9;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 13px;
+}
+
+.title h2{
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 19px;
+}
+
+.box-pesquisa-user{
+  width: 90%;
+  height: 80px;
+  margin: auto;
+}
+
+
+.box-pesquisa-user p{
+margin-left: 15px;
+font-family: sans-serif;
+color: #198da9;
+}
+
+.pesquisa-user{
+  width: 100%;
+  height: 50px;
+  /* background-color: #198da9; */
+  border: 1px solid #198da9;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.pesquisa-user form input{
+  width: 70%;
+  height: 45px;
+  margin-left: 15px;
+  border: none;
+  font-size: 20px;
+}
+
+.pesquisa-user form input:focus{
+  outline: none;
+}
+
+.pesquisa-user form button{
+  width: 25%;
+  height: 35px;
+  background-color: #198da9;
+  border: none;
+  border-radius: 15px;
+  margin-top: 0px;
+  color: white;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.users-title{
+  display: flex;
+
+}
+
+.users-title h2{
+
+}
+
+#Nusuarios{
+  margin-left: auto;
+}
+
+.box-return-users{
+  width: 90%;
+  height: 400px;
+  margin: auto;
+  margin-top: 40px;
+
+}
+
+.box-return-users h2{
+  color: grey;
+}
+
+.return-user-info{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  background-color: #198da9;
+  border: 1px solid white;
+}
+
+.user-id{
+  width: 15%;
+  color: white;
+  text-align: center;
+}
+
+.user-name{
+  width: 35%;
+  color: white;
+  text-align: center;
+}
+
+.user-email{
+  width: 35%;
+  color: white;
+  text-align: center;
+}
+
+.user-ver-mais{
+  width: 15%;
+  color: white;
+  text-align: center;
+}
+
+.user-ver-mais a{
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
