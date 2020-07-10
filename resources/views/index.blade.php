@@ -69,13 +69,13 @@ $servicos = [
           <div class="rating-and-stars">
               <span class="number-rating"><?php echo $item["avaliacao"];?></span>
             <div class="star-rating">
-              <?php for ($i=0; $i < 5; $i++){?>
-                <?php if ($i < round($item["avaliacao"], 0, PHP_ROUND_HALF_DOWN)): ?>
+              @for ($i=0; $i < 5; $i++)
+                @if ($i < round($item["avaliacao"], 0, PHP_ROUND_HALF_DOWN))
                   <i>&#9733;</i>
-                <?php else: ?>
+                @else:
                   <i>&#9734;</i>
-                <?php endif; ?>
-              <?php } ?>
+                @endif
+                @endfor
             </div>
           </div>
         </div>
@@ -84,14 +84,14 @@ $servicos = [
           <p class="descricao-preco"><?php echo $descricao_preco; ?></p>
           <div class="preco-g">
           <p class="preco">R$<?php echo number_format($item['preco'], 2, ',', '.');?></p>
-        <?php if ($item["desconto"]): ?>
+        @if ($item["desconto"])
           <span class="valor-total">R$<?php echo number_format($item["preco"], 2, ',', '.');?></span>
-        <?php endif; ?>
+        @endif
           </div>
         </div>
         <a href="/item/{{$item["id"]}}" class="ver_mais">Ver mais</a>
       </div>
-      <?php endforeach;?>
+      @endforeach
   </section>
 
 <h2>Conheça o Brasil</h2>
