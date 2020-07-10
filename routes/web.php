@@ -19,5 +19,7 @@ Route::post('/cadastro', 'UsuariosController@cadastro')->middleware('guest');
 Route::post('/login', 'UsuariosController@login')->middleware('guest');
 
 Route::get('/logout', 'UsuariosController@logout')->middleware('auth');
+
+Route::get('/entrar', 'Controles@entrar')->middleware('guest');
 ///////////////////////////////
 Route::get('/laravel', function () { return view('welcome');});

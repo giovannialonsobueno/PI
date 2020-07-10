@@ -40,18 +40,19 @@ class UsuariosController extends Controller
       $email = $request->email;
       $senha = $request->senha;
       if (Auth::attempt([ "email"=>$email, "password"=>$senha ]))
-      { return redirect('/'); }
+      { return redirect(''); }
     }
+
     }
-  function login(Request $request){
+    function login(Request $request){
         $email = $request->email;
         $senha = $request->senha;
         if (Auth::attempt([ "email"=>$email, "password"=>$senha ]))
-        { return redirect('/'); }
-  }
-
-function logout(Request $request){
-    Auth::logout();
-    return redirect('/');
+        { return redirect(''); }
     }
+
+      function logout(Request $request){
+      Auth::logout();
+      return redirect('');
+      }
 }

@@ -138,64 +138,6 @@ $servicos = [
     </div>
   </div>
 </section>
-
-<h2>Como foi a sua viagem?</h2>
-
-  <section class="coments">
-    <div class="section-comentario">
-        <div class="img-nome-horario">
-          <img src="destinos/P2.jpg" alt="foto">
-          <span class="nome">Priscila Alcantara</span>
-          <hr>
-          <div class="comment-area">
-          <span class="horario">1 semana atrás</span><br>
-          <span class="comentario">Atendimento atencioso e solicitos de todos staff do hotel.
-                                    Excelente café da manhã com produtos de qualidades e muita variedade.
-                                    Quartos impecavelmente limpos.
-                                    Ótima localização.
-                                    Excelente ambiente digno de um hotel 58. </span>
-        </div>
-      </div>
-    </div>
-
-    <div class="section-comentario">
-        <div class="img-nome-horario">
-          <img src="destinos/P3.jpg" alt="foto">
-          <span class="nome">Maria Clara</span>
-          <hr>
-          <div class="comment-area">
-          <span class="horario">2 semana atrás</span><br>
-          <span class="comentario">With spacious, modern and renovated rooms, this hotel is a classic in Rio de Janeiro. Arguably and the most elegant and traditional, with an excellent restaurant infrastructure and good leisure area, this hotel is a necessary experience for those who wish to enjoy the luxury of a hotel with a beach city in Brazil.
-
-                                    Com quartos espaços, modernos e reformados, este hotel é um clássico do Rio de Janeiro. Indiscutivelmente e o mais elegante e tradicional, com uma excelente infraestrutura de restaurantes e boa área de lazer, tonam esse hotel uma experiencia necessária para aqueles que desejam usufruir o luxo de um hotel com uma cidade de praia do Brasil. </span>
-        </div>
-      </div>
-    </div>
-
-    <div class="section-comentario">
-        <div class="img-nome-horario">
-          <img src="destinos/P1.png" alt="foto">
-          <span class="nome">Gabriel Martins</span>
-          <hr>
-          <div class="comment-area">
-          <span class="horario">2 meses atrás</span><br>
-          <span class="comentario">Estivemos em um final de semana com a familia - 6 apartamentos, e não posso deixar de agradecer o carrinho e a atenção do maitre Santos e do Gonçalves. Feijoada com roda de samba fantástica, atendimento sempre nota 10. A torta de Brie com damascos do Brunch mantém o padão....e os drinks na piscina são sempre maravilhosos. Parabéns!!! </span>
-        </div>
-      </div>
-    </div>
-
-    <div class="section-comentario">
-        <div class="img-nome-horario">
-          <img src="destinos/P4.jpeg" alt="foto">
-          <span class="nome">joyce Mascarenhas</span>
-          <hr>
-          <div class="comment-area">
-          <span class="horario">3 semana atrás</span><br>
-          <span class="comentario">Ótima vista para o mar, a parte da piscina ótima estrutura, os quartos são aconchegante, não está tão em conta a diária como era com os antigos gestores, mas vale a pena ir pelo menos uma vez na vida rsrsrsrs.. </span>
-        </div>
-      </div>
-    </div>
-  </section>
  @include("includes/footer")
 </body>
 </html>

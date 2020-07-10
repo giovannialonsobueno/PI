@@ -17,5 +17,7 @@ namespace App\Http\Controllers;
       function reservas($id){ return view('reservas',["_ID"=>$id]); }
 
       function Rpesq(){ return view('resultadoPesquisa'); }
+
+      function entrar(){ return view('entrar');}
   }
  ?>
