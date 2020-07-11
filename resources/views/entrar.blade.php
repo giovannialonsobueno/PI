@@ -12,8 +12,8 @@
 
   <div class="card-login">
     <div class="cancel">
-
-    </div>
+       <a href="/">Voltar</a>
+     </div>
     <div class="img2">
       <img src="/img/logo.png" alt="">
       <h3>Esta Vago</h3>
@@ -40,8 +40,8 @@
 <div id="cadastro">
   <div class="card-login">
     <div class="cancel">
-
-    </div>
+       <a href="/">Voltar</a>
+     </div>
     <div class="img2">
       <img src="/img/logo.png" alt="">
       <h3>Esta Vago</h3>

@@ -38,6 +38,31 @@ width: 100%;
   display: flex;
 }
 
+.cancel{
+  width: 100%;
+  text-align: right;
+  padding: 10px;
+}
+
+.cancel a{
+  text-decoration: none;
+  font-family: arial;
+  width:30px;
+  height:30px;
+  padding:3px;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #198da9;
+  color: white;
+  transition: 0.2s;
+}
+
+.cancel a:hover{
+  background-color: #ebbe09;
+  border-color: #ebbe09;
+}
+
 .card-login{
   width: 50vw;
   height: 90vh;
