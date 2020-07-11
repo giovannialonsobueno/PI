@@ -8,7 +8,6 @@
   </head>
   <body>
     @include("includes/headerAdmin");
-
     <main>
 
       <div class="title">

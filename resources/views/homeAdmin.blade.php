@@ -7,7 +7,7 @@
     <title></title>
   </head>
   <body>
-    @include("includes/headerAdmin");
+    @include("includes/headerAdmin")
 
     <main>
 

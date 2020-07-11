@@ -19,5 +19,13 @@ namespace App\Http\Controllers;
       function Rpesq(){ return view('resultadoPesquisa'); }
 
       function entrar(){ return view('entrar');}
+
+      function cadastroHotel() {return view('cadastroHotel');}
+
+      function homeAdmin() {return view('homeAdmin');}
+
+      function hotel() {return view('hotel');}
+
+      function user() {return view('user');}
   }
  ?>

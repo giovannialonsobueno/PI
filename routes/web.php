@@ -21,5 +21,13 @@ Route::post('/login', 'UsuariosController@login')->middleware('guest');
 Route::get('/logout', 'UsuariosController@logout')->middleware('auth');
 
 Route::get('/entrar', 'Controles@entrar')->middleware('guest');
+
+Route::get('/cadastroHotel', 'Controles@cadastroHotel');
+
+Route::get('/homeAdmin', 'Controles@homeAdmin');
+
+Route::get('/hotel', 'Controles@hotel');
+
+Route::get('/user', 'Controles@user');
 ///////////////////////////////
 Route::get('/laravel', function () { return view('welcome');});

@@ -40,7 +40,9 @@ class UsuariosController extends Controller
       $email = $request->email;
       $senha = $request->senha;
       if (Auth::attempt([ "email"=>$email, "password"=>$senha ]))
-      { return redirect(''); }
+      { return redirect('/'); } else {
+        return redirect('/entrar');
+      }
     }
 
     }
@@ -48,11 +50,13 @@ class UsuariosController extends Controller
         $email = $request->email;
         $senha = $request->senha;
         if (Auth::attempt([ "email"=>$email, "password"=>$senha ]))
-        { return redirect(''); }
+        { return redirect('/'); } else {
+          return redirect('/entrar');
+        }
     }
 
       function logout(Request $request){
       Auth::logout();
-      return redirect('');
+      return redirect('/');
       }
 }

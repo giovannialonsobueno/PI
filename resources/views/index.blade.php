@@ -72,7 +72,7 @@ $servicos = [
               @for ($i=0; $i < 5; $i++)
                 @if ($i < round($item["avaliacao"], 0, PHP_ROUND_HALF_DOWN))
                   <i>&#9733;</i>
-                @else:
+                @else
                   <i>&#9734;</i>
                 @endif
                 @endfor
