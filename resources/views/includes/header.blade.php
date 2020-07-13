@@ -6,10 +6,14 @@
         <h1><a href="/">ESTAVAGO</a></h1>
         <div class="botoes_header">
           @auth
-          <button><a href="/logout">{{ auth()->user()->nome }}</a></button>
+            <a href="/perfil" class="dropbtn">{{ auth()->user()->nome }}</a>
+            <div class="dropdown-content">
+              <a href="/perfil"><i class="fa fa-user"></i>Perfil</a>
+              <a href="/logout"><i class="fa fa-sign-out"></i>Sair</a>
+            </div>
           @endauth
           @guest
-          <button><a href="/entrar">Entrar</a></button>
+          <a href="/entrar">Entrar</a>
           @endguest
         </div>
       </div>
