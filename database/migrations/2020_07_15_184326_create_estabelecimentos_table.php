@@ -17,8 +17,8 @@ class CreateEstabelecimentosTable extends Migration
           $table->id();
           $table->string('nome');
           $table->string('endereco');
-          $table->string('tel1');
-          $table->string('tel2');
+          $table->integer('tel1');
+          $table->integer('tel2');
           $table->text('descricao');
           $table->text('fotos');
           $table->integer('numEstrelas');

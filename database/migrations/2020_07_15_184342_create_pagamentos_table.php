@@ -13,7 +13,8 @@ class CreatePagamentosTable extends Migration
      */
     public function up()
     {
-        Sche  $table->id();
+          Schema::create('pagamentos', function (Blueprint $table) {
+          $table->id();
           $table->double('valor');
           $table->integer('numParcelas');
           $table->string('status');
