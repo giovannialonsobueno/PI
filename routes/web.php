@@ -16,7 +16,9 @@ Route::get('/reservas/{id}', 'Controles@reservas')->middleware('auth');
 
 Route::get('/logout', 'UsuariosController@logout')->middleware('auth');
 
-Route::get('/entrar', 'Controles@entrar')->middleware('guest');
+Route::get('/login', 'Controles@login')->middleware('guest');
+
+Route::get('/cadastro', 'Controles@cadastro')->middleware('guest');
 
 Route::get('/cadastroHotel', 'Controles@cadastroHotel');
 

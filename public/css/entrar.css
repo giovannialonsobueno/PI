@@ -19,7 +19,7 @@ form{
 width: 100%;
 }
 
-#lightbox{
+.lightbox{
   width: 100%;
   justify-content: center;
   align-items:center;

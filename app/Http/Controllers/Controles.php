@@ -8,8 +8,6 @@ namespace App\Http\Controllers;
 
       function pesquisa(){ return view('pesquisa'); }
 
-      function login(){ return view('login'); }
-
       function produto(){ return view('produto'); }
 
       function reserva(){ return view('reserva'); }
@@ -18,7 +16,9 @@ namespace App\Http\Controllers;
 
       function Rpesq(){ return view('resultadoPesquisa'); }
 
-      function entrar(){ return view('entrar');}
+      function login(){ return view('login');}
+
+      function cadastro(){ return view('cadastro');}
 
       function cadastroHotel() {return view('cadastroHotel');}
 

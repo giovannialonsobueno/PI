@@ -13,7 +13,7 @@
             </div>
           @endauth
           @guest
-          <a href="/entrar">Entrar</a>
+            <a href="/login" class="dropbtn">Entrar</a>
           @endguest
         </div>
       </div>
