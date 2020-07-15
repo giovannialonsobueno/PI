@@ -1,3 +1,4 @@
+
 button:focus, input:focus{
   outline: none;
 }
@@ -31,34 +32,63 @@ header{
 .botoes_header{
 margin-left: auto;
 margin-right: 4.5%;
+margin-bottom: 30px;
+width: auto;
 }
 
 .header-A h1 a{
   color: white;
-  font-size: 20px;
+  font-size: 1.3rem;
   margin-left: 10px;
   text-decoration: none;
   font-family:arial;
 }
 
-.header-A a{
+.botoes_header a{
   text-transform: capitalize;
   color: inherit;
   text-decoration: none;
+  color: white;
+  padding: 5px 8px;
+  text-decoration: none;
+  border: solid 1px white;
+  border-radius: 10px;
 }
 
-.header-A button{
-  width: auto;
-  height: auto;
-  margin-left: 5px;
-  background-color: rgba(255, 0, 0, 0);
-  border: 1px solid white;
-  color: white;
-  border-radius: 8px;
-  position: relative;
-  bottom: 20px;
+.botoes_header .dropbtn {
+  width: 100%;
   font-size: 1rem;
-  padding: 5px;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  text-transform: capitalize;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  margin-top: 5px;
+}
+
+.dropdown-content a {
+  width: 100%;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content i{
+  width: 1rem;
+  color: grey;
+}
+
+.botoes_header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.botoes_header:hover .dropdown-content {
+  display: block;
 }
 
 .header-B{

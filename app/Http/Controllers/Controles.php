@@ -27,5 +27,7 @@ namespace App\Http\Controllers;
       function hotel() {return view('hotel');}
 
       function user() {return view('user');}
+
+      function perfil() {return view('perfil');}
   }
  ?>
