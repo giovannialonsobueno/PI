@@ -22,6 +22,7 @@
         @csrf
           <input type="email" name="email" placeholder="E-mail">
           <input type="password" name="senha" placeholder="Senha">
+          @error ('email')<span class="erro">Email ou senha incorretos</span>@enderror
           <button type="submit" name="entrar">Entrar</button>
         </form>
         <div class="info-rodape">
