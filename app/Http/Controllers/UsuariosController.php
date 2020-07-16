@@ -65,12 +65,22 @@ class UsuariosController extends Controller
         return redirect('/');
       }
 
-    function logout(Request $request){
-      if (Auth::check()) {
-        Auth::logout();
-        return redirect('/');
-      } else {
-        return redirect('/login');
+      function atualizarSenha(Request $request){
+        $id = auth()->user()->id;
+        $user = User::find($id);
+        $user->senha = Hash::make($request->senha);
+        $user->save();
+
+        return redirect('/perfil');
+
       }
-    }
+
+      function logout(Request $request){
+        if (Auth::check()) {
+          Auth::logout();
+          return redirect('/');
+        } else {
+          return redirect('/login');
+        }
+      }
 }

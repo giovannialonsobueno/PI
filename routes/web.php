@@ -36,5 +36,9 @@ Route::post('/login', 'UsuariosController@login');
 
 Route::post('/atualizar', "UsuariosController@atualizar");
 
+Route::post('/atualizarSenha', "UsuariosController@atualizarSenha");
+
+
+
 ///////////////////////////////
 Route::get('/laravel', function () { return view('welcome');});

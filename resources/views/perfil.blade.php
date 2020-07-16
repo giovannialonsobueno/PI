@@ -58,15 +58,15 @@
             <div class="box-cep">
 
               <div class="cep">
-                <p>Telefone fixo</p>
+                <p>Telefone</p>
                 <input type="text" name="tel" value="{{ auth()->user()->tel }}" placeholder="phone number">
               </div>
 
 
-              <div class="cep2">
+              <!-- <div class="cep2">
                 <p>Celular</p>
                 <input type="text" name="" value="" placeholder="cellphone">
-              </div>
+              </div> -->
 
             </div>
 
@@ -119,7 +119,8 @@ function fecharSenha() {
 </script>
 
 <div id="lightbox2">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/entrar.css">
+
 <div id="senha">
 
   <div class="card-login">
@@ -136,11 +137,11 @@ function fecharSenha() {
 
   <div class="formulario">
     <h3>ALTERAR SENHA</h3>
-    <form class="" action="" method="post">
-
-      <input type="email" name="" value="" placeholder="Nova Senha">
-      <input type="password" name="" value="" placeholder="Confirmar Senha">
-      <button type="button" name="button">Alterar</button>
+    <form class="" action="/atualizarSenha" method="post">
+      @csrf
+      <input type="password" name="senha" value="" placeholder="Nova Senha">
+      <input type="password" name="confSenha" value="" placeholder="Confirmar Senha">
+      <button type="submit" name="button">Alterar</button>
 
     </form>
 
