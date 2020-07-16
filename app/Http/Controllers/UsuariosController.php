@@ -53,8 +53,19 @@ class UsuariosController extends Controller
 
       }
 
-    function logout(Request $request){
-      Auth::logout();
-      return redirect('/');
-    }
+
+      function atualizarSenha(Request $request){
+        $id = auth()->user()->id;
+        $user = User::find($id);
+        $user->senha = Hash::make($request->senha);
+        $user->save();
+
+        return redirect('/perfil');
+
+      }
+
+      function logout(Request $request){
+        Auth::logout();
+        return redirect('/');
+      }
 }
