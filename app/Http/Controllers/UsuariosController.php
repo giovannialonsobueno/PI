@@ -37,6 +37,22 @@ class UsuariosController extends Controller
       return redirect('/login');}
       }
 
+      function atualizar(Request $request){
+        $id = auth()->user()->id;
+        $user = User::find($id);
+        $user->cpf = $request->cpf;
+        $user->nome = $request->nome;
+        $user->data_nasc = $request->dataNasc;
+        $user->cidade = $request->cidade;
+        $user->pais = $request->pais;
+        $user->tel = $request->tel;
+        $user->receber_info = $request->receber_info;
+        $user->save();
+
+        return redirect('/');
+
+      }
+
     function logout(Request $request){
       Auth::logout();
       return redirect('/');

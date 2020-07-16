@@ -2,8 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="{{asset('css/perfil.css')}}">
     <link rel="stylesheet" href="/css/footer.css">
+
     <title></title>
   </head>
   <body>
@@ -16,40 +17,40 @@
 
       </div>
 
-      <div class="img-perfil">
-        <img src="img\perfil.png" alt="">
-      </div>
-
-
 
       <section class="box-cad-hotel">
         <div class="cad-info-hotel">
 
-          <form class="" action="index.html" method="post" enctype="multipart/form-data">
+          <div class="img-perfil">
+            <img src="img\perfil.png" alt="">
+          </div>
+
+          <form class="" action="/atualizar" method="post" enctype="multipart/form-data">
+          @csrf
             <p>Nome</p>
-            <input type="text" name="" value="" placeholder="name">
+            <input type="text" name="nome" value="{{ auth()->user()->nome }}" placeholder="">
 
             <p>E-mail</p>
-            <input type="text" name="" value="" placeholder="email">
+            <input type="text" name="email" value="{{ auth()->user()->email }}" placeholder="">
 
             <p>CPF</p>
-            <input type="text" name="" value="" placeholder="cpf">
+            <input type="text" name="cpf" value="{{ auth()->user()->cpf }}" placeholder="cpf">
 
             <div class="box-cep">
 
               <div class="cep">
                 <p>Data de Nascimento</p>
-                <input type="text" name="" value="" placeholder="xx/xx/xxxx">
+                <input type="date" name="dataNasc" value="{{ auth()->user()->data_nasc }}" placeholder="xx/xx/xxxx">
               </div>
 
               <div class="cep">
                 <p>Cidade</p>
-                <input type="text" name="" value="" placeholder="city">
+                <input type="text" name="cidade" value="{{ auth()->user()->cidade }}" placeholder="city">
               </div>
 
               <div class="cep2">
                 <p>País</p>
-                <input type="text" name="" value="" placeholder="country">
+                <input type="text" name="pais" value="{{ auth()->user()->pais }}" placeholder="country">
               </div>
 
             </div>
@@ -58,7 +59,7 @@
 
               <div class="cep">
                 <p>Telefone fixo</p>
-                <input type="text" name="" value="" placeholder="phone number">
+                <input type="text" name="tel" value="{{ auth()->user()->tel }}" placeholder="phone number">
               </div>
 
 
@@ -70,7 +71,7 @@
             </div>
 
             <div class="check-boxx">
-              <input type="checkbox" name="" value="">
+              <input type="checkbox" name="receber_info" value="1" >
               <p>Deseja receber informações e promoções por email?</p>
             </div>
 
@@ -80,7 +81,7 @@
 
 
 
-            <button type="button" name="button">Salvar Alterações</button>
+            <button type="submit" name="button">Salvar Alterações</button>
 
           </form>
 

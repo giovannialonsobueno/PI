@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
           $table->integer('cpf')->nullable();
           $table->string('cidade')->nullable();
           $table->string('pais')->nullable();
-          $table->datetime('data_nasc')->nullable();
+          $table->date('data_nasc')->nullable();
           $table->integer('receber_info')->nullable();
           $table->integer('amd');
         });
