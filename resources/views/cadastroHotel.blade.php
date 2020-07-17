@@ -18,34 +18,35 @@
       <section class="box-cad-hotel">
         <div class="cad-info-hotel">
 
-          <form class="" action="index.html" method="post" enctype="multipart/form-data">
+          <form action="/" method="post" enctype="multipart/form-data">
+            @csrf
             <p>Nome do Hotel</p>
-            <input type="text" name="" value="" placeholder="name">
+            <input required type="text" name="nome" placeholder="name">
 
             <p>Endereço</p>
-            <input type="text" name="" value="" placeholder="adress">
+            <input required type="text" name="endereco" value="" placeholder="adress">
 
             <p>E-mail</p>
-            <input type="text" name="" value="" placeholder="email">
+            <input required type="email" name="" value="" placeholder="email">
 
             <p>Cnpj</p>
-            <input type="text" name="" value="" placeholder="cnpj">
+            <input required type="text" name="" value="" placeholder="cnpj">
 
             <div class="box-cep">
 
               <div class="cep">
                 <p>Cep</p>
-                <input type="text" name="" value="" placeholder="zip code">
+                <input required type="text" name="" value="" placeholder="zip code">
               </div>
 
               <div class="cep">
                 <p>Cidade</p>
-                <input type="text" name="" value="" placeholder="city">
+                <input required type="text" name="" value="" placeholder="city">
               </div>
 
               <div class="cep2">
                 <p>Estado</p>
-                <input type="text" name="" value="" placeholder="country">
+                <input required type="text" name="" value="" placeholder="country">
               </div>
 
             </div>
@@ -54,17 +55,17 @@
 
               <div class="cep">
                 <p>Telefone 1</p>
-                <input type="text" name="" value="" placeholder="phone number 1">
+                <input required type="text" name="" value="" placeholder="phone number 1">
               </div>
 
               <div class="cep">
                 <p>Telefone 2</p>
-                <input type="text" name="" value="" placeholder="phone number 2">
+                <input required type="text" name="" value="" placeholder="phone number 2">
               </div>
 
               <div class="cep2">
                 <p>Celular</p>
-                <input type="text" name="" value="" placeholder="cellphone">
+                <input required type="text" name="" value="" placeholder="cellphone">
               </div>
 
             </div>

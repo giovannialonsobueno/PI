@@ -38,7 +38,7 @@ Route::post('/atualizar', "UsuariosController@atualizar");
 
 Route::post('/atualizarSenha', "UsuariosController@atualizarSenha");
 
-
+Route::post('/cadastroHotel', 'EstabelecimentosController@cadastroHotel');
 
 ///////////////////////////////
 Route::get('/laravel', function () { return view('welcome');});
