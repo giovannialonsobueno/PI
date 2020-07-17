@@ -15,7 +15,7 @@ class CreateAvaliacoesTable extends Migration
     {
         Schema::create('avaliacoes', function (Blueprint $table) {
           $table->id();
-          $table->datetime('data_avaliacao');
+          $table->date('data_avaliacao');
           $table->string('nomeEstablecimento');
           $table->foreignId('usuarios_id')->references('id')->on('users');
           $table->timestamps();

@@ -4,21 +4,27 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="{{asset('css/perfil.css')}}">
     <link rel="stylesheet" href="/css/footer.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+
     <title></title>
   </head>
   <body>
     @include('includes.header')
+
     <main>
+
       <div class="title">
         <h2>Perfil</h2>
+
       </div>
+
+
       <section class="box-cad-hotel">
         <div class="cad-info-hotel">
+
           <div class="img-perfil">
             <img src="img\perfil.png" alt="">
           </div>
+
           <form class="" action="/atualizar" method="post" enctype="multipart/form-data">
           @csrf
             <p>Nome</p>

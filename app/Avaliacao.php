@@ -7,4 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 class Avaliacao extends Model
 {
     protected $table = "avaliacoes";
+
+    public function estabelecimento(){
+      return $this->hasMany('App\Estabelecimento');
+    }
+
+
+    public function user(){
+      return $this->belongsTo('App\User');
+    }
 }
