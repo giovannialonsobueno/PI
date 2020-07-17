@@ -15,7 +15,7 @@ class CreateCancelamentosTable extends Migration
     {
         Schema::create('cancelamentos', function (Blueprint $table) {
           $table->id();
-          $table->dateTime('dataCancelamento');
+          $table->date('dataCancelamento');
           $table->text('motivo');
           $table->timestamps();
         });
