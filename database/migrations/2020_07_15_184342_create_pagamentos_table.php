@@ -11,13 +11,19 @@ class CreatePagamentosTable extends Migration
      *
      * @return void
      */
+     /*
+      alterações feitas:
+      coluna 'status' alterada para tinyinteger (era string)
+     delete essas mensagens no próximo commit
+     ou atualize-as caso haja mais alguma alteração nesta migration
+     */
     public function up()
     {
           Schema::create('pagamentos', function (Blueprint $table) {
           $table->id();
           $table->double('valor');
           $table->integer('numParcelas');
-          $table->string('status');
+          $table->tinyInteger('status');
           $table->timestamps();
         });
     }
