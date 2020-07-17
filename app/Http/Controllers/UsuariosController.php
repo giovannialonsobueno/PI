@@ -42,6 +42,7 @@ class UsuariosController extends Controller
         $user = User::find($id);
         $user->cpf = $request->cpf;
         $user->nome = $request->nome;
+        $user->email = $request->email;
         $user->data_nasc = $request->dataNasc;
         $user->cidade = $request->cidade;
         $user->pais = $request->pais;
