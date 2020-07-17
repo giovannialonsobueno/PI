@@ -48,9 +48,7 @@ class UsuariosController extends Controller
         }
         $validacoes = $request->validate([
           'nome' => 'required|min:10',
-          'email' => 'required|email|unique:users',
-          'senha' => 'required|lte:confirmar|min:6',
-          'tel' => ''
+          'email' => 'required|email|unique:users'
         ]);
         $id = auth()->user()->id;
         $user = User::find($id);
