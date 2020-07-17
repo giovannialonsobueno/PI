@@ -45,15 +45,11 @@ class UsuariosController extends Controller
       function atualizar(Request $request){
         if (!Auth::check()) {
           return redirect('/login');
-
         }
-
         $validacoes = $request->validate([
           'nome' => 'required|min:10',
-          'email' => 'required|email|unique:users',
+          'email' => 'required|email'
         ]);
-
-
         $id = auth()->user()->id;
         $user = User::find($id);
         $user->cpf = $request->cpf;
