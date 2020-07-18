@@ -50,9 +50,7 @@ class EstabelecimentosController extends Controller
 
     $hotel->numEstrelas = $request->numEstrelas;
 
-    $hotel->avaliacoes_id = 1;
-
     $hotel->save();
-
+    return "ok";
   }
 }

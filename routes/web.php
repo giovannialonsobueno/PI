@@ -22,7 +22,7 @@ Route::get('/cadastro', 'Controles@cadastro');
 
 Route::get('/cadastroHotel', 'Controles@cadastroHotel');
 
-Route::get('/cadastroQuartos', "Controles@cadastroQuarto");
+Route::get('/quartos', "QuartosController@mostrarDados");
 
 Route::get('/homeAdmin', 'Controles@homeAdmin');
 

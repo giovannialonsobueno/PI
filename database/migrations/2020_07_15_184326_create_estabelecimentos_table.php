@@ -43,7 +43,6 @@ class CreateEstabelecimentosTable extends Migration
           $table->tinyInteger('cancelamentoGratuito')->nullable();
           $table->text('fotos');
           $table->integer('numEstrelas');
-          $table->foreignId('avaliacoes_id')->references('id')->on('avaliacoes');
           $table->timestamps();
         });
     }

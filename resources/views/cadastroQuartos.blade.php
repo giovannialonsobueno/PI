@@ -23,6 +23,11 @@
 
 
           <form class="" action="index.html" method="post" enctype="multipart/form-data">
+            <select name="">
+            @foreach ($dados as $hoteis)
+              <option value="{{$hoteis->id}}">{{$hoteis->nome}}</option>
+            @endforeach
+            </select>
             <p>Nome quarto</p>
             <input type="text" name="" value="" placeholder="room name">
 

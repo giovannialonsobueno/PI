@@ -77,32 +77,32 @@
             <div class="box-check-box">
 
               <div class="check-box">
-                <input type="checkbox" name="wifi" value="">
+                <input type="checkbox" name="wifi" value="1">
                 <p>wi-fi</p>
               </div>
 
               <div class="check-box">
-                <input type="checkbox" name="cafeDaManha" value="">
+                <input type="checkbox" name="cafeDaManha" value="1">
                 <p>Café da manha</p>
               </div>
 
               <div class="check-box">
-                <input type="checkbox" name="piscina" value="">
+                <input type="checkbox" name="piscina" value="1">
                 <p>Piscina</p>
               </div>
 
               <div class="check-box">
-                <input type="checkbox" name="sauna" value="">
+                <input type="checkbox" name="sauna" value="1">
                 <p>Sauna</p>
               </div>
 
               <div class="check-box">
-                <input type="checkbox" name="permitePets" value="">
+                <input type="checkbox" name="permitePets" value="1">
                 <p>Permite Pets</p>
               </div>
 
               <div class="check-box">
-                <input type="checkbox" name="" value="">
+                <input type="checkbox" name="" value="1">
                 <p>Cancelamento Gratuito</p>
               </div>
 

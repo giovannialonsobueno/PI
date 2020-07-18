@@ -13,8 +13,8 @@ class CreateUsersTable extends Migration
      */
   /*
    alterações feitas:
-  coluna 'adm' agora é tiny integer (era integer) e não nulo
-  coluna 'receber_info' agora é tiny integer
+  coluna 'adm' agora tem como valor default (0).
+  caso o valor seja 1, o usuário é um administrador (nescessário mudar manualmente o atributo)
   delete essas mensagens no próximo commit
   ou atualize-as caso haja mais alguma alteração nesta migration
   */
@@ -32,7 +32,7 @@ class CreateUsersTable extends Migration
           $table->string('pais')->nullable();
           $table->date('data_nasc')->nullable();
           $table->tinyInteger('receber_info')->nullable();
-          $table->tinyInteger('adm');
+          $table->tinyInteger('adm')->default(0);
         });
     }
 
