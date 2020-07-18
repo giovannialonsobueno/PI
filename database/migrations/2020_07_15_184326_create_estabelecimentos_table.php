@@ -35,12 +35,12 @@ class CreateEstabelecimentosTable extends Migration
           $table->biginteger('tel2');
           $table->biginteger('celular');
           $table->text('descricao');
-          $table->tinyInteger('wifi');
-          $table->tinyInteger('cafeDaManha');
-          $table->tinyInteger('piscina');
-          $table->tinyInteger('sauna');
-          $table->tinyInteger('permitePets');
-          $table->tinyInteger('cancelamentoGratuito');
+          $table->tinyInteger('wifi')->nullable();
+          $table->tinyInteger('cafeDaManha')->nullable();
+          $table->tinyInteger('piscina')->nullable();
+          $table->tinyInteger('sauna')->nullable();
+          $table->tinyInteger('permitePets')->nullable();
+          $table->tinyInteger('cancelamentoGratuito')->nullable();
           $table->text('fotos');
           $table->integer('numEstrelas');
           $table->foreignId('avaliacoes_id')->references('id')->on('avaliacoes');

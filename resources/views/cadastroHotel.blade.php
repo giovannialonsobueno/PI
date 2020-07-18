@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/headerAdmin.css">
     <link rel="stylesheet" href="css/cadastrarHotel.css">
+    <script src="https://kit.fontawesome.com/837f81fff7.js" crossorigin="anonymous"></script>
     <title></title>
   </head>
   <body>
@@ -18,35 +19,35 @@
       <section class="box-cad-hotel">
         <div class="cad-info-hotel">
 
-          <form action="/" method="post" enctype="multipart/form-data">
+          <form action="/cadastroHotel" method="post" enctype="multipart/form-data">
             @csrf
             <p>Nome do Hotel</p>
             <input required type="text" name="nome" placeholder="name">
 
             <p>Endereço</p>
-            <input required type="text" name="endereco" value="" placeholder="adress">
+            <input required type="text" name="endereco" placeholder="adress">
 
             <p>E-mail</p>
-            <input required type="email" name="" value="" placeholder="email">
+            <input required type="email" name="email" placeholder="email">
 
             <p>Cnpj</p>
-            <input required type="text" name="" value="" placeholder="cnpj">
+            <input required type="number" name="cnpj" placeholder="cnpj">
 
             <div class="box-cep">
 
               <div class="cep">
                 <p>Cep</p>
-                <input required type="text" name="" value="" placeholder="zip code">
+                <input required type="number" name="cep" placeholder="zip code">
               </div>
 
               <div class="cep">
                 <p>Cidade</p>
-                <input required type="text" name="" value="" placeholder="city">
+                <input required type="text" name="cidade" placeholder="city">
               </div>
 
               <div class="cep2">
                 <p>Estado</p>
-                <input required type="text" name="" value="" placeholder="country">
+                <input required type="text" name="estado" placeholder="country">
               </div>
 
             </div>
@@ -55,67 +56,93 @@
 
               <div class="cep">
                 <p>Telefone 1</p>
-                <input required type="text" name="" value="" placeholder="phone number 1">
+                <input required type="text" name="tel1" placeholder="phone number 1">
               </div>
 
               <div class="cep">
                 <p>Telefone 2</p>
-                <input required type="text" name="" value="" placeholder="phone number 2">
+                <input required type="text" name="tel2" placeholder="phone number 2">
               </div>
 
               <div class="cep2">
                 <p>Celular</p>
-                <input required type="text" name="" value="" placeholder="cellphone">
+                <input required type="text" name="celular" placeholder="cellphone">
               </div>
 
             </div>
 
             <p>Descrição</p>
-            <textarea name="name" rows="8" cols="80" placeholder="description"></textarea>
+            <textarea name="descricao" rows="8" cols="80" placeholder="description"></textarea>
 
             <div class="box-check-box">
 
               <div class="check-box">
-                <input type="checkbox" name="" value="">
+                <input type="checkbox" name="wifi" value="">
                 <p>wi-fi</p>
               </div>
 
               <div class="check-box">
-                <input type="checkbox" name="" value="">
+                <input type="checkbox" name="cafeDaManha" value="">
                 <p>Café da manha</p>
               </div>
 
               <div class="check-box">
-                <input type="checkbox" name="" value="">
+                <input type="checkbox" name="piscina" value="">
                 <p>Piscina</p>
               </div>
 
               <div class="check-box">
-                <input type="checkbox" name="" value="">
+                <input type="checkbox" name="sauna" value="">
                 <p>Sauna</p>
               </div>
 
               <div class="check-box">
-                <input type="checkbox" name="" value="">
+                <input type="checkbox" name="permitePets" value="">
                 <p>Permite Pets</p>
               </div>
 
               <div class="check-box">
-                <input type="checkbox" name="" value="">
+                <input type="checkbox" name="cancelamentoGratuito" value="">
                 <p>Cancelamento gratuito</p>
               </div>
 
+            <div class="star-rating">
+              <input type="radio" name="numEstrelas" value="1">
+              <i class="fas fa-star"></i>
             </div>
 
+            <div class="star-rating">
+              <input type="radio" name="numEstrelas" value="2">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+
+            <div class="star-rating">
+              <input type="radio" name="numEstrelas" value="3">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
+              </i>
+            </div>
+
+            <div class="star-rating">
+              <input type="radio" name="numEstrelas" value="4">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
+              </i><i class="fas fa-star"></i>
+            </div>
+
+            <div class="star-rating">
+              <input type="radio" name="numEstrelas" value="5">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
+              </i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
 
             <div class="upload-image">
               <p>Selecionar Imagens</p>
               <input type="file" id="myFile" multiple size="50" onchange="myFunction()" >
               <p id="demo"></p>
+            </div>
 
             </div>
 
-            <button type="button" name="button">Cadastrar</button>
+            <button type="submit" name="button">Cadastrar</button>
 
           </form>
 
