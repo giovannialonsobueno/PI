@@ -107,44 +107,13 @@
               </div>
 
               <div class="check-box">
-                <select class="" name="">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-
+                <select name="numEstrelas">
+                @for ($i=1; $i <= 5; $i++)
+                  <option value="{{$i}}">{{$i}}</option>
+                @endfor
                 </select>
-                <p>Numero de Estrelas</p>
+                <p>Classificação em Estrelas<i class="fas fa-star"></i></p>
               </div>
-
-            <div class="star-rating">
-              <input type="radio" name="numEstrelas" value="1">
-              <i class="fas fa-star"></i>
-            </div>
-
-            <div class="star-rating">
-              <input type="radio" name="numEstrelas" value="2">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-
-            <div class="star-rating">
-              <input type="radio" name="numEstrelas" value="3">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
-              </i>
-            </div>
-
-            <div class="star-rating">
-              <input type="radio" name="numEstrelas" value="4">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
-              </i><i class="fas fa-star"></i>
-            </div>
-
-            <div class="star-rating">
-              <input type="radio" name="numEstrelas" value="5">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
-              </i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
 
             <div class="upload-image">
               <p>Selecionar Imagens</p>
