@@ -82,7 +82,7 @@
 
               <div class="check-box">
                 <input type="checkbox" name="" value="">
-                <p>Café da manha</p>
+                <p>Café da Manha</p>
               </div>
 
               <div class="check-box">
@@ -102,7 +102,19 @@
 
               <div class="check-box">
                 <input type="checkbox" name="" value="">
-                <p>Cancelamento gratuito</p>
+                <p>Cancelamento Gratuito</p>
+              </div>
+
+              <div class="check-box">
+                <select class="" name="">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+
+                </select>
+                <p>Numero de Estrelas</p>
               </div>
 
             </div>
