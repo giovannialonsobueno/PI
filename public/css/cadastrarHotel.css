@@ -9,15 +9,19 @@ body{
   width: 100%;
   height: 100%;
   /* background-color: #def5ff; */
+  background-image: url('/img/BG3.jpg');
+  background-position: left;
+  background-repeat:repeat-x;
 }
 
 main{
   width: 90%;
   margin: 0 auto;
+
 }
 
 .title{
-  width: 90%;
+  width: 70%;
   height: 50px;
   background-color: #c94f63;
   border: 1px solid #c94f63;
@@ -39,11 +43,16 @@ main{
   width: 90%;
   margin: auto;
   margin-bottom: 50px;
+
 }
 
 .cad-info-hotel{
-  width: 70%;
+  width: 77%;
   margin: auto;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 1px 8px 16px rgba(68,68,68,0.6);
+  background-color: white;
 }
 
 .cad-info-hotel p{
@@ -93,7 +102,7 @@ main{
 }
 
 .check-box{
-  width: 25%;
+  width: 30%;
   height: 20px;
   display: flex;
   align-items: center;
@@ -107,6 +116,15 @@ main{
 .check-box p{
   font-size: 15px;
   margin-bottom: 23px;
+}
+
+.check-box select{
+  width: 45px;
+  height: 25px;
+
+  border-radius: 5px;
+
+  text-align: center;
 }
 
 
