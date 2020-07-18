@@ -63,6 +63,11 @@ namespace App\Http\Controllers;
       return view('cadastroHotel');
       }
 
+      function cadastroQuarto(){
+
+          return view('cadastroQuartos');
+      }
+
       function homeAdmin()
       {
       return view('homeAdmin');
