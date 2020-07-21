@@ -15,7 +15,7 @@ class UsuariosController extends Controller
       return redirect('/perfil');
     }
     $validacoes = $request->validate([
-      'nome' => 'required|min:10',
+      'nome' => 'required|min:6',
       'email' => 'required|email|unique:users',
       'senha' => 'required|lte:confirmar|min:6'
     ]);

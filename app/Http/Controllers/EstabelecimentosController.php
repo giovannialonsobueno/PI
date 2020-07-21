@@ -9,10 +9,33 @@ class EstabelecimentosController extends Controller
 {
   function cadastroHotel(Request $request)
   {
+
     $validacoes = $request->validate([
-      "nome" => "required|min:10",
-      "email" => "required|unique",
-      "cnpj" => "required|"
+      "nome" => "required",
+
+      "email" => "required|unique:estabelecimentos",
+
+      "cnpj" => "required|size:14",
+
+      "endereco" => "required",
+
+      "cep" => "required|size:8",
+
+      "cidade" => "required",
+
+      "estado" => "required",
+
+      "tel1" => "required|between:12,14",
+
+      "tel2"=>"required|between:12,14",
+
+      "celular"=>"required|between:13,15",
+
+      "descricao"=>"required",
+
+      "numEstrelas"=>"required|integer|between:1,5",
+
+      "fotos"=>"required"
     ]);
     $hotel = new Estabelecimento;
 
@@ -50,11 +73,12 @@ class EstabelecimentosController extends Controller
 
     $hotel->cancelamentoGratuito = $request->cancelamentoGratuito;
 
-    $hotel->fotos = 1 ;//$request->fotos;
+    $hotel->fotos = $request->fotos;
 
     $hotel->numEstrelas = $request->numEstrelas;
 
     $hotel->save();
-    return "ok";
+    $id = $hotel->id;
+    return redirect('/cadastroQuartos/'.$id);
   }
 }

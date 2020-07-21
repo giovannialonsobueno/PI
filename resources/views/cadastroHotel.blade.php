@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="css/headerAdmin.css">
     <link rel="stylesheet" href="css/cadastrarHotel.css">
     <script src="https://kit.fontawesome.com/837f81fff7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
     <title></title>
   </head>
   <body>
@@ -22,58 +24,82 @@
           <form action="/cadastroHotel" method="post" enctype="multipart/form-data">
             @csrf
             <p>Nome do Hotel</p>
-            <input required type="text" name="nome" placeholder="name">
-
+            <input  type="text" name="nome" placeholder="name">
+            @error ('nome')
+              <span class="erro">Coloque um nome no hotel</span>
+            @enderror
             <p>Endereço</p>
-            <input required type="text" name="endereco" placeholder="adress">
-
+            <input  type="text" name="endereco" placeholder="adress">
+            @error ('endereco')
+              <span class="erro">Coloque um endereco no hotel</span>
+            @enderror
             <p>E-mail</p>
-            <input required type="email" name="email" placeholder="email">
-
+            <input  type="email" name="email" placeholder="email">
+            @error ('email')
+              <span class="erro">Email inválido ou já em uso</span>
+            @enderror
             <p>Cnpj</p>
-            <input required type="number" name="cnpj" placeholder="cnpj">
-
+            <input  type="number" name="cnpj" placeholder="cnpj">
+            @error ('cnpj')
+              <span class="erro">Forneça o cnpj do responsável legal do hotel</span>
+            @enderror
             <div class="box-cep">
 
               <div class="cep">
                 <p>Cep</p>
-                <input required type="number" name="cep" placeholder="zip code">
+                <input  type="number" name="cep" placeholder="zip code">
+                @error ('cep')
+                  <span class="erro">forneça um cep válido</span>
+                @enderror
               </div>
-
               <div class="cep">
                 <p>Cidade</p>
-                <input required type="text" name="cidade" placeholder="city">
+                <input  type="text" name="cidade" placeholder="city">
+                @error ('cidade')
+                  <span class="erro">dê a cidade do local</span>
+                @enderror
               </div>
 
               <div class="cep2">
                 <p>Estado</p>
-                <input required type="text" name="estado" placeholder="country">
+                <input  type="text" name="estado" placeholder="country">
+                @error ('estado')
+                  <span class="erro">dê o estado do local</span>
+                @enderror
               </div>
-
             </div>
 
             <div class="box-cep">
 
               <div class="cep">
                 <p>Telefone 1</p>
-                <input required type="text" name="tel1" placeholder="phone number 1">
+                <input  type="text" name="tel1" placeholder="phone number 1">
               </div>
-
+              @error ('tel1')
+                <span class="erro">forneça um telefone válido</span>
+              @enderror
               <div class="cep">
                 <p>Telefone 2</p>
-                <input required type="text" name="tel2" placeholder="phone number 2">
+                <input  type="text" name="tel2" placeholder="phone number 2">
+                @error ('tel2')
+                  <span class="erro">forneça um telefone valido</span>
+                @enderror
               </div>
 
               <div class="cep2">
                 <p>Celular</p>
-                <input required type="text" name="celular" placeholder="cellphone">
+                <input  type="text" name="celular" placeholder="cellphone">
               </div>
-
+              @error ('celular')
+                <span class="erro">forneça um celular válido</span>
+              @enderror
             </div>
 
             <p>Descrição</p>
             <textarea name="descricao" rows="8" cols="80" placeholder="description"></textarea>
-
+            @error ('descricao')
+              <span class="erro">Dê uma descrição ao seu hotel</span>
+            @enderror
             <div class="box-check-box">
 
               <div class="check-box">
@@ -108,17 +134,24 @@
 
               <div class="check-box">
                 <select name="numEstrelas">
+                  <option selected disabled>Estrelas</option>
                 @for ($i=1; $i <= 5; $i++)
                   <option value="{{$i}}">{{$i}}</option>
                 @endfor
                 </select>
                 <p>Classificação em Estrelas<i class="fas fa-star"></i></p>
               </div>
+              @error ('numEstrelas')
+                <span class="erro"></span>
+              @enderror
 
             <div class="upload-image">
               <p>Selecionar Imagens</p>
-              <input type="file" id="myFile" multiple size="50" onchange="myFunction()" >
+              <input type="file" name="fotos" id="myFile" multiple size="50" onchange="myFunction()" >
               <p id="demo"></p>
+              @error ('fotos')
+                <span class="erro">Forneça ao mínimo uma foto para o hotel</span>
+              @enderror
             </div>
 
             </div>
