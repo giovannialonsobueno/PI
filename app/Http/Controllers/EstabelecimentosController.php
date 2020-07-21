@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Estabelecimento;
+use App\Imagem;
 
 class EstabelecimentosController extends Controller
 {
@@ -78,7 +79,17 @@ class EstabelecimentosController extends Controller
     $hotel->numEstrelas = $request->numEstrelas;
 
     $hotel->save();
-    $id = $hotel->id;
+      $id = $hotel->id;
+        for($i=0; $i<count($request->allFiles()['fotos']); $i++){
+          $file = $request->allFiles()['fotos'][$i];
+
+          $imagem = new imagem();
+
+          $imagem->estabelecimentos_id = $hotel->id;
+          $imagem->caminho = $file->store('imagensHotel');
+          $imagem->save();
+          unset($imagem);
+        }
     return redirect('/cadastroQuartos/'.$id);
   }
 }

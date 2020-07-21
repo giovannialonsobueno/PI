@@ -147,7 +147,7 @@
 
             <div class="upload-image">
               <p>Selecionar Imagens</p>
-              <input type="file" name="fotos" id="myFile" multiple size="50" onchange="myFunction()" >
+              <input type="file" id="myFile" multiple size="50" name="fotos[]" onchange="myFunction()" >
               <p id="demo"></p>
               @error ('fotos')
                 <span class="erro">Forneça ao mínimo uma foto para o hotel</span>
