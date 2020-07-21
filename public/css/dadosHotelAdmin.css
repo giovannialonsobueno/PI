@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  /* background-color: #def5ff; */
+}
+
+main{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.box-info-hotel{
+  width: 70%;
+  margin: auto;
+  background-color: white;
+  padding: 50px;
+  margin-top: 50px;
+  border-radius: 20px;
+  box-shadow: 1px 8px 16px rgba(68,68,68,0.6);
+  margin-bottom: 50px;
+}
+
+.title{
+  width: 70%;
+  height: 50px;
+  background-color: #c94f63;
+  border: 1px solid #c94f63;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 13px;
+}
+
+.title h2{
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 19px;
+}
+
+.card-info{
+  width: 100%;
+
+  display: block;
+
+}
+
+.titulo{
+  display: flex;
+  width: 100%;
+  align-items:
+
+}
+
+.titulo button{
+  width: 130px;
+  height: 40px;
+  border: none;
+  background-color: #0085a8;
+  color: white;
+  border-radius: 15px;
+  font-size: 16px;
+  margin-left: auto;
+}
+
+.img img{
+  width: 300px;
+  height: 250px;
+  margin-right: 20px;
+
+}
+
+.info h1, p{
+  margin: 0;
+  color: grey;
+  margin-top: 5px;
+
+}
+
+.info h4{
+  color: green;
+  margin: 0px;
+  font-family: Montserrat;
+}
+
+.card-reserva p{
+  margin-bottom: 10px;
+  font-family: Montserrat;
+  color: grey;
+
+}
+
+.card-reserva span{
+  font-weight: bolder;
+
+}
+
+span{
+  color: black;
+  font-weight: bold;
+}
+
+.exibir-fotos{
+  width: 100%;
+
+
+  margin-top: 30px;
+}
+
+.exibir-fotos h2{
+  color: grey;
+}
+
+.box-fotos{
+  display: flex;
+  width: 100%;
+}
+
+.card-fotos{
+  width: 30%;;
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: 1px 8px 16px rgba(68,68,68,0.6);
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.card-fotos img{
+  width: 100%;
+  border-radius: 15px ;
+}
+
+.card-fotos a{
+  text-decoration: none;
+}
+
+.card-fotos p{
+  color: red;
+  text-align: center;
+}
