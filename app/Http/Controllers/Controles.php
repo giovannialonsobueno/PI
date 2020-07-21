@@ -54,7 +54,8 @@ namespace App\Http\Controllers;
       }
 
       function perfil() {
-        if (Auth::check()) {return view('perfil');}
+        if (Auth::check())
+        {return view('perfil',["_ID"=>$id]);}
         else { return redirect('login');}
       }
 
@@ -63,9 +64,14 @@ namespace App\Http\Controllers;
       return view('cadastroHotel');
       }
 
-      function quartos(){
-
-          return view('cadastroQuartos');
+      function cadastroQuartos($id){
+      if (Auth::check()) {
+      if (auth()->user()->adm = 1) {
+        return view('cadastroQuartos',["_ID"=>$id]);
+      }
+        } else {
+          return redirect('/');
+        }
       }
 
       function homeAdmin()

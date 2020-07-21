@@ -11,6 +11,24 @@ class EstabelecimentosSeeder extends Seeder
      */
     public function run()
     {
-        //
+      DB::table('EstabelecimentosSeeder')->insert([
+          'nome'=>'Saraiva'
+      ]);
+
+      DB::table('EstabelecimentosSeeder')->insert([
+          'nome'=>'Saraiva'
+      ]);
+
+      DB::table('EstabelecimentosSeeder')->insert([
+          'nome'=>'Saraiva'
+      ]);
+
+      DB::table('EstabelecimentosSeeder')->insert([
+          'nome'=>'Saraiva'
+      ]);
+
+      DB::table('EstabelecimentosSeeder')->insert([
+          'nome'=>'Saraiva'
+      ]);
     }
 }

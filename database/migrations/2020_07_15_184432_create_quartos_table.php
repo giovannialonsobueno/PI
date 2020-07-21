@@ -20,7 +20,7 @@ class CreateQuartosTable extends Migration
           $table->integer('numCamasCasal');
           $table->double('valorDiaria');
           $table->text('descricao');
-          $table->text('fotos');
+          $table->string('fotos');
           $table->foreignId('estabelecimentos_id')->references('id')->on('estabelecimentos');
           $table->timestamps();
         });

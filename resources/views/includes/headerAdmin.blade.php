@@ -11,7 +11,7 @@
     <header>
       <div class="header-A">
         <a href="/homeAdmin">
-         <img src="img/logo.png" alt=""></a>
+         <img src="/img/logo.png" alt=""></a>
         <h1>ESTA VAGO</h1>
 
         <div class="nomeUser">
