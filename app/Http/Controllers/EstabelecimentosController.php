@@ -4,16 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Estabelecimento;
+use App\Imagem;
 
 class EstabelecimentosController extends Controller
 {
   function cadastroHotel(Request $request)
   {
-    $validacoes = $request->validate([
-      "nome" => "required|min:10",
-      "email" => "required|unique",
-      "cnpj" => "required|"
-    ]);
+    // $validacoes = $request->validate([
+    //   "nome" => "required|min:10",
+    //   "email" => "required|unique",
+    //   "cnpj" => "required|"
+    // ]);
     $hotel = new Estabelecimento;
 
     $hotel->nome = $request->nome;

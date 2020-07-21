@@ -117,7 +117,7 @@
 
             <div class="upload-image">
               <p>Selecionar Imagens</p>
-              <input type="file" id="myFile" multiple size="50" onchange="myFunction()" >
+              <input type="file" id="myFile" multiple size="50" name="fotos[]" onchange="myFunction()" >
               <p id="demo"></p>
             </div>
 
