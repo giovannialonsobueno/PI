@@ -41,7 +41,7 @@ class CreateEstabelecimentosTable extends Migration
           $table->tinyInteger('sauna')->nullable();
           $table->tinyInteger('permitePets')->nullable();
           $table->tinyInteger('cancelamentoGratuito')->nullable();
-          $table->text('fotos');
+        
           $table->integer('numEstrelas');
           $table->timestamps();
         });

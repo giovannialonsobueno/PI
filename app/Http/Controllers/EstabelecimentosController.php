@@ -50,11 +50,26 @@ class EstabelecimentosController extends Controller
 
     $hotel->cancelamentoGratuito = $request->cancelamentoGratuito;
 
-    $hotel->fotos = 1 ;//$request->fotos;
 
     $hotel->numEstrelas = $request->numEstrelas;
 
     $hotel->save();
+
+        for($i=0; $i<count($request->allFiles()['fotos']); $i++){
+          $file = $request->allFiles()['fotos'][$i];
+
+          $imagem = new imagem();
+
+          $imagem->estabelecimentos_id = $hotel->id;
+          $imagem->caminho = $file->store('imagensHotel');
+          $imagem->save();
+          unset($imagem);
+        }
+
+
+
+
+
     return "ok";
   }
 }

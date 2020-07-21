@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Estabelecimento extends Model
 {
   public function avaliacoes(){
-    return $this->belongsTo('App\Avaliacoes');
+    return $this->hasMany('App\Avaliacoes');
   }
 
 

@@ -9,7 +9,7 @@ class Avaliacao extends Model
     protected $table = "avaliacoes";
 
     public function estabelecimento(){
-      return $this->hasMany('App\Estabelecimento');
+      return $this->belongsTo('App\Estabelecimento');
     }
 
 
