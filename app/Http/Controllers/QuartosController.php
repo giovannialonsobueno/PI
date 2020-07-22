@@ -8,6 +8,11 @@ use App\Estabelecimento;
 use Illuminate\Http\Storage;
 class QuartosController extends Controller
 {
+  function quartosAdmin($id)
+  {
+    $hotel = Estabelecimento::find($id);
+    return view('/quartosAdmin',["_ID"=>$id], compact('hotel'));
+  }
 
   function cadastrarQuarto(Request $request){
 

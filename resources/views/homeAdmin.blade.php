@@ -25,7 +25,7 @@
         </div>
 
         <div class="Card-opt">
-          <a href="/hotel">
+          <a href="/hotelAdmin">
           <img src="icon-img/hoteis.png" alt="">
           <h2>Hoteis</h2>
           </a>

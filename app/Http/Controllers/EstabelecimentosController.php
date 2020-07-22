@@ -8,6 +8,17 @@ use App\Imagem;
 
 class EstabelecimentosController extends Controller
 {
+  function hotelAdmin()
+  {
+    $hoteis = Estabelecimento::all();
+    return view('hotelAdmin', compact('hoteis'));
+  }
+
+  function dadosHotelAdmin($id)
+  {
+    $hotel = Estabelecimento::find($id);
+    return view('dadosHotelAdmin',["_ID"=>$id], compact('hotel'));
+  }
   function cadastroHotel(Request $request)
   {
 

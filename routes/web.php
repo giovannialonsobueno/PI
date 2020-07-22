@@ -20,13 +20,11 @@ Route::get('/login', 'Controles@login');
 
 Route::get('/cadastro', 'Controles@cadastro');
 
-Route::get('/cadastroHotel', 'Controles@cadastroHotel');
+Route::get('/hotelAdmin', 'EstabelecimentosController@hotelAdmin');
 
 Route::get('/cadastroQuartos/{id}', "Controles@cadastroQuartos");
 
 Route::get('/homeAdmin', 'Controles@homeAdmin');
-
-Route::get('/hotel', 'Controles@hotel');
 
 Route::get('/user', 'Controles@user');
 
@@ -43,5 +41,9 @@ Route::post('/atualizarSenha', "UsuariosController@atualizarSenha");
 Route::post('/cadastroHotel', 'EstabelecimentosController@cadastroHotel');
 
 Route::post('/cadastroQuartos', 'QuartosController@cadastrarQuarto');
+
+Route::get('/dadosHotelAdmin/{id}','EstabelecimentosController@dadosHotelAdmin');
+
+Route::get('/quartosAdmin/{id}','QuartosController@quartosAdmin');
 ///////////////////////////////
 Route::get('/laravel', function () { return view('welcome');});

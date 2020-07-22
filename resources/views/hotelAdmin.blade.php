@@ -28,51 +28,47 @@
       <section class="box-return-users">
 
         <div class="users-title">
-
           <h2>Hoteis Cadastrados</h2>
           <h2 id="Nusuarios">1289</h2>
-
         </div>
-
 
         <div class="return-user-info">
           <div class="user-id">
-            <p>Hotel Id</p>
+            <p>Id</p>
           </div>
 
           <div class="user-name">
-            <p>Hotel Name</p>
+            <p>Nome</p>
           </div>
 
           <div class="user-email">
-            <p>Hotel address</p>
+            <p>Endereço</p>
           </div>
 
           <div class="user-ver-mais">
-            <a href="#">Hotel Info</a>
-
+            <a href="/hotelAdmin">Info</a>
           </div>
         </div>
 
-
+        @foreach ($hoteis as $hotel)
         <div class="return-user-info">
           <div class="user-id">
-            <p>049384767574</p>
+            <p>{{$hotel->id}}</p>
           </div>
 
           <div class="user-name">
-            <p>Saint Patrick Hotel</p>
+            <p>{{$hotel->nome}}</p>
           </div>
 
           <div class="user-email">
-            <p>Rua São Patricio, 324 - Santos</p>
+            <p>{{$hotel->endereco}}</p>
           </div>
 
           <div class="user-ver-mais">
-            <a href="#">Ver Informações</a>
-
+            <a href="/dadosHotelAdmin/{{$hotel->id}}">Ver Informações</a>
           </div>
         </div>
+        @endforeach
 
 
       </section>

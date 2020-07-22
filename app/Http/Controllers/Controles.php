@@ -6,7 +6,12 @@ namespace App\Http\Controllers;
     class Controles extends Controller{
       function home()
       {
+        if (Auth::check()) {
+        if (auth()->user()->adm = 1) {
+        return redirect('homeAdmin');
+        }} else {
         return view('index');
+        }
       }
 
       function item($id)
@@ -59,11 +64,6 @@ namespace App\Http\Controllers;
         else { return redirect('login');}
       }
 
-      function cadastroHotel()
-      {
-      return view('cadastroHotel');
-      }
-
       function cadastroQuartos($id){
       if (Auth::check()) {
       if (auth()->user()->adm = 1) {
@@ -77,11 +77,6 @@ namespace App\Http\Controllers;
       function homeAdmin()
       {
       return view('homeAdmin');
-      }
-
-      function hotel()
-      {
-      return view('hotel');
       }
 
       function user()
