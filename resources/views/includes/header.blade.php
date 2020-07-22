@@ -6,9 +6,9 @@
         <h1><a href="/">ESTAVAGO</a></h1>
         <div class="botoes_header">
           @auth
-            <a href="/perfil" class="dropbtn">{{ auth()->user()->nome }}</a>
+            <a href="/perfil/{{auth()->user()->id}}" class="dropbtn">{{ auth()->user()->nome }}</a>
             <div class="dropdown-content">
-              <a href="/perfil"><i class="fa fa-user"></i>Perfil</a>
+              <a href="/perfil/{{auth()->user()->id}}"><i class="fa fa-user"></i>Perfil</a>
               <a href="/logout"><i class="fa fa-sign-out"></i>Sair</a>
             </div>
           @endauth

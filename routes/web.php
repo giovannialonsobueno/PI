@@ -28,7 +28,7 @@ Route::get('/homeAdmin', 'Controles@homeAdmin');
 
 Route::get('/user', 'Controles@user');
 
-Route::get('perfil','Controles@perfil');
+Route::get('/perfil/{id}','Controles@perfil');
 
 Route::post('/cadastro', 'UsuariosController@cadastro');
 

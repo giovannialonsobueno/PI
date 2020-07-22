@@ -36,11 +36,11 @@ class UsuariosController extends Controller
           return redirect('/perfil');
         }
         if (Auth::attempt([ "email"=>$request->email, "password"=>$request->senha]))
-        { return redirect('/'); }
+          { return redirect('/'); }
         else {
-        $validacoes = $request->validate([
-        'email'=>'min:99999']);
-        return redirect('/login');}
+          $validacoes = $request->validate([
+            'email'=>'min:99999']);
+          return redirect('/login');}
       }
 
       function atualizar(Request $request){
