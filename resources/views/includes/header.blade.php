@@ -19,24 +19,24 @@
       </div>
 
       <div class="header-B">
-        <form action="/pesquisa" method="get">
+        <form action="/busca" method="get">
           <div class="input1">
-            <label for="">Local</label>
-            <input type="text" name="" value="">
+            <label for="local">Local</label>
+            <input type="text" name="local" value="{{old('local')}}">
           </div>
           <div class="input2">
             <label>Entrada</label>
-            <input type="date" id="saida" name="">
+            <input type="date" id="saida" name="entrada" value="{{old('entrada')}}">
           </div>
           <div class="input2">
-            <label for="">Saida</label>
-            <input type="date" id="entrada" name="">
+            <label for="saida">Saida</label>
+            <input type="date" id="entrada" name="saida" value="{{old('saida')}}">
           </div>
           <div class="input3">
             <label>Hospedes</label>
             <div class="box-select">
               <div class="custom-select" style="width:calc(100% - 10px);height: 70px;">
-                <select>
+                <select name="hospedes">
                     @for ($i=0; $i <= 9; $i++)
                       <option value="{{$i}}">{{$i}}</option>
                     @endfor
@@ -44,7 +44,7 @@
                 </div>
             </div>
           </div>
-          <div class="input3">
+          {{-- <div class="input3">
             <label>Quartos</label>
             <div class="box-select">
               <div class="custom-select" style="width:calc(100% - 10px);height: 70px;">
@@ -55,8 +55,8 @@
                   </select>
                 </div>
             </div>
-          </div>
-          <button type="submit" name="button">Pesquisar</button>
+          </div> --}}
+          <button type="submit" name="upload">Pesquisar</button>
         </form>
       </div>
     </header>

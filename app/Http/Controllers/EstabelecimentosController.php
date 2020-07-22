@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Estabelecimento;
 use App\Imagem;
+use Illuminate\Support\Facades\DB;
 
 class EstabelecimentosController extends Controller
 {
@@ -104,14 +105,25 @@ class EstabelecimentosController extends Controller
     return redirect('/cadastroQuartos/'.$id);
   }
 
-  // public function busca(Request $request){
-  //
-  //       $search = $request->search;
-  //       if($search == ""){
-  //           return redirect('/principal');
-  //       }
-  //       $mecanismo = Produto::where('nome_produto', 'LIKE', '%'.$search.'%')->get();
-  //       return view('busca',['mecanismo'=>$mecanismo]);
-  //   }
+  public function busca(Request $request){
+    $local = $request->local;
+    $entrada = $request->entrada;
+    $saida = $request->saida;
+    $teste = DB::select("select distinct e.*
+      from
+      	estabelecimentos e
+          inner join quartos q on e.id = q.estabelecimentos_id
+      	left join quartos_has_reservas qr on q.id = qr.quartos_id
+      	left join reservas r on qr.reservas_id = r.id
+      where (e.cidade like '%$local%' or e.estado like '%$local%' or e.nome like '%$local%')
+      and (r.dataIN is null or
+        	(
+        		('$entrada' not between r.dataIN and r.dataOUT)
+        		and ('$saida' not between r.dataIN and r.dataOUT)
+        	)
+        );
+    ");
+    return view('pesquisa', compact('teste'));
+    }
 
 }
