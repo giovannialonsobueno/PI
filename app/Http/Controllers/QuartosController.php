@@ -6,13 +6,9 @@ use Illuminate\Http\Request;
 use App\Quarto;
 use App\Estabelecimento;
 use Illuminate\Http\Storage;
+use Illuminate\Support\Facades\DB;
 class QuartosController extends Controller
 {
-  function quartosAdmin($id)
-  {
-    $hotel = Estabelecimento::find($id);
-    return view('/quartosAdmin',["_ID"=>$id], compact('hotel'));
-  }
 
   function cadastrarQuarto(Request $request){
 
@@ -56,5 +52,15 @@ class QuartosController extends Controller
      $quarto->save();
      }
     return view('homeAdmin');
+  }
+
+  function quartosAdmin($id){
+    $quartos = DB::select("select * from quartos where estabelecimentos_id = $id;");
+    return view('quartosAdmin', ['_ID'=>$id], compact('quartos'));
+  }
+
+  function dadosQuartosAdmin($id){
+    $quarto = Quarto::find($id);
+    return view('dadosQuartosAdmin',["_ID"=>$id], compact('quarto'));
   }
 }
