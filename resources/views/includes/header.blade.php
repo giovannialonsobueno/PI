@@ -19,7 +19,7 @@
       </div>
 
       <div class="header-B">
-        <form action="/pesquisa" method="post">
+        <form action="/pesquisa" method="get">
           <div class="input1">
             <label for="">Local</label>
             <input type="text" name="" value="">

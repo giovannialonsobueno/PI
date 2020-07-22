@@ -26,7 +26,6 @@ class CreateUsersTable extends Migration
           $table->string('email')->unique();
           $table->string('senha');
           $table->bigInteger('tel')->nullable();
-          $table->string('foto')->nullable();
           $table->bigInteger('cpf')->nullable();
           $table->string('cidade')->nullable();
           $table->string('pais')->nullable();

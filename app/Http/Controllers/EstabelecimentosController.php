@@ -103,4 +103,15 @@ class EstabelecimentosController extends Controller
         }
     return redirect('/cadastroQuartos/'.$id);
   }
+
+  // public function busca(Request $request){
+  //
+  //       $search = $request->search;
+  //       if($search == ""){
+  //           return redirect('/principal');
+  //       }
+  //       $mecanismo = Produto::where('nome_produto', 'LIKE', '%'.$search.'%')->get();
+  //       return view('busca',['mecanismo'=>$mecanismo]);
+  //   }
+
 }

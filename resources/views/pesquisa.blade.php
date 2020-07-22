@@ -15,7 +15,7 @@
 
             <h3>Categoria</h3>
 
-            <form action="" method="get">
+            <form action="/pesquisa" method="get">
 
                 <div class="star-rating">
                   <input type="checkbox" name="1-estrela" value="1">
