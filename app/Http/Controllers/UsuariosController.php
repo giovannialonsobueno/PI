@@ -14,6 +14,7 @@ class UsuariosController extends Controller
     if (Auth::check()) {
       return redirect('/perfil');
     }
+
     $validacoes = $request->validate([
       'nome' => 'required|min:6',
       'email' => 'required|email|unique:users',

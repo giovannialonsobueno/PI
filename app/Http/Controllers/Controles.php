@@ -7,11 +7,11 @@ namespace App\Http\Controllers;
       function home()
       {
         if (Auth::check()) {
-        if (auth()->user()->adm = 1) {
-        return redirect('homeAdmin');
-        }} else {
-        return view('index');
+          if (auth()->user()->adm == 1) {
+            return redirect('/homeAdmin');
+          }
         }
+            return view('index');
       }
 
       function item($id)
@@ -51,17 +51,16 @@ namespace App\Http\Controllers;
         else { return redirect('/perfil');}
       }
 
-
       function cadastro()
       {
         if (!Auth::check()) {return view('cadastro');}
         else { return redirect('/perfil');}
       }
 
-      function perfil() {
+      function perfil($id) {
         if (Auth::check())
         {return view('perfil',["_ID"=>$id]);}
-        else { return redirect('login');}
+        else { return redirect('/login');}
       }
 
       function cadastroQuartos($id){

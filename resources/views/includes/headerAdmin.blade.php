@@ -25,7 +25,7 @@
               </button>
               <div class="dropdown-content">
                 <a href="#"><i class="fa fa-user"></i>Editar Perfil</a>
-                <a href="#"><i class="fa fa-sign-out"></i>Sair</a>
+                <a href="/logout"><i class="fa fa-sign-out"></i>Sair</a>
               </div>
               </div>
             </div>
